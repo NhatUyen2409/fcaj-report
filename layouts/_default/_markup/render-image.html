@@ -1,0 +1,10 @@
+{{- $url := .Destination -}}
+{{- if not (urls.Parse $url).IsAbs -}}
+  {{- if not (hasPrefix $url "/fcaj-report/") -}}
+    {{- $url = $url | relURL -}}
+  {{- end -}}
+{{- end -}}
+<figure class="report-figure">
+  <img src="{{ $url }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" />
+  {{ with .Title }}<figcaption class="report-figcaption">{{ . }}</figcaption>{{ end }}
+</figure>

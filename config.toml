@@ -1,0 +1,66 @@
+baseURL = "https://nhatuyen2409.github.io/fcaj-report/"
+relativeURLs = false
+canonifyURLs = false
+defaultContentLanguage = "en"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "workshop", "red", "blue", "green".
+  themeVariant = "workshop"
+  # Official FCAJ template custom CSS
+  custom_css = ["css/custom.css"]
+  # Git hub repo link
+  editURL = ""
+  description = "AWS First Cloud AI Journey - Internship Report"
+  author = "Phan Nhật Uyên"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[Languages]
+[Languages.en]
+title = "Internship Report"
+weight = 1
+languageName = "English"
+label = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-aws'></i> AWS Cloud Journey"
+identifier = "AWS Cloud Journey"
+url = "https://cloudjourney.awsfcaj.com/"
+weight = 20
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj"
+weight = 20
+
+[Languages.vi]
+title = "Báo cáo thực tập"
+weight = 2
+languageName = "Tiếng Việt"
+label = "Tiếng Việt"
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-aws'></i> AWS Cloud Journey"
+identifier = "AWS Cloud Journey"
+url = "https://cloudjourney.awsfcaj.com/"
+weight = 20
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj"
+weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+
+<div class="notfound" style="text-align: center; padding: 60px 20px;">
+  <h1>404 - Trang không tìm thấy / Page Not Found</h1>
+  <p>Đang kiểm tra chuyển hướng đường dẫn cũ... / Checking for legacy hash routes...</p>
+  <p><a href="{{ "" | relLangURL }}">Trở về trang chủ / Return to Home</a></p>
+</div>
+
+<script>
+  (function() {
+    var hash = window.location.hash || '';
+    var base = '{{ "" | relURL }}';
+    if (!base.endsWith('/')) base += '/';
+
+    var routeMap = {
+      '#/worklog': '1-worklog/',
+      '#/proposal': '2-proposal/',
+      '#/blogs-posted': '3-blogsposted/',
+      '#/events': '4-eventparticipated/',
+      '#/workshop': '5-workshop/',
+      '#/self-evaluation': '6-self-evaluation/',
+      '#/feedback': '7-feedback/'
+    };
+
+    for (var key in routeMap) {
+      if (hash === key || hash.indexOf(key + '/') === 0) {
+        window.location.replace(base + routeMap[key]);
+        return;
+      }
+    }
+
+    if (hash.indexOf('#/blog/') === 0) {
+      var blogSlug = hash.replace('#/blog/', '');
+      if (blogSlug.indexOf('s3-express') !== -1) {
+        window.location.replace(base + '3-blogsposted/3.1-s3-express-one-zone/');
+        return;
+      } else if (blogSlug.indexOf('event-driven') !== -1) {
+        window.location.replace(base + '3-blogsposted/3.2-event-driven-architecture/');
+        return;
+      } else if (blogSlug.indexOf('identity') !== -1) {
+        window.location.replace(base + '3-blogsposted/3.3-identity-containment/');
+        return;
+      }
+    }
+
+    if (hash.indexOf('#/event/') === 0) {
+      var eventSlug = hash.replace('#/event/', '');
+      if (eventSlug.indexOf('hoi-thao') !== -1 || eventSlug.indexOf('moderniz') !== -1) {
+        window.location.replace(base + '4-eventparticipated/4.1-database-modernization/');
+        return;
+      } else if (eventSlug.indexOf('first-cloud') !== -1 || eventSlug.indexOf('meetup') !== -1) {
+        window.location.replace(base + '4-eventparticipated/4.2-fcaj-meetup/');
+        return;
+      } else if (eventSlug.indexOf('enterprise') !== -1) {
+        window.location.replace(base + '4-eventparticipated/4.3-enterprise-ai-on-aws/');
+        return;
+      }
+    }
+  })();
+</script>
+
+{{ partial "footer.html" . }}

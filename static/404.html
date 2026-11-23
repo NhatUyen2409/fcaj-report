@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Đang chuyển hướng / Redirecting...</title>
+  <script>
+    (function() {
+      var hash = window.location.hash || '';
+      var base = '/fcaj-report/';
+      var routeMap = {
+        '#/worklog': '1-worklog/',
+        '#/proposal': '2-proposal/',
+        '#/blogs-posted': '3-blogsposted/',
+        '#/events': '4-eventparticipated/',
+        '#/workshop': '5-workshop/',
+        '#/self-evaluation': '6-self-evaluation/',
+        '#/feedback': '7-feedback/'
+      };
+
+      for (var key in routeMap) {
+        if (hash === key || hash.indexOf(key + '/') === 0) {
+          window.location.replace(base + routeMap[key]);
+          return;
+        }
+      }
+
+      // Check blog detail hash
+      if (hash.indexOf('#/blog/') === 0) {
+        var blogSlug = hash.replace('#/blog/', '');
+        if (blogSlug.indexOf('s3-express') !== -1) {
+          window.location.replace(base + '3-blogsposted/3.1-s3-express-one-zone/');
+          return;
+        } else if (blogSlug.indexOf('event-driven') !== -1) {
+          window.location.replace(base + '3-blogsposted/3.2-event-driven-architecture/');
+          return;
+        } else if (blogSlug.indexOf('identity') !== -1) {
+          window.location.replace(base + '3-blogsposted/3.3-identity-containment/');
+          return;
+        }
+      }
+
+      // Check event detail hash
+      if (hash.indexOf('#/event/') === 0) {
+        var eventSlug = hash.replace('#/event/', '');
+        if (eventSlug.indexOf('hoi-thao') !== -1 || eventSlug.indexOf('moderniz') !== -1) {
+          window.location.replace(base + '4-eventparticipated/4.1-database-modernization/');
+          return;
+        } else if (eventSlug.indexOf('first-cloud') !== -1 || eventSlug.indexOf('meetup') !== -1) {
+          window.location.replace(base + '4-eventparticipated/4.2-fcaj-meetup/');
+          return;
+        } else if (eventSlug.indexOf('enterprise') !== -1) {
+          window.location.replace(base + '4-eventparticipated/4.3-enterprise-ai-on-aws/');
+          return;
+        }
+      }
+
+      // Default fallback
+      window.location.replace(base);
+    })();
+  </script>
+</head>
+<body>
+  <p>Đang chuyển hướng đến trang tài liệu... / Redirecting to documentation page...</p>
+  <p><a href="/fcaj-report/">Nhấn vào đây nếu không tự động chuyển hướng / Click here if not redirected automatically</a></p>
+</body>
+</html>

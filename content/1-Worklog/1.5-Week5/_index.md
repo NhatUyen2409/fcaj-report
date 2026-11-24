@@ -6,18 +6,17 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-# Week 5: Week 5 – Project Ideation & Preparation
+# Week 5: Project Ideation & Architecture Preparation (14/10/2026 – 16/10/2026)
 
 ### Week 5 Objectives:
-* Discuss, select the project topic, and build the initial ideation for the Nutrition E-Commerce project.
+* Finalize Nutrition E-Commerce project topic, research solution architecture, and prepare internship proposal.
 
 ### Weekly Tasks & Activities:
 | Day | Task & Details | Start Date | Completion Date | Reference Materials |
 | --- | -------------- | ---------- | --------------- | ------------------- |
-| Tuesday | **Main Task:** Project Topic Discussion<br>**Detailed Activities:** Group discussion, searching and proposing project ideas. Research Eat Clean food business models, products, and catalog organization on e-commerce websites. | 2026-10-13 | 2026-10-13 | [HelloFresh](https://www.hellofresh.com/)<br>[Go Fit Mart](https://gofitmart.vn/) |
-| Wednesday | **Main Task:** Project Ideation & Preparation<br>**Detailed Activities:** Finalize the Nutrition E-Commerce topic, define project objectives and planned features. Research third-party nutritional data sources to look up calories, protein, carbohydrates, and fat. | 2026-10-14 | 2026-10-14 | [FoodData Central](https://fdc.nal.usda.gov/)<br>[Open Food Facts](https://world.openfoodfacts.org/)<br>[MyFitnessPal](https://www.myfitnesspal.com/) |
+| Wednesday | Main Task: Discuss and finalize Nutrition E-Commerce project proposal.<br>Detailed Activities: Group discussion on nutrition e-commerce requirements, identifying user personas, meal recommendation features, and scope of deployment on AWS. | 2026-10-14 | 2026-10-14 | [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) |
+| Friday | Main Task: Technical architecture research and system tier diagramming.<br>Detailed Activities: Analyze target architecture including Frontend, Backend Microservices, Database, and GenAI integration; finalize project proposal document. | 2026-10-16 | 2026-10-16 | [Web Application Architecture on AWS](https://aws.amazon.com/solutions/implementations/serverless-image-handler/) |
 
 ### Week 5 Achievements:
-* Agreed on the Nutrition E-Commerce project topic.
-* Defined project goals and expected features of the project.
-* Researched Eat Clean food e-commerce websites and third-party nutritional data sources.
+* Finalized objectives and business scope for the Nutrition E-Commerce project.
+* Completed the Proposal document featuring a tiered AWS cloud architecture diagram.

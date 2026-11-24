@@ -8,14 +8,14 @@ pre: " <b> 7. </b> "
 
 # Internship Experience & Feedback
 
-### 1. Internship Experience
-The internship at AWS First Cloud AI Journey provided an open, professional, and inspiring environment. I had the privilege of working hands-on with cutting-edge AWS Cloud technologies while receiving dedicated, insightful guidance from my Mentor and the organizing team.
+### 1. Working Environment
+The AWS First Cloud AI Journey program provided a professional and welcoming learning and internship environment, giving me valuable practical experience and knowledge.
 
-### 2. Satisfaction Level
-I am thoroughly satisfied with the curriculum structure and practical skill development. The assignments complemented my academic studies at the university while substantially broadening my production cloud engineering competencies.
+### 2. Support from Mentor & Organizers
+The Mentor and organizing team were consistently supportive and dedicated, answering questions whenever I faced challenges or needed clarification throughout the program.
 
-### 3. Suggestions for Improvement
-The program could consider introducing in-person hackathons and career mentoring roundtables with alumni working at major AWS Premier Partners. This would offer even deeper networking and collaborative problem-solving opportunities.
+### 3. Alignment with Academic Major
+The program connects with my academic major across several aspects while helping me broaden my knowledge of cloud computing and system security.
 
-### 4. Recommendation to Future Students
-This is an exceptional and highly rewarding internship program for students aspiring to build careers in Cloud Computing and Generative AI. I will enthusiastically recommend the AWS First Cloud AI Journey to junior peers in upcoming cohorts.
+### 4. Learning Opportunities & Skill Development
+Through the program, I had the opportunity to access real-world knowledge, cultivate independent learning skills, and gain meaningful practical experience.

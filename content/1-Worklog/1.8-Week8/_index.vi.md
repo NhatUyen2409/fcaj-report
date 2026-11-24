@@ -1,33 +1,24 @@
 ---
-title: "Worklog Tuần 8"
+title: "Nhật ký tuần 8"
 date: 2026-09-14
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-# Tuần 8: Các dịch vụ Migration của AWS (02/11/2026 – 06/11/2026)
+# Tuần 8: CloudFront & Cognito (03/11/2026 – 06/11/2026)
 
 ### Mục tiêu tuần 8:
-* Hiểu các khái niệm và chiến lược chuyển đổi lên cloud (migration).
-* Tìm hiểu AWS VM Import/Export.
-* Tìm hiểu AWS Database Migration Service (DMS).
-* Hiểu việc chuyển đổi schema cơ sở dữ liệu.
-* Tìm hiểu AWS Elastic Disaster Recovery.
+* Tìm hiểu tăng tốc phân phối nội dung với Amazon CloudFront và quản lý định danh người dùng với Amazon Cognito.
 
 ### Các công việc triển khai trong tuần:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| Thứ 2 | - Học kiến thức nền tảng về migration lên cloud.<br>- Tìm hiểu các chiến lược migration.<br>- Tìm hiểu các dịch vụ migration của AWS. | 2026-11-02 | 2026-11-02 | [AWS Migration – 7Rs Migration Strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html) |
-| Thứ 3 | - Khám phá AWS VM Import/Export.<br>- Tìm hiểu cách migrate image máy ảo.<br>- Rà soát các yêu cầu khi migration. | 2026-11-03 | 2026-11-03 | [AWS VM Import/Export – User Guide](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html) |
-| Thứ 4 | - Tìm hiểu AWS Database Migration Service.<br>- Tìm hiểu Source Endpoint và Target Endpoint.<br>- Tìm hiểu Replication Task. | 2026-11-04 | 2026-11-04 | [AWS Database Migration Service (DMS)](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) |
-| Thứ 5 | - Khám phá AWS Schema Conversion Tool.<br>- Tìm hiểu việc chuyển đổi schema cơ sở dữ liệu.<br>- Rà soát khả năng tương thích khi migrate cơ sở dữ liệu. | 2026-11-05 | 2026-11-05 | [AWS Schema Conversion Tool (SCT)](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html) |
-| Thứ 6 | - Tìm hiểu AWS Elastic Disaster Recovery.<br>- Tìm hiểu RPO và RTO.<br>- Rà soát các chiến lược backup và recovery. | 2026-11-06 | 2026-11-06 | [AWS Elastic Disaster Recovery (DRS)](https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html) |
+| Thứ Ba | Main Task: Tìm hiểu Amazon CloudFront và phân phối nội dung.<br>Detailed Activities: Cấu hình phân phối Amazon CloudFront, Origin Access Control (OAC), chứng chỉ SSL/TLS và bộ nhớ đệm tại biên cho tài nguyên web. | 2026-11-03 | 2026-11-03 | [Amazon CloudFront – Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
+| Thứ Năm | Main Task: Tìm hiểu xác thực người dùng với Amazon Cognito.<br>Detailed Activities: Cấu hình Amazon Cognito User Pools, App Clients và quy trình xác thực dựa trên token cho đăng ký và đăng nhập người dùng. | 2026-11-05 | 2026-11-05 | [Amazon Cognito – Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
+| Thứ Sáu | Main Task: Đánh giá tích hợp CloudFront và Cognito trong kiến trúc Nutrition E-Commerce.<br>Detailed Activities: Phân tích luồng xác thực an toàn, phân quyền API gateway và phân phối nội dung tại biên trong giải pháp Nutrition E-Commerce. | 2026-11-06 | 2026-11-06 | [Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce) |
 
 ### Kết quả đạt được tuần 8:
-* Nắm được các chiến lược migration lên cloud cơ bản.
-* Tìm hiểu quy trình VM Import/Export.
-* Tìm hiểu DMS Replication Instance, Endpoint và Task.
-* Hiểu full load và ongoing data replication.
-* Hiểu mục đích của AWS Schema Conversion Tool.
-* Hiểu các khái niệm cơ bản về disaster recovery, RPO và RTO.
+* Nắm vững cơ chế caching và phân phối nội dung tĩnh/động tại biên qua Amazon CloudFront.
+* Hiểu quy trình xác thực người dùng dựa trên JWT token với Amazon Cognito User Pools.
+* Đánh giá kiến trúc tích hợp an toàn giữa CloudFront và Cognito trong dự án Nutrition E-Commerce.

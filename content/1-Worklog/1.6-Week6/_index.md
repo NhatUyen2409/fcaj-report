@@ -6,28 +6,17 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-# Week 6: AWS Lambda & Serverless Computing (19/10/2026 – 23/10/2026)
+# Week 6: Docker & Amazon ECR (21/10/2026 – 23/10/2026)
 
 ### Week 6 Objectives:
-* Understand Serverless Computing and AWS Lambda.
-* Learn Lambda Functions, Triggers, Events, and Execution Roles.
-* Practice creating and deploying Lambda Functions.
-* Explore integration between Lambda and Amazon S3.
-* Learn basic monitoring using CloudWatch.
+* Master Docker fundamentals, containerization concepts, and explore container image management with Amazon ECR.
 
 ### Weekly Tasks & Activities:
 | Day | Task & Details | Start Date | Completion Date | Reference Materials |
 | --- | -------------- | ---------- | --------------- | ------------------- |
-| Monday | - Learn Serverless Computing fundamentals.<br>- Explore AWS Lambda and its architecture.<br>- Understand Functions, Runtimes, and Handlers. | 2026-10-19 | 2026-10-19 | [AWS Lambda – Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |
-| Tuesday | - Create and configure Lambda Functions.<br>- Write basic Python code.<br>- Test functions using sample events. | 2026-10-20 | 2026-10-20 | [AWS Lambda – Getting Started](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) |
-| Wednesday | - Learn Lambda Triggers and Event Sources.<br>- Integrate Lambda with Amazon S3.<br>- Practice processing uploaded files. | 2026-10-21 | 2026-10-21 | [AWS Lambda – Services & Triggers](https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html) |
-| Thursday | - Monitor Lambda using CloudWatch.<br>- Review execution logs and metrics.<br>- Practice troubleshooting basic errors. | 2026-10-22 | 2026-10-22 | [AWS Lambda – Monitoring & CloudWatch](https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html) |
-| Friday | - Test the serverless workflow.<br>- Review permissions and configurations.<br>- Document the practical results. | 2026-10-23 | 2026-10-23 | [AWS Lambda – Execution Roles & IAM](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) |
+| Wednesday | Main Task: Learn Docker fundamentals and containerize applications.<br>Detailed Activities: Study Docker architecture, images, containers, and write Dockerfiles to containerize application components. | 2026-10-21 | 2026-10-21 | [Docker – Container Fundamentals](https://docs.docker.com/get-started/) |
+| Friday | Main Task: Explore Amazon ECR and container image management.<br>Detailed Activities: Create Amazon ECR repositories, configure IAM permissions, and practice authentication and pushing container images to ECR. | 2026-10-23 | 2026-10-23 | [Amazon ECR – User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) |
 
 ### Week 6 Achievements:
-* Understood the fundamentals of Serverless Computing.
-* Learned Lambda Functions, Runtimes, Handlers, and Triggers.
-* Practiced creating and testing Lambda Functions using Python.
-* Explored S3 event notifications and Lambda integration.
-* Learned to monitor function execution using CloudWatch Logs.
-* Understood basic serverless application workflows.
+* Mastered application containerization concepts using Docker.
+* Understood how to create and manage container image repositories on Amazon ECR.

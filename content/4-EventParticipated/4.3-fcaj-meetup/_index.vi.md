@@ -1,9 +1,11 @@
 ---
 title: "First Cloud AI Journey Meetup (24/10/2026)"
 date: 2026-09-14
-weight: 2
+weight: 3
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.3. </b> "
+aliases:
+  - /vi/4-eventparticipated/4.2-fcaj-meetup/
 ---
 
 <article class="event-report-article">
@@ -15,7 +17,7 @@ pre: " <b> 4.2. </b> "
 <span>Sự kiện tham gia</span>
 </a>
 <span class="sep">/</span>
-<span class="current">Sự kiện 2 - First Cloud AI Journey Meetup (24/10/2026)</span>
+<span class="current">Sự kiện 3 - First Cloud AI Journey Meetup (24/10/2026)</span>
 </div>
 <button type="button" class="btn btn-outline btn-sm" >
 <span>← Quay lại sự kiện</span>
@@ -58,9 +60,9 @@ pre: " <b> 4.2. </b> "
 </header>
 
 <!-- Event 2 Check-in Photo -->
-<div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+<div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0; display: block; text-align: center;">
 <div class="event-uploaded-img-wrap"  title="Nhấp để xem ảnh độ nét cao (HD)">
-<img id="event-2-cover-img" src="/fcaj-report/images/events/event-2.jpg" alt="First Cloud AI Journey Meetup – 24/10/2026" class="event-uploaded-img" onload="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='block';" onerror="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='none';" loading="eager" />
+<img id="event-3-cover-img" src="/fcaj-report/images/events/event-3.jpg" onerror="this.onerror=null; this.src='/images/events/event-3.jpg';" alt="First Cloud AI Journey Meetup – 24/10/2026" class="event-uploaded-img" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 6px;" loading="eager" />
 </div>
 <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
 Ảnh check-in thực tế của sinh viên tại sự kiện First Cloud AI Journey Meetup (24/10/2026) – Tầng 26, Bitexco Financial Tower
@@ -75,6 +77,12 @@ pre: " <b> 4.2. </b> "
 </div>
 <div class="report-prose">
 <p><strong>First Cloud AI Journey Meetup</strong> tập trung vào năm chủ đề chính: <strong>Voice AI</strong>, <strong>AWS Resource Access Manager (RAM)</strong>, <strong>AI-assisted Penetration Testing</strong>, <strong>Amazon Bedrock AgentCore</strong> và <strong>Kiro Crew</strong>.</p>
+
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #f97316; border-radius: 6px; padding: 12px 16px; margin: 16px 0;">
+<p style="margin: 0; font-size: 14px; color: #1e293b;">
+<strong>Danh sách diễn giả:</strong> <strong>Kiệt Trần, Long Huỳnh, Thịnh Nguyễn, Xuân An, Khoa Kiều, Nghi Danh</strong>
+</p>
+</div>
 
 <div class="report-quote-box" style="border-left-color: #171717;">
 “Sự kiện quy tụ các chuyên gia công nghệ, kỹ sư giải pháp và cộng đồng AWS tại Việt Nam, mang đến chuỗi bài trình bày kỹ thuật chuyên sâu, phiên live demo kiến trúc và thảo luận mở về ứng dụng thực tiễn của Cloud Computing và Trí tuệ nhân tạo trong doanh nghiệp.”

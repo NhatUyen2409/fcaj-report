@@ -1,9 +1,11 @@
 ---
 title: "Enterprise AI on AWS Cloud (14/11/2026)"
 date: 2026-09-14
-weight: 3
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.4. </b> "
+aliases:
+  - /4-eventparticipated/4.3-enterprise-ai-on-aws/
 ---
 
 <article class="event-report-article">
@@ -15,7 +17,7 @@ pre: " <b> 4.3. </b> "
 <span>Events Participated</span>
 </a>
 <span class="sep">/</span>
-<span class="current">Event 3 - Enterprise AI on AWS Cloud (November 14, 2026)</span>
+<span class="current">Event 4 - Enterprise AI on AWS Cloud (November 14, 2026)</span>
 </div>
 <button type="button" class="btn btn-outline btn-sm" >
 <span>← Back to Events</span>
@@ -57,10 +59,10 @@ pre: " <b> 4.3. </b> "
 </div>
 </header>
 
-<!-- Event 3 Check-in Photo -->
-<div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+<!-- Event 4 Check-in Photo -->
+<div id="event-4-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
 <div class="event-uploaded-img-wrap"  title="Click to view high-definition image">
-<img id="event-3-cover-img" src="/fcaj-report/images/events/event-3.jpg" alt="Enterprise AI on AWS Cloud – 14/11/2026" class="event-uploaded-img" onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';" onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';" loading="eager" />
+<img id="event-4-cover-img" src="/fcaj-report/images/events/event-4.jpg" onerror="this.onerror=null; this.src='/images/events/event-4.jpg';" alt="Enterprise AI on AWS Cloud – 14/11/2026" class="event-uploaded-img" onload="const w = document.getElementById('event-4-cover-wrap'); if (w) w.style.display='block';" loading="eager" />
 </div>
 <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
 Authentic attendee check-in photograph at Enterprise AI on AWS Cloud (November 14, 2026) – 26th Floor, Bitexco Financial Tower
@@ -117,8 +119,8 @@ Authentic attendee check-in photograph at Enterprise AI on AWS Cloud (November 1
 <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. From Academic AI to Enterprise AI</h3>
 <p>The speaker used the vivid analogy of a home kitchen and a restaurant chain to explain the fundamental differences between experimental AI and enterprise AI:</p>
 
-<div class="minimal-table-wrap">
-<table class="minimal-table">
+<div class="minimal-table-wrap" style="overflow-x:auto;">
+<table class="minimal-table" style="min-width:640px;">
 <thead>
 <tr>
 <th style="width: 20%;">Criteria</th>
@@ -134,18 +136,22 @@ Authentic attendee check-in photograph at Enterprise AI on AWS Cloud (November 1
 </tr>
 <tr>
 <td><strong>Primary Goal</strong></td>
+<td>Highest accuracy on fixed benchmark datasets (Benchmark / Accuracy)</td>
 <td>Continuous Business Value, High Availability & High ROI</td>
 </tr>
 <tr>
 <td><strong>Operating Environment</strong></td>
+<td>Static, controlled experimental environment with isolated resources</td>
 <td>Dynamic, Unpredictable Traffic, Real-time Customer Facing</td>
 </tr>
 <tr>
 <td><strong>Security Standard</strong></td>
+<td>Minimal, prioritizing research speed and experimentation</td>
 <td>Strict Compliance (GDPR, HIPAA, SOC 2), IAM, Encryption at Rest/Transit</td>
 </tr>
 <tr>
 <td><strong>Operational Cost</strong></td>
+<td>One-time expenditure per research training run</td>
 <td>Continuous Cost per Token, Elastic Scaling, Budget Governance</td>
 </tr>
 </tbody>

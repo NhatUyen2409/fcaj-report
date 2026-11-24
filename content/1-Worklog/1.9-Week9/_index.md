@@ -6,29 +6,19 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-# Week 9: Docker & Containerization (09/11/2026 – 13/11/2026)
+# Week 9: Terraform, GitHub Actions & Bedrock (10/11/2026 – 13/11/2026)
 
 ### Week 9 Objectives:
-* Understand containerization and Docker architecture.
-* Learn Docker Images, Containers, and Dockerfiles.
-* Practice building and running Docker Containers.
-* Learn container networking and persistent storage.
-* Explore Docker applications on AWS.
+* Learn Infrastructure as Code (IaC) with Terraform, CI/CD with GitHub Actions OIDC, and Generative AI applications with Amazon Bedrock.
 
 ### Weekly Tasks & Activities:
 | Day | Task & Details | Start Date | Completion Date | Reference Materials |
 | --- | -------------- | ---------- | --------------- | ------------------- |
-| Monday | - Learn containerization fundamentals.<br>- Explore Docker architecture.<br>- Compare Containers and Virtual Machines. | 2026-11-09 | 2026-11-09 | [Docker – What is a Container?](https://docs.docker.com/learn/content/what-is-a-container/) |
-| Tuesday | - Install and configure Docker.<br>- Practice basic Docker CLI commands.<br>- Download and run Docker Images. | 2026-11-10 | 2026-11-10 | [Docker – Engine Installation Guide](https://docs.docker.com/engine/install/) |
-| Wednesday | - Learn Dockerfile instructions.<br>- Build custom Docker Images.<br>- Deploy a basic application in a container. | 2026-11-11 | 2026-11-11 | [Docker – Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) |
-| Thursday | - Learn Docker Volumes and Networks.<br>- Manage container lifecycle.<br>- Review container logs and configurations. | 2026-11-12 | 2026-11-12 | [Docker – Manage Data in Volumes](https://docs.docker.com/engine/storage/volumes/) |
-| Friday | - Test a containerized application.<br>- Troubleshoot basic errors.<br>- Explore Docker integration with Amazon ECS. | 2026-11-13 | 2026-11-13 | [Amazon ECR – Pushing Docker Images](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html) |
+| Tuesday | Main Task: Learn Terraform and Infrastructure as Code.<br>Detailed Activities: Study HashiCorp Terraform fundamentals, HCL syntax, provider configurations, resource declarations, and state management on AWS. | 2026-11-10 | 2026-11-10 | [Terraform – AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) |
+| Thursday | Main Task: Explore GitHub Actions and AWS OIDC authentication.<br>Detailed Activities: Build automated CI/CD workflows using GitHub Actions and configure secure keyless authentication to AWS via OpenID Connect (OIDC). | 2026-11-12 | 2026-11-12 | [AWS Security – OpenID Connect with GitHub Actions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) |
+| Friday | Main Task: Learn Amazon Bedrock fundamentals and AI integration.<br>Detailed Activities: Explore Amazon Bedrock foundation models, API invocations, prompt engineering concepts, and generative AI features in the application. | 2026-11-13 | 2026-11-13 | [Amazon Bedrock – User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) |
 
 ### Week 9 Achievements:
-* Understood the differences between Virtual Machines and Containers.
-* Learned Docker Engine, Images, Containers, and Dockerfiles.
-* Practiced installing and configuring Docker.
-* Learned basic Docker CLI commands.
-* Practiced building and running custom containers.
-* Understood Docker Volumes and Networks.
-* Explored container deployment using Amazon ECS.
+* Understood Terraform syntax and automated AWS infrastructure provisioning.
+* Mastered secure CI/CD workflows using GitHub Actions and IAM OIDC keyless authentication.
+* Explored Amazon Bedrock foundation models for smart meal recommendation features.

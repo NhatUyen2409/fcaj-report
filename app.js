@@ -7467,8 +7467,8 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
             ? 'Để phân định rõ nét sự khác biệt giữa AI thử nghiệm và AI quy mô doanh nghiệp, diễn giả đã sử dụng phép ẩn dụ trực quan giữa <strong>Bếp ăn gia đình (Home Kitchen)</strong> và <strong>Chuỗi nhà hàng tiêu chuẩn (Restaurant Chain)</strong>:'
             : 'The speaker used the vivid analogy of a home kitchen and a restaurant chain to explain the fundamental differences between experimental AI and enterprise AI:'}</p>
 
-          <div class="minimal-table-wrap">
-            <table class="minimal-table">
+          <div class="minimal-table-wrap" style="overflow-x:auto;">
+            <table class="minimal-table" style="min-width:640px;">
               <thead>
                 <tr>
                   <th style="width: 20%;">${isVi ? 'Tiêu chí' : 'Criteria'}</th>
@@ -7484,19 +7484,23 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Mục tiêu tối thượng' : 'Primary Goal'}</strong></td>
-                  <td>${isVi ? 'Độ chính xác cao nhất trên tập dữ liệu cố định (Benchmark / Accuracy)' : 'Continuous Business Value, High Availability & High ROI'}</td>
+                  <td>${isVi ? 'Độ chính xác cao nhất trên tập dữ liệu cố định (Benchmark / Accuracy)' : 'Highest accuracy on fixed benchmark datasets (Benchmark / Accuracy)'}</td>
+                  <td>${isVi ? 'Giá trị kinh doanh liên tục, tính sẵn sàng cao và ROI bền vững (Business Value & High ROI)' : 'Continuous Business Value, High Availability & High ROI'}</td>
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Môi trường vận hành' : 'Operating Environment'}</strong></td>
-                  <td>${isVi ? 'Môi trường thử nghiệm tĩnh, có kiểm soát, tài nguyên biệt lập' : 'Dynamic, Unpredictable Traffic, Real-time Customer Facing'}</td>
+                  <td>${isVi ? 'Môi trường thử nghiệm tĩnh, có kiểm soát, tài nguyên biệt lập' : 'Static, controlled experimental environment with isolated resources'}</td>
+                  <td>${isVi ? 'Môi trường động, lưu lượng truy cập biến động, phục vụ khách hàng theo thời gian thực (Real-time Customer Facing)' : 'Dynamic, Unpredictable Traffic, Real-time Customer Facing'}</td>
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Quy chuẩn an ninh' : 'Security Standard'}</strong></td>
-                  <td>${isVi ? 'Tối thiểu, ưu tiên tốc độ ra kết quả nghiên cứu' : 'Strict Compliance (GDPR, HIPAA, SOC 2), IAM, Encryption at Rest/Transit'}</td>
+                  <td>${isVi ? 'Tối thiểu, ưu tiên tốc độ ra kết quả nghiên cứu' : 'Minimal, prioritizing research speed and experimentation'}</td>
+                  <td>${isVi ? 'Tuân thủ nghiêm ngặt (GDPR, HIPAA, SOC 2), IAM, mã hóa dữ liệu khi lưu trữ và truyền tải (Encryption at Rest/Transit)' : 'Strict Compliance (GDPR, HIPAA, SOC 2), IAM, Encryption at Rest/Transit'}</td>
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Chi phí vận hành' : 'Operational Cost'}</strong></td>
-                  <td>${isVi ? 'Chi trả một lần theo đợt huấn luyện nghiên cứu' : 'Continuous Cost per Token, Elastic Scaling, Budget Governance'}</td>
+                  <td>${isVi ? 'Chi trả một lần theo đợt huấn luyện nghiên cứu' : 'One-time expenditure per research training run'}</td>
+                  <td>${isVi ? 'Chi phí liên tục tính theo từng token tiêu thụ, co giãn linh hoạt và quản trị ngân sách chặt chẽ (Cost per Token & Elastic Scaling)' : 'Continuous Cost per Token, Elastic Scaling, Budget Governance'}</td>
                 </tr>
               </tbody>
             </table>

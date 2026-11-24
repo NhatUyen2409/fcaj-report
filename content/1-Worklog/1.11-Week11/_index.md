@@ -6,30 +6,18 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-# Week 11: AWS Data Analytics & Business Intelligence (23/11/2026 – 27/11/2026)
+# Week 11: Final Project Testing & Project Submission (23/11/2026 – 27/11/2026)
 
 ### Week 11 Objectives:
-* Understand Data Analytics and Data Lake concepts.
-* Explore AWS data storage and processing services.
-* Learn Amazon Athena and SQL queries.
-* Understand Amazon QuickSight and Business Intelligence.
-* Practice creating basic data visualizations.
+* Test and validate core application features across user journeys; finalize technical documentation and submit the team project.
 
 ### Weekly Tasks & Activities:
 | Day | Task & Details | Start Date | Completion Date | Reference Materials |
 | --- | -------------- | ---------- | --------------- | ------------------- |
-| Monday | - Learn Data Analytics fundamentals.<br>- Understand Data Lakes and Data Warehouses.<br>- Explore Amazon S3 for data storage. | 2026-11-23 | 2026-11-23 | [AWS Cloud – What is a Data Lake?](https://aws.amazon.com/what-is/data-lake/) |
-| Tuesday | - Explore AWS data analytics services.<br>- Learn about AWS Glue.<br>- Understand basic data processing workflows. | 2026-11-24 | 2026-11-24 | [AWS Analytics – Overview & Architecture](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html) |
-| Wednesday | - Learn Amazon Athena.<br>- Practice basic SQL queries.<br>- Analyze datasets stored in Amazon S3. | 2026-11-25 | 2026-11-25 | [Amazon Athena – Interactive SQL Query](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) |
-| Thursday | - Learn Business Intelligence fundamentals.<br>- Explore Amazon QuickSight.<br>- Understand Datasets and Dashboards. | 2026-11-26 | 2026-11-26 | [AWS Cloud – What is Business Intelligence?](https://aws.amazon.com/what-is/business-intelligence/) |
-| Friday | - Create basic data visualizations.<br>- Build a sample dashboard.<br>- Review the AWS analytics workflow. | 2026-11-27 | 2026-11-27 | [Amazon QuickSight – Creating Visuals](https://docs.aws.amazon.com/quick/latest/userguide/creating-a-visual.html) |
+| Monday | Main Task: Final Project Testing.<br>Detailed Activities: Test the main features of Nutrition E-Commerce, review AWS deployment status, and identify remaining issues before final submission. | 2026-11-23 | 2026-11-23 | [Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)<br>[AWS Well-Architected – Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) |
+| Friday | Main Task: Project Finalization and Submission.<br>Detailed Activities: Verify resolved issues, finalize project documentation, and submit the completed Nutrition E-Commerce project. | 2026-11-27 | 2026-11-27 | [Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce) |
 
 ### Week 11 Achievements:
-* [Planned Learning Outcomes]
-* Understood Data Lake architecture and data storage concepts.
-* Learned structured, semi-structured, and unstructured data.
-* Explored AWS Glue and data processing workflows.
-* Practiced querying data using Amazon Athena.
-* Learned basic SQL operations for data analysis.
-* Explored Amazon QuickSight dashboards and visualizations.
-* Practiced creating basic charts and reports.
+* Verified primary application user flows and identified optimization areas during testing.
+* Confirmed resolved issues and finalized project documentation.
+* Completed final submission of the Nutrition E-Commerce team project.

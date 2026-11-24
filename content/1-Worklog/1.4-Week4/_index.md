@@ -6,20 +6,17 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-# Week 4: AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 09/10/2026)
+# Week 4: AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 08/10/2026)
 
 ### Week 4 Objectives:
-* Learn about AWS services for data processing, storage and database management.
+* Learn serverless compute with AWS Lambda, object storage with S3, Cloud9 IDE, and databases with RDS and DynamoDB.
 
 ### Weekly Tasks & Activities:
 | Day | Task & Details | Start Date | Completion Date | Reference Materials |
 | --- | -------------- | ---------- | --------------- | ------------------- |
-| Tuesday | **Main Task:** AWS Lambda.<br>**Detailed Activities:** Learn about Lambda Functions and how to execute code using the Serverless model. | 2026-10-06 | 2026-10-06 | [Getting Started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) |
-| Thursday | **Main Task:** Amazon S3 & Cloud9.<br>**Detailed Activities:** Learn about Buckets, Objects in S3 and the AWS Cloud9 development environment. | 2026-10-08 | 2026-10-08 | [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) / [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) |
-| Friday | **Main Task:** Amazon RDS & DynamoDB.<br>**Detailed Activities:** Learn about relational database RDS and NoSQL database DynamoDB. | 2026-10-09 | 2026-10-09 | [Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) / [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) |
+| Tuesday | Main Task: AWS Lambda & Amazon S3.<br>Detailed Activities: Learn serverless compute with AWS Lambda, manage buckets and objects in Amazon S3, and integrate S3 event notifications with Lambda. | 2026-10-06 | 2026-10-06 | [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |
+| Thursday | Main Task: Cloud9, Amazon RDS & DynamoDB.<br>Detailed Activities: Set up development environment on AWS Cloud9; compare relational database Amazon RDS with NoSQL database Amazon DynamoDB. | 2026-10-08 | 2026-10-08 | [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) |
 
 ### Week 4 Achievements:
-* Understood the basics of AWS Lambda and the Serverless model.
-* Learned how to store data on Amazon S3.
-* Got familiar with the AWS Cloud9 development environment.
-* Distinguished between relational database RDS and NoSQL DynamoDB.
+* Mastered core concepts of AWS Lambda serverless execution and Amazon S3 storage.
+* Understood suitable use cases for relational Amazon RDS versus NoSQL DynamoDB.

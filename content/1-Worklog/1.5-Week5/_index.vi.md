@@ -1,23 +1,22 @@
 ---
-title: "Worklog Tuần 5"
+title: "Nhật ký tuần 5"
 date: 2026-09-14
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-# Tuần 5: Week 5 – Project Ideation & Preparation
+# Tuần 5: Định hướng đề xuất dự án & Chuẩn bị kiến trúc (14/10/2026 – 16/10/2026)
 
 ### Mục tiêu tuần 5:
-* Thảo luận, lựa chọn chủ đề và xây dựng ý tưởng ban đầu cho dự án Nutrition E-Commerce.
+* Thống nhất chủ đề dự án Nutrition E-Commerce, nghiên cứu kiến trúc giải pháp và lập đề xuất đồ án thực tập.
 
 ### Các công việc triển khai trong tuần:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| Thứ Ba | **Main Task:** Project Topic Discussion<br>**Detailed Activities:** Thảo luận nhóm, tìm kiếm và đề xuất ý tưởng dự án. Tìm hiểu mô hình kinh doanh thực phẩm Eat Clean, các sản phẩm và cách tổ chức danh mục trên website thương mại điện tử. | 2026-10-13 | 2026-10-13 | [HelloFresh](https://www.hellofresh.com/)<br>[Go Fit Mart](https://gofitmart.vn/) |
-| Thứ Tư | **Main Task:** Project Ideation & Preparation<br>**Detailed Activities:** Thống nhất chủ đề Nutrition E-Commerce, xác định mục tiêu và các chức năng dự kiến. Tìm hiểu nguồn dữ liệu bên thứ ba để tra cứu thông tin dinh dưỡng như calo, protein, carbohydrate và chất béo. | 2026-10-14 | 2026-10-14 | [FoodData Central](https://fdc.nal.usda.gov/)<br>[Open Food Facts](https://world.openfoodfacts.org/)<br>[MyFitnessPal](https://www.myfitnesspal.com/) |
+| Thứ Tư | Main Task: Thảo luận và thống nhất đề xuất đồ án Nutrition E-Commerce.<br>Detailed Activities: Họp nhóm thảo luận yêu cầu bài toán thương mại điện tử dinh dưỡng, xác định đối tượng người dùng, tính năng gợi ý khẩu phần và phạm vi triển khai trên AWS. | 2026-10-14 | 2026-10-14 | [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) |
+| Thứ Sáu | Main Task: Khảo sát kiến trúc kỹ thuật và lập sơ đồ phân tầng hệ thống.<br>Detailed Activities: Phân tích mô hình kiến trúc dự kiến gồm Frontend, Backend Microservices, Cơ sở dữ liệu và tích hợp GenAI; hoàn thiện bản đề xuất đồ án (Proposal). | 2026-10-16 | 2026-10-16 | [Kiến trúc ứng dụng Web trên AWS](https://aws.amazon.com/solutions/implementations/serverless-image-handler/) |
 
 ### Kết quả đạt được tuần 5:
-* Thống nhất lựa chọn chủ đề Nutrition E-Commerce.
-* Xác định mục tiêu và các chức năng dự kiến của dự án.
-* Tìm hiểu các website bán thực phẩm Eat Clean và nguồn dữ liệu dinh dưỡng bên thứ ba.
+* Thống nhất mục tiêu và phạm vi nghiệp vụ của đồ án Nutrition E-Commerce.
+* Hoàn thành tài liệu Đề xuất đồ án (Proposal) với sơ đồ kiến trúc phân tầng trên AWS.

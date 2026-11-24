@@ -36,12 +36,6 @@ identifier = "AWS Cloud Journey"
 url = "https://cloudjourney.awsfcaj.com/"
 weight = 20
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj"
-weight = 20
-
 [Languages.vi]
 title = "Báo cáo thực tập"
 weight = 2
@@ -52,12 +46,6 @@ label = "Tiếng Việt"
 name = "<i class='fab fa-aws'></i> AWS Cloud Journey"
 identifier = "AWS Cloud Journey"
 url = "https://cloudjourney.awsfcaj.com/"
-weight = 20
-
-[[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [markup]

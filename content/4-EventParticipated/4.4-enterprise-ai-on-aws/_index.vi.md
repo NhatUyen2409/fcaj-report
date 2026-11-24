@@ -1,9 +1,11 @@
 ---
 title: "Enterprise AI on AWS Cloud (14/11/2026)"
 date: 2026-09-14
-weight: 3
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.4. </b> "
+aliases:
+  - /vi/4-eventparticipated/4.3-enterprise-ai-on-aws/
 ---
 
 <article class="event-report-article">
@@ -15,7 +17,7 @@ pre: " <b> 4.3. </b> "
 <span>Sự kiện tham gia</span>
 </a>
 <span class="sep">/</span>
-<span class="current">Sự kiện 3 - Enterprise AI on AWS Cloud (14/11/2026)</span>
+<span class="current">Sự kiện 4 - Enterprise AI on AWS Cloud (14/11/2026)</span>
 </div>
 <button type="button" class="btn btn-outline btn-sm" >
 <span>← Quay lại sự kiện</span>
@@ -57,10 +59,10 @@ pre: " <b> 4.3. </b> "
 </div>
 </header>
 
-<!-- Event 3 Check-in Photo -->
-<div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+<!-- Event 4 Check-in Photo -->
+<div id="event-4-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
 <div class="event-uploaded-img-wrap"  title="Nhấp để xem ảnh độ nét cao (HD)">
-<img id="event-3-cover-img" src="/fcaj-report/images/events/event-3.jpg" alt="Enterprise AI on AWS Cloud – 14/11/2026" class="event-uploaded-img" onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';" onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';" loading="eager" />
+<img id="event-4-cover-img" src="/fcaj-report/images/events/event-4.jpg" onerror="this.onerror=null; this.src='/images/events/event-4.jpg';" alt="Enterprise AI on AWS Cloud – 14/11/2026" class="event-uploaded-img" onload="const w = document.getElementById('event-4-cover-wrap'); if (w) w.style.display='block';" loading="eager" />
 </div>
 <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
 Ảnh check-in thực tế của sinh viên tại sự kiện Enterprise AI on AWS Cloud (14/11/2026) – Tầng 26, Bitexco Financial Tower
@@ -117,8 +119,8 @@ pre: " <b> 4.3. </b> "
 <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Từ Academic AI đến Enterprise AI (From Academic AI to Enterprise AI)</h3>
 <p>Để phân định rõ nét sự khác biệt giữa AI thử nghiệm và AI quy mô doanh nghiệp, diễn giả đã sử dụng phép ẩn dụ trực quan giữa <strong>Bếp ăn gia đình (Home Kitchen)</strong> và <strong>Chuỗi nhà hàng tiêu chuẩn (Restaurant Chain)</strong>:</p>
 
-<div class="minimal-table-wrap">
-<table class="minimal-table">
+<div class="minimal-table-wrap" style="overflow-x:auto;">
+<table class="minimal-table" style="min-width:640px;">
 <thead>
 <tr>
 <th style="width: 20%;">Tiêu chí</th>
@@ -135,18 +137,22 @@ pre: " <b> 4.3. </b> "
 <tr>
 <td><strong>Mục tiêu tối thượng</strong></td>
 <td>Độ chính xác cao nhất trên tập dữ liệu cố định (Benchmark / Accuracy)</td>
+<td>Giá trị kinh doanh liên tục, tính sẵn sàng cao và ROI bền vững (Business Value & High ROI)</td>
 </tr>
 <tr>
 <td><strong>Môi trường vận hành</strong></td>
 <td>Môi trường thử nghiệm tĩnh, có kiểm soát, tài nguyên biệt lập</td>
+<td>Môi trường động, lưu lượng truy cập biến động, phục vụ khách hàng theo thời gian thực (Real-time Customer Facing)</td>
 </tr>
 <tr>
 <td><strong>Quy chuẩn an ninh</strong></td>
 <td>Tối thiểu, ưu tiên tốc độ ra kết quả nghiên cứu</td>
+<td>Tuân thủ nghiêm ngặt (GDPR, HIPAA, SOC 2), IAM, mã hóa dữ liệu khi lưu trữ và truyền tải (Encryption at Rest/Transit)</td>
 </tr>
 <tr>
 <td><strong>Chi phí vận hành</strong></td>
 <td>Chi trả một lần theo đợt huấn luyện nghiên cứu</td>
+<td>Chi phí liên tục tính theo từng token tiêu thụ, co giãn linh hoạt và quản trị ngân sách chặt chẽ (Cost per Token & Elastic Scaling)</td>
 </tr>
 </tbody>
 </table>

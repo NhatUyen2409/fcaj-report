@@ -120,15 +120,22 @@ p:has(> strong) + p:has(> strong) {
    3. SHARED TABLE DESIGN & MODULAR COLUMN WIDTHS
    ========================================================================== */
 
-/* Universal table base styles */
+/* Universal table base styles - Bulletproof Full Grid Border System */
 #body-inner table,
 table {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   margin: 1rem 0 1.5rem 0 !important;
-  border-collapse: collapse !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
   table-layout: auto !important;
+  border-top: 1px solid #d5dce5 !important;
+  border-left: 1px solid #d5dce5 !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 4px !important;
+  background-color: #ffffff !important;
 }
 
 #body-inner table th,
@@ -136,8 +143,11 @@ table th {
   background-color: #283e5b !important;
   color: #ffffff !important;
   font-weight: 600 !important;
-  padding: 8px 12px !important;
-  border: 1px solid #435c7c !important;
+  padding: 9px 12px !important;
+  border-right: 1px solid #435c7c !important;
+  border-bottom: 1px solid #d5dce5 !important;
+  border-top: none !important;
+  border-left: none !important;
   text-align: left !important;
   vertical-align: top !important;
   box-sizing: border-box !important;
@@ -145,13 +155,32 @@ table th {
 
 #body-inner table td,
 table td {
-  padding: 8px 12px !important;
-  border: 1px solid #e1e4e8 !important;
+  padding: 9px 12px !important;
+  border-right: 1px solid #d5dce5 !important;
+  border-bottom: 1px solid #d5dce5 !important;
+  border-top: none !important;
+  border-left: none !important;
   vertical-align: top !important;
   word-break: normal !important;
   overflow-wrap: break-word !important;
   white-space: normal !important;
   box-sizing: border-box !important;
+}
+
+/* Alternating rows */
+#body-inner table tbody tr:nth-child(even) td,
+table tbody tr:nth-child(even) td {
+  background-color: #f8fafc !important;
+}
+
+#body-inner table tbody tr:nth-child(odd) td,
+table tbody tr:nth-child(odd) td {
+  background-color: #ffffff !important;
+}
+
+#body-inner table tbody tr:hover td,
+table tbody tr:hover td {
+  background-color: #f1f5f9 !important;
 }
 
 /* Ensure links inside tables wrap naturally by word and don't expand whole cell */
@@ -340,7 +369,18 @@ table:has(th:nth-child(3):last-child):not(.self-evaluation-table table):not(.pro
 }
 
 .report-table tr:last-child td {
-  border-bottom: none !important;
+  border-bottom: 1px solid #d5dce5 !important;
+}
+
+#body-inner table tbody tr:last-child td,
+#body-inner table tr:last-child td,
+.worklog-page table tbody tr:last-child td,
+.worklog-page table tr:last-child td,
+table tbody tr:last-child td,
+table tr:last-child td,
+.report-table tbody tr:last-child td,
+.report-table tr:last-child td {
+  border-bottom: 1px solid #d5dce5 !important;
 }
 
 /* Responsive horizontal scrolling on smaller screens */
@@ -652,4 +692,137 @@ pre .copy-to-clipboard {
   padding: 12px;
   text-align: center;
   background: #fbfcfd;
+}
+
+/* ==========================================================================
+   10. EVENT REPORT METADATA STRIP & HERO
+   ========================================================================== */
+.report-hero {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.report-hero-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.report-hero-badge-row .badge {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-purple {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #d8b4fe;
+}
+
+.badge-blue {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #7dd3fc;
+}
+
+.badge-gray {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.report-main-title {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.report-main-subtitle {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.report-meta-compact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #334155;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.meta-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-strip-label {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.meta-strip-val {
+  color: #334155;
+}
+
+
+/* Uploaded Event Photo Box */
+.event-uploaded-photo-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  margin: 20px 0 28px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: block !important;
+}
+
+.event-uploaded-img-wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.event-uploaded-img {
+  max-width: 100%;
+  max-height: 520px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Responsive Minimal Table for Event Comparisons */
+.minimal-table-wrap {
+  overflow-x: auto !important;
+  margin: 24px 0 !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.minimal-table {
+  width: 100% !important;
+  min-width: 640px !important;
+  border-collapse: collapse !important;
 }

@@ -1,34 +1,24 @@
 ---
-title: "Worklog Tuần 9"
+title: "Nhật ký tuần 9"
 date: 2026-09-14
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-# Tuần 9: Docker & Container hóa (09/11/2026 – 13/11/2026)
+# Tuần 9: Terraform, GitHub Actions & Bedrock (10/11/2026 – 13/11/2026)
 
 ### Mục tiêu tuần 9:
-* Hiểu container hóa và kiến trúc Docker.
-* Tìm hiểu Docker Image, Container và Dockerfile.
-* Thực hành build và chạy Docker Container.
-* Tìm hiểu mạng container và lưu trữ dữ liệu bền vững.
-* Tìm hiểu cách chạy ứng dụng Docker trên AWS.
+* Tìm hiểu Hạ tầng dưới dạng mã nguồn (IaC) với Terraform, CI/CD với GitHub Actions OIDC và ứng dụng Generative AI với Amazon Bedrock.
 
 ### Các công việc triển khai trong tuần:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| Thứ 2 | - Học kiến thức nền tảng về container hóa.<br>- Tìm hiểu kiến trúc Docker.<br>- So sánh Container và máy ảo. | 2026-11-09 | 2026-11-09 | [Docker – What is a Container?](https://docs.docker.com/learn/content/what-is-a-container/) |
-| Thứ 3 | - Cài đặt và cấu hình Docker.<br>- Thực hành các lệnh Docker CLI cơ bản.<br>- Tải và chạy Docker Image. | 2026-11-10 | 2026-11-10 | [Docker – Engine Installation Guide](https://docs.docker.com/engine/install/) |
-| Thứ 4 | - Tìm hiểu các chỉ thị trong Dockerfile.<br>- Build Docker Image tùy chỉnh.<br>- Triển khai một ứng dụng cơ bản trong container. | 2026-11-11 | 2026-11-11 | [Docker – Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) |
-| Thứ 5 | - Tìm hiểu Docker Volume và Network.<br>- Quản lý vòng đời container.<br>- Xem log và cấu hình của container. | 2026-11-12 | 2026-11-12 | [Docker – Manage Data in Volumes](https://docs.docker.com/engine/storage/volumes/) |
-| Thứ 6 | - Kiểm thử một ứng dụng đã container hóa.<br>- Xử lý các lỗi cơ bản.<br>- Tìm hiểu việc tích hợp Docker với Amazon ECS. | 2026-11-13 | 2026-11-13 | [Amazon ECR – Pushing Docker Images](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html) |
+| Thứ Ba | Main Task: Tìm hiểu Terraform và Hạ tầng dưới dạng mã nguồn (IaC).<br>Detailed Activities: Tìm hiểu nền tảng HashiCorp Terraform, cú pháp HCL, cấu hình provider, khai báo tài nguyên và quản lý file trạng thái trên AWS. | 2026-11-10 | 2026-11-10 | [Terraform – AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) |
+| Thứ Năm | Main Task: Tìm hiểu GitHub Actions và xác thực AWS OIDC.<br>Detailed Activities: Xây dựng pipeline CI/CD tự động hóa bằng GitHub Actions và cấu hình xác thực không dùng khóa bảo mật lâu dài với AWS qua OpenID Connect (OIDC). | 2026-11-12 | 2026-11-12 | [AWS Security – OpenID Connect with GitHub Actions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) |
+| Thứ Sáu | Main Task: Tìm hiểu nền tảng Amazon Bedrock và tích hợp AI.<br>Detailed Activities: Tìm hiểu các mô hình nền tảng trên Amazon Bedrock, gọi API mô hình, khái niệm kỹ thuật prompt và tính năng Generative AI trong ứng dụng. | 2026-11-13 | 2026-11-13 | [Amazon Bedrock – User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) |
 
 ### Kết quả đạt được tuần 9:
-* Phân biệt được máy ảo (Virtual Machine) và Container.
-* Tìm hiểu Docker Engine, Image, Container và Dockerfile.
-* Thực hành cài đặt và cấu hình Docker.
-* Nắm được các lệnh Docker CLI cơ bản.
-* Thực hành build và chạy container tùy chỉnh.
-* Hiểu Docker Volume và Network.
-* Tìm hiểu việc triển khai container bằng Amazon ECS.
+* Hiểu cú pháp Terraform và cách quản lý tài nguyên hạ tầng AWS tự động.
+* Nắm vững quy trình CI/CD an toàn qua GitHub Actions và IAM OIDC không dùng Access Key cố định.
+* Khảo sát các mô hình nền tảng Amazon Bedrock phục vụ tính năng gợi ý thực đơn thông minh.

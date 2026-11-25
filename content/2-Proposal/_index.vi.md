@@ -7,429 +7,336 @@ pre: " <b> 2. </b> "
 ---
 
 <div class="tech-report">
-<!-- HEADER -->
 <header>
-<div class="report-eyebrow">Project Proposal</div>
+<div class="report-eyebrow">Đề xuất dự án</div>
+<p class="report-intro">Thiết kế kiến trúc, phạm vi, vấn đề giải quyết, kế hoạch và ước tính chi phí cho dự án workshop.</p>
 <h1 class="report-title">Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS</h1>
-<p class="report-subtitle">Personalized Nutrition E-Commerce Platform on AWS</p>
-<p class="report-intro">
-Dự án xây dựng nền tảng thương mại điện tử thực phẩm tích hợp trí tuệ nhân tạo (AI) hỗ trợ phân tích và cá nhân hóa nhu cầu dinh dưỡng cho người dùng. 
-Toàn bộ hệ thống được thiết kế, vận hành và tự động hóa trên nền tảng điện toán đám mây AWS với React, Spring Boot 4, Amazon ECS Fargate, 
-Amazon Bedrock và Terraform.
-</p>
+<p class="report-subtitle">Tra cứu dinh dưỡng có nguồn và mua sắm trên hạ tầng AWS</p>
 </header>
 
-<!-- 1. TỔNG QUAN DỰ ÁN -->
+<!-- 1. 1. TÓM TẮT ĐỀ XUẤT -->
 <section class="report-section">
-<h2 class="report-h2">1. Tổng quan dự án</h2>
-<p class="report-p">
-Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa là giải pháp hỗ trợ người tiêu dùng tiếp cận thực phẩm lành mạnh 
-(Eat Clean, Low-Carb, High-Protein, Vegan) dựa trên chỉ số dinh dưỡng rõ ràng và mục tiêu thể trạng cá nhân. 
-Hệ thống kết hợp giữa kiến trúc backend mạnh mẽ và trợ lý AI thông minh nhằm đơn giản hóa việc tra cứu khẩu phần ăn.
-</p>
-
-<h3 class="report-h3">Các công nghệ và dịch vụ nền tảng:</h3>
-<ul class="report-list">
-<li><strong>Giao diện người dùng:</strong> React 19, TypeScript, Vite, Tailwind CSS – Ứng dụng Single Page Application (SPA) tối ưu tốc độ phản hồi.</li>
-<li><strong>Dịch vụ ứng dụng backend:</strong> Spring Boot 4 (Java 21) – RESTful API xử lý nghiệp vụ đơn hàng, danh mục và truy vấn dữ liệu dinh dưỡng.</li>
-<li><strong>Cơ sở dữ liệu:</strong> PostgreSQL 17 trên Amazon RDS – Lưu trữ chuẩn hóa 152 sản phẩm với hồ sơ dinh dưỡng USDA FoodData Central.</li>
-<li><strong>Phân phối và lưu trữ tĩnh:</strong> Amazon CloudFront và Amazon S3 – Mạng CDN toàn cầu và lưu trữ an toàn mã nguồn frontend cùng hình ảnh sản phẩm.</li>
-<li><strong>Môi trường tính toán và cân bằng tải:</strong> Amazon ECS Fargate và Application Load Balancer (ALB) – Vận hành container không máy chủ, tự động quản lý.</li>
-<li><strong>Quản lý định danh:</strong> Amazon Cognito User Pools – Xác thực tài khoản người dùng và cấp phát JWT token an toàn.</li>
-<li><strong>Trí tuệ nhân tạo (AI):</strong> Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails – Xử lý ngôn ngữ tự nhiên và kiểm duyệt an toàn nội dung.</li>
-<li><strong>Hạ tầng như mã nguồn (IaC) và CI/CD:</strong> Terraform và GitHub Actions (AWS OIDC) – Tự động hóa triển khai 100%, bảo mật không lưu Access Key tĩnh.</li>
-</ul>
-
-<div class="report-callout">
-<strong>Nguyên tắc cốt lõi về AI:</strong> Hệ thống tuân thủ nguyên tắc <em>AI chỉ phân tích ý đồ (Intent Classification) và trích xuất tham số lọc (Parameter Extraction)</em> từ câu hỏi tự nhiên của người dùng. Toàn bộ số liệu dinh dưỡng (calo, macro, chất dị ứng) <strong>đều được truy vấn trực tiếp từ cơ sở dữ liệu PostgreSQL chuẩn USDA</strong>, loại bỏ hoàn toàn hiện tượng AI tự sinh số liệu (hallucination).
-</div>
+<h2 class="report-h2">1. Tóm tắt đề xuất</h2>
+<p class="report-p">Nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên AWS hỗ trợ tra cứu thực phẩm, mua hàng và gợi ý bữa ăn từ dữ liệu có nguồn. React gọi Spring Boot qua CloudFront và ALB; PostgreSQL lưu dữ liệu, Bedrock chỉ diễn giải yêu cầu. Sản phẩm thiếu dữ liệu bị loại khi lọc dinh dưỡng hoặc allergen. Số liệu trả lời do code lấy từ DB, kết hợp vận hành theo buổi demo để kiểm soát chi phí.</p>
 </section>
 
-<!-- 2. VẤN ĐỀ VÀ GIẢI PHÁP -->
+<!-- 2. 2. VẤN ĐỀ CẦN GIẢI QUYẾT -->
 <section class="report-section">
-<h2 class="report-h2">2. Vấn đề và giải pháp</h2>
-<p class="report-p"><strong>Khó khăn thực tế của người dùng:</strong></p>
-<ul class="report-list">
-<li>Thiếu thông tin dinh dưỡng minh bạch và chi tiết trên các sàn thương mại điện tử thực phẩm truyền thống.</li>
-<li>Khó kiểm soát các chất gây dị ứng nguy hiểm (gluten, đậu phộng, hải sản,...) do thành phần không được ghi rõ ràng.</li>
-<li>Tốn nhiều thời gian và công sức tính toán macro (Calo, Protein, Carbs, Fat) thủ công cho từng bữa ăn.</li>
-<li>Thiếu công cụ tìm kiếm và lọc sản phẩm theo mục tiêu dinh dưỡng cá nhân hóa linh hoạt.</li>
-</ul>
-
-<p class="report-p"><strong>Các chức năng giải pháp cốt lõi:</strong></p>
-<ul class="report-list">
-<li><strong>Catalog 152 sản phẩm USDA:</strong> Dữ liệu thực phẩm sạch được chuẩn hóa theo chuẩn USDA FoodData Central với đầy đủ hàm lượng calo và macro trên từng khẩu phần.</li>
-<li><strong>Bộ lọc dinh dưỡng đa tiêu chí:</strong> Cho phép lọc chính xác theo khoảng calo, mức protein tối thiểu, giới hạn carb và chất béo.</li>
-<li><strong>Kiểm soát 9 allergen và 6 chế độ ăn:</strong> Nhận diện và cảnh báo nghiêm ngặt 9 chất gây dị ứng phổ biến (cơ chế fail-closed: loại bỏ khi nghi vấn) và 6 nhãn chế độ ăn (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
-<li><strong>AI tra cứu sản phẩm thông minh:</strong> Trợ lý Amazon Bedrock Nova 2 Lite chuyển đổi yêu cầu ngôn ngữ tự nhiên thành các tham số truy vấn dữ liệu chuẩn xác.</li>
-<li><strong>Hồ sơ dinh dưỡng và gợi ý bữa ăn:</strong> Tính toán chỉ số BMR, TDEE và gợi ý cơ cấu một bữa ăn cân bằng macro phù hợp với người dùng.</li>
-<li><strong>Giỏ hàng và đặt hàng trực tuyến:</strong> Theo dõi tổng lượng dinh dưỡng và biểu đồ phân bổ macro của đơn hàng theo thời gian thực.</li>
-<li><strong>Thanh toán linh hoạt:</strong> Hỗ trợ thanh toán khi nhận hàng (COD) và tích hợp cổng thanh toán trực tuyến mô phỏng VNPAY Sandbox.</li>
-<li><strong>Trang quản trị (Admin):</strong> Quản lý danh mục sản phẩm, theo dõi đơn hàng và cập nhật dữ liệu USDA.</li>
-</ul>
-
-<div class="report-callout report-callout-disclaimer">
-<strong>Tuyên bố miễn trừ trách nhiệm y tế (Medical Disclaimer):</strong> Nền tảng được xây dựng nhằm hỗ trợ theo dõi thói quen dinh dưỡng và mua sắm thực phẩm lành mạnh; hệ thống <strong>không phải là thiết bị y tế và không đưa ra chẩn đoán, điều trị hay tư vấn y khoa chuyên nghiệp</strong>. Người dùng có bệnh lý nền cần tham khảo ý kiến bác sĩ hoặc chuyên gia dinh dưỡng.
-</div>
+<h2 class="report-h2">2. Vấn đề cần giải quyết</h2>
+<h3 class="report-h3">Vấn đề là gì?</h3>
+<p class="report-p">Người mua khó so sánh thực phẩm khi dữ liệu dinh dưỡng và allergen thiếu nhất quán. Câu trả lời AI có thể chứa con số thiếu căn cứ nếu model tự sinh nội dung.</p>
+<h3 class="report-h3">Giải pháp</h3>
+<p class="report-p">Người mua khó đối chiếu dữ liệu dinh dưỡng và allergen giữa các sản phẩm. Chatbot sinh văn bản có thể đưa ra con số không có căn cứ. MVP gồm catalog 152 sản phẩm USDA, tài khoản, bộ lọc theo dinh dưỡng, 9 allergen và 6 nhãn chế độ ăn; phân tích bữa ăn; AI tra cứu chỉ đọc; giỏ hàng, đặt hàng, quản lý sản phẩm, ảnh, đơn, thống kê và nhật ký thanh toán. COD và VNPAY sandbox nằm trong phạm vi.</p>
+<p class="report-p">D32 bổ sung hồ sơ và gợi ý một bữa gồm món protein, rau/trái cây và tinh bột. Mục tiêu tính bằng Mifflin-St Jeor × mức vận động. Chỉ áp dụng cho tuổi 18–65, BMI 17–35, loại trừ mang thai, cho con bú và bệnh cần giám sát. Không có thanh toán thật, hoàn tiền tự động hoặc tư vấn y tế. Danh tính lấy từ JWT; trừ kho bằng UPDATE có điều kiện trong transaction.</p>
+<h3 class="report-h3">Lợi ích và hiệu quả đầu tư</h3>
+<p class="report-p">Người mua tra cứu thông tin từ DB, lọc theo nhu cầu và xem giới hạn dữ liệu. Cửa hàng quản lý catalog, ảnh, đơn và nhật ký thanh toán trong cùng ứng dụng. Cost Explorer ghi 6,44 USD cho 01–21/11/2026, toàn bộ được credit bù. Chưa có số liệu doanh thu hay tiết kiệm lao động để tính ROI tài chính.</p>
 </section>
 
-<!-- 3. KIẾN TRÚC AWS -->
+<!-- 3. 3. KIẾN TRÚC GIẢI PHÁP -->
 <section class="report-section">
-<h2 class="report-h2">3. Kiến trúc AWS</h2>
-<p class="report-p">
-Hệ thống được thiết kế theo các nguyên tắc của <strong>AWS Well-Architected Framework</strong>, 
-kết hợp giữa mô hình container không máy chủ, cơ sở dữ liệu quan hệ được quản lý và dịch vụ trí tuệ nhân tạo tạo sinh.
-</p>
-
-<!-- HÌNH 1: AWS ARCHITECTURE -->
+<h2 class="report-h2">3. Kiến trúc giải pháp</h2>
+<h3 class="report-h3">AWS architecture reference</h3>
+<p class="report-p">Nhấp vào hình để phóng to / tương tác thu phóng</p>
 <div class="report-figure">
-<div class="report-figure-img-wrap"  title="Nhấp để phóng to">
-<img src="/fcaj-report/images/proposal/aws-architecture.png" alt="Sơ đồ kiến trúc hạ tầng AWS" class="report-figure-img" loading="lazy" />
+<a href="/fcaj-report/images/workshop/5.1-overview/aws-architecture.png" target="_blank" class="report-figure-img-wrap" title="Nhấp để phóng to">
+<img src="/fcaj-report/images/workshop/5.1-overview/aws-architecture.png" alt="Sơ đồ kiến trúc hạ tầng AWS" class="report-figure-img" loading="lazy" />
+</a>
+<div class="report-figure-caption">Sơ đồ kiến trúc AWS vẽ trên draw.io bằng bộ AWS Architecture Icons, cập nhật Multi-AZ và AWS STS ngày 25/11/2026</div>
 </div>
-<div class="report-figure-caption">Hình 1: Sơ đồ kiến trúc tổng thể AWS (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Nhấp để phóng to</em></div>
-</div>
-
-<h3 class="report-h3">Mô tả cấu hình và phân bổ dịch vụ:</h3>
-<ul class="report-list">
-<li><strong>Singapore (<code>ap-southeast-1</code>):</strong> Vùng vận hành chính chứa VPC, Subnets, ECS Fargate, ALB, RDS PostgreSQL, S3, Cognito và CloudWatch.</li>
-<li><strong>Tokyo (<code>ap-northeast-1</code>):</strong> Vùng phục vụ cho Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails nhằm đảm bảo tính khả dụng của mô hình AI.</li>
-<li><strong>Amazon CloudFront & S3:</strong> CloudFront phân phối giao diện React tĩnh từ S3 và chuyển tiếp API request đến ALB.</li>
-<li><strong>Application Load Balancer (ALB):</strong> Tiếp nhận yêu cầu từ CloudFront, cân bằng tải và định tuyến đến cụm container Spring Boot trên ECS Fargate.</li>
-<li><strong>Amazon ECS Fargate:</strong> Chạy container backend Spring Boot 4. Trong môi trường Demo, hệ thống triển khai <strong>1 task duy nhất (Active)</strong> với cấu hình tối ưu chi phí: <strong>0,5 vCPU và 1 GB RAM</strong>.</li>
-<li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17, instance class <strong>db.t4g.micro, dung lượng 20 GB gp3, Single-AZ</strong>.</li>
-<li><strong>Phân vùng mạng và tối ưu chi phí:</strong>
-ECS Task đặt trong Public Subnet (gán Public IPv4) để kéo Docker image từ ECR và gọi Bedrock Tokyo mà <em>không cần khởi tạo NAT Gateway</em> (tiết kiệm ~32 USD/tháng cho mỗi NAT Gateway). 
-RDS PostgreSQL đặt trong Private Subnet cách ly hoàn toàn Internet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432. 
-Subnet thứ hai ở AZ-2 đóng vai trò standby resilience (sẵn sàng nâng cấp Multi-AZ trong tương lai), không chạy task đồng thời trong demo.
-</li>
-<li><strong>Định danh và giám sát:</strong> Amazon Cognito quản lý định danh người dùng qua JWT; AWS Secrets Manager bảo vệ mật khẩu; CloudWatch, Budgets và SNS giám sát tài nguyên và cảnh báo chi phí.</li>
-<li><strong>Giới hạn kiến trúc hiện tại:</strong> Giao tiếp từ CloudFront đến ALB hiện sử dụng giao thức HTTP (kết nối Client đến CloudFront là HTTPS, kết hợp Custom Secret Header xác thực giữa CloudFront và ALB để chặn truy cập trực tiếp).</li>
-</ul>
-
-<!-- HÌNH 2: APPLICATION FLOW -->
-<div class="report-figure" style="margin-top: 28px;">
-<div class="report-figure-img-wrap"  title="Nhấp để phóng to">
-<img src="/fcaj-report/images/proposal/application-flow.png" alt="Sơ đồ luồng hoạt động ứng dụng" class="report-figure-img" loading="lazy" />
-</div>
-<div class="report-figure-caption">Hình 2: Sơ đồ luồng hoạt động ứng dụng (Application Flow Diagram) — <em>Nhấp để phóng to</em></div>
-</div>
-
-<h3 class="report-h3">Luồng xử lý 8 bước của ứng dụng:</h3>
-<ol class="report-list" style="padding-left: 20px;">
-<li>Người dùng truy cập ứng dụng qua giao thức HTTPS đến tên miền Amazon CloudFront CDN.</li>
-<li>CloudFront trả về các tệp tĩnh React SPA từ Amazon S3 hoặc chuyển tiếp yêu cầu API <code>/api/*</code> đến ALB.</li>
-<li>ALB kiểm tra Custom Secret Header từ CloudFront và chuyển tiếp yêu cầu đến container Spring Boot trên ECS Fargate.</li>
-<li>Người dùng xác thực với Amazon Cognito User Pool; Client đính kèm JWT Bearer token vào Header của mọi request.</li>
-<li>Spring Security xác thực chữ ký số JWT của Cognito và phân quyền truy cập người dùng/quản trị viên.</li>
-<li>Khi có câu hỏi tự nhiên về dinh dưỡng, Backend gọi API Amazon Bedrock Nova 2 Lite (Tokyo) để trích xuất ý đồ và tham số lọc.</li>
-<li>Backend dùng tham số từ AI truy vấn dữ liệu 152 sản phẩm trực tiếp từ PostgreSQL RDS trong Private Subnet.</li>
-<li>Backend trả về kết quả JSON chứa thông tin dinh dưỡng chuẩn hóa cho Client hiển thị.</li>
-</ol>
+<p class="report-p">Từ 22/11/2026 (D33), môi trường dev chạy 2 task ECS, mỗi Availability Zone một task, và RDS ở chế độ Multi-AZ với bản dự phòng (Standby) ở AZ thứ hai. Diễn tập Reboot with failover ngày 22/11 chuyển AZ chính từ ap-southeast-1a sang ap-southeast-1b trong khoảng 20–45 giây; API gián đoạn khoảng nửa phút rồi tự phục hồi, không mất dữ liệu.</p>
+<h3 class="report-h3">Các dịch vụ AWS sử dụng</h3>
+<p class="report-p">CloudFront + S3 — React SPA và ảnh qua OAC; Function viết lại đường dẫn; hai bucket riêng tư.</p>
+<p class="report-p">ALB + ECS Fargate + ECR — ALB nhận CloudFront + header bí mật; Spring Boot 4 / Java 21, ARM64, 0,5 vCPU / 1 GB, 2 task ở 2 AZ.</p>
+<p class="report-p">RDS PostgreSQL + Secrets Manager — db.t4g.micro, 20 GB gp3, Multi-AZ (standby ở AZ thứ hai), private subnet, mã hóa; Flyway V1–V11.</p>
+<p class="report-p">Cognito — JWT sub và cognito:groups; USER / ADMIN.</p>
+<p class="report-p">Bedrock + Guardrails — Nova 2 Lite ở Tokyo; tool chỉ đọc, số liệu do code lấy từ DB.</p>
+<p class="report-p">CloudWatch + SNS + Budgets — Log 14 ngày, 7 alarm, cảnh báo thư điện tử; ngân sách 100 USD.</p>
+<p class="report-p">CloudTrail + S3 audit + WAF — Audit và ALB logs lưu 30 ngày; WAF chỉ bật khi demo; KMS do AWS quản lý.</p>
+<p class="report-p">Terraform + IAM + STS + GitHub Actions — State S3 use_lockfile; SSO, boundary; CI/CD qua OIDC, AWS STS cấp quyền tạm thời (AssumeRoleWithWebIdentity), không lưu access key.</p>
+<p class="report-p">Ứng dụng ở ap-southeast-1, tiền tố nutrition-dev, chỉ một môi trường dev. D15 đặt ECS ở public subnet với IP công khai để tránh chi phí NAT, còn RDS giữ private. D17 chọn một môi trường để phù hợp đồ án. D18 chuyển lời gọi Bedrock và Guardrail sang ap-northeast-1 vì quota Singapore của tài khoản bằng 0; profile jp.amazon.nova-2-lite-v1:0. D24/D31 giới hạn model vào searchProducts với intent search, facts, compare, plan; số liệu do backend ghép. CloudFront → ALB hiện dùng HTTP vì chưa có domain riêng.</p>
+<h3 class="report-h3">Thiết kế thành phần</h3>
+<p class="report-p">Frontend React + TypeScript hiển thị catalog, giỏ hàng, hồ sơ, gợi ý và trang quản trị.</p>
+<p class="report-p">Backend Spring Boot 4 / Java 21: catalog quản lý tra cứu; commerce xử lý giỏ/đơn; payments xác minh IPN; ai trích ý định; admin cung cấp API quản trị; profile tính mục tiêu và gợi ý.</p>
+<p class="report-p">Database PostgreSQL dùng SQL tham số hóa và Flyway V1–V11.</p>
+<p class="report-p">AI dùng Nova 2 Lite với Guardrails; code kiểm bộ lọc và ghép số liệu từ DB.</p>
+<p class="report-p">CI/CD GitHub Actions kiểm thử, build ARM64, lấy quyền tạm thời từ AWS STS qua OIDC, đẩy ECR và deploy.</p>
 </section>
 
-<!-- 4. CÔNG NGHỆ VÀ KẾ HOẠCH TRIỂN KHAI -->
+<!-- 4. 4. TRIỂN KHAI KỸ THUẬT -->
 <section class="report-section">
-<h2 class="report-h2">4. Công nghệ và kế hoạch triển khai</h2>
-<p class="report-p"><strong>Bảng tổng hợp công nghệ:</strong></p>
+<h2 class="report-h2">4. Triển khai kỹ thuật</h2>
+<p class="report-p">Terraform dựng hạ tầng; Maven wrapper và Flyway quản lý backend/schema; React + TypeScript tạo frontend. Pipeline OIDC build, kiểm thử và triển khai theo nhánh master. Các pha được nhóm theo mốc đã ghi trong repo.</p>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 20%;">Lớp kiến trúc</th>
-<th style="width: 40%;">Công nghệ / Dịch vụ</th>
-<th style="width: 40%;">Mục đích sử dụng</th>
+<th style="width: 15%;">Pha</th>
+<th style="width: 25%;">Thời gian 2026</th>
+<th style="width: 60%;">Nội dung thực tế</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Frontend</strong></td>
-<td>React 19, TypeScript, Vite, Tailwind CSS</td>
-<td>Single Page Application phản hồi nhanh, giao diện thân thiện và responsive.</td>
+<td>1</td>
+<td>29/10–01/11</td>
+<td>Repo, khung frontend, catalog backend, Cognito</td>
 </tr>
 <tr>
-<td><strong>Backend</strong></td>
-<td>Spring Boot 4.1 (Java 21), Spring Security</td>
-<td>RESTful API xử lý logic đơn hàng, xác thực JWT và kết nối cơ sở dữ liệu.</td>
+<td>2</td>
+<td>03–10/11</td>
+<td>Thiết kế giao diện, dữ liệu USDA</td>
 </tr>
 <tr>
-<td><strong>Database</strong></td>
-<td>PostgreSQL 17 trên Amazon RDS (db.t4g.micro)</td>
-<td>Lưu trữ dữ liệu quan hệ, người dùng, đơn hàng và 152 sản phẩm chuẩn USDA.</td>
+<td>3</td>
+<td>11–12/11</td>
+<td>Terraform mạng/RDS/ECR/Cognito/ALB/ECS/CloudFront; OIDC; chạy AWS lần đầu</td>
 </tr>
 <tr>
-<td><strong>AI & GenAI</strong></td>
-<td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
-<td>Trích xuất ý đồ tìm kiếm dinh dưỡng và kiểm duyệt an toàn nội dung.</td>
+<td>4</td>
+<td>13–18/11</td>
+<td>AI, Guardrails, alarm; tìm kiếm, giới hạn tốc độ, phân tích bữa ăn, VNPAY sandbox, giao diện</td>
 </tr>
 <tr>
-<td><strong>Compute</strong></td>
-<td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
-<td>Vận hành container backend không máy chủ (0,5 vCPU, 1 GB RAM active task).</td>
-</tr>
-<tr>
-<td><strong>Networking</strong></td>
-<td>Amazon CloudFront, Application Load Balancer, VPC</td>
-<td>Phân phối CDN toàn cầu, cân bằng tải và phân vùng mạng bảo vệ dữ liệu.</td>
-</tr>
-<tr>
-<td><strong>Security</strong></td>
-<td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
-<td>Quản lý định danh người dùng và bảo mật thông tin xác thực backend.</td>
-</tr>
-<tr>
-<td><strong>IaC & CI/CD</strong></td>
-<td>Terraform, GitHub Actions, AWS OIDC</td>
-<td>Tự động hóa 100% hạ tầng và triển khai liên tục không dùng static keys.</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Kế hoạch 5 giai đoạn thực hiện:</strong></p>
-<div class="report-table-wrapper">
-<table class="report-table">
-<thead>
-<tr>
-<th style="width: 22%;">Giai đoạn</th>
-<th style="width: 38%;">Hạng mục chính</th>
-<th style="width: 40%;">Kết quả bàn giao</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>29/10 – 01/11/2026</strong></td>
-<td>Khởi tạo & Thiết kế</td>
-<td>Xác định phạm vi, thiết kế kiến trúc AWS và mô hình dữ liệu dinh dưỡng.</td>
-</tr>
-<tr>
-<td><strong>03/11 – 10/11/2026</strong></td>
-<td>Giao diện & Dữ liệu</td>
-<td>Phát triển giao diện React, chuẩn hóa 152 sản phẩm USDA và các Entity backend.</td>
-</tr>
-<tr>
-<td><strong>11/11 – 12/11/2026</strong></td>
-<td>Triển khai hạ tầng</td>
-<td>Viết Terraform triển khai VPC, Subnets, RDS, ECR, ECS Fargate, ALB và CloudFront.</td>
-</tr>
-<tr>
-<td><strong>13/11 – 18/11/2026</strong></td>
-<td>AI & Nghiệp vụ</td>
-<td>Tích hợp Bedrock Nova 2 Lite, cấu hình Guardrails, hoàn thiện giỏ hàng và VNPAY Sandbox.</td>
-</tr>
-<tr>
-<td><strong>20/11 – 22/11/2026</strong></td>
-<td>Kiểm thử & Tối ưu</td>
-<td>Kiểm thử tích hợp đầu cuối, tối ưu chi phí thực tế và hoàn tất tài liệu đồ án.</td>
+<td>5</td>
+<td>20–22/11</td>
+<td>Tokyo, E2E, audit/WAF tùy chọn; AI đủ intent, D32, apply audit và đo chi phí</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 
-<!-- 5. ƯỚC TÍNH CHI PHÍ -->
+<!-- 5. 5. KẾ HOẠCH VÀ MỐC TRIỂN KHAI -->
 <section class="report-section">
-<h2 class="report-h2">5. Ước tính chi phí</h2>
-<p class="report-p">
-Chi phí được ước tính dựa trên 3 kịch bản vận hành và được đối chiếu với dữ liệu thực tế từ <strong>AWS Cost Explorer</strong>:
-</p>
-
-<p class="report-p"><strong>Bảng 1: So sánh chi phí theo 3 kịch bản vận hành (USD/tháng):</strong></p>
+<h2 class="report-h2">5. Kế hoạch và mốc triển khai</h2>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 40%;">Dịch vụ AWS</th>
+<th style="width: 30%;">Ngày</th>
+<th style="width: 70%;">Mốc thực tế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29/10/2026</td>
+<td>Khởi tạo repo</td>
+</tr>
+<tr>
+<td>01/11/2026</td>
+<td>Khung frontend, catalog backend, Cognito</td>
+</tr>
+<tr>
+<td>03–06/11/2026</td>
+<td>Thiết kế lại giao diện</td>
+</tr>
+<tr>
+<td>10/11/2026</td>
+<td>Dữ liệu USDA</td>
+</tr>
+<tr>
+<td>11/11/2026</td>
+<td>Terraform mạng, RDS, ECR, Cognito, ALB, ECS và CloudFront</td>
+</tr>
+<tr>
+<td>12/11/2026</td>
+<td>OIDC, ảnh sản phẩm và lần chạy AWS đầu tiên</td>
+</tr>
+<tr>
+<td>13/11/2026</td>
+<td>AI, Guardrails, đánh giá và alarm</td>
+</tr>
+<tr>
+<td>14–15/11/2026</td>
+<td>Tìm kiếm, quên mật khẩu, thống kê, giới hạn tốc độ, Spring Boot 4</td>
+</tr>
+<tr>
+<td>16/11/2026</td>
+<td>Mở rộng catalog, nhãn chế độ ăn, phân tích bữa, VNPAY sandbox</td>
+</tr>
+<tr>
+<td>17–18/11/2026</td>
+<td>Hoàn thiện giao diện</td>
+</tr>
+<tr>
+<td>20/11/2026</td>
+<td>Tokyo, E2E, audit, WAF tùy chọn, nhật ký thanh toán</td>
+</tr>
+<tr>
+<td>21/11/2026</td>
+<td>AI đủ intent, hồ sơ và gợi ý D32</td>
+</tr>
+<tr>
+<td>22/11/2026</td>
+<td>Apply audit và đo chi phí</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- 6. 6. ƯỚC TÍNH NGÂN SÁCH -->
+<section class="report-section">
+<h2 class="report-h2">6. Ước tính ngân sách</h2>
+<h3 class="report-h3">Chi phí hạ tầng</h3>
+<p class="report-p">Ước tính USD/tháng, đối chiếu AWS Pricing Calculator ngày 25/11/2026 cho cấu hình Multi-AZ và 2 task (D33), chưa thuế, sai lệch có thể ±10%. Production là phương án tương lai chưa triển khai. Bedrock thực tế gọi tại Tokyo.</p>
+<div class="report-table-wrapper">
+<table class="report-table">
+<thead>
+<tr>
+<th style="width: 40%;">Dịch vụ / Cấu hình</th>
 <th class="text-right" style="width: 20%;">Demo (~4h/ngày)</th>
-<th class="text-right" style="width: 20%;">24/7</th>
+<th class="text-right" style="width: 20%;">24/7 (Pricing Calculator)</th>
 <th class="text-right" style="width: 20%;">Production đề xuất</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-<td class="text-right">~4</td>
-<td class="text-right">~22</td>
-<td class="text-right">~70</td>
+<td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td>
+<td class="text-right">~11,6</td>
+<td class="text-right">42,75</td>
+<td class="text-right">~70 (Multi-AZ, db.t4g.small)</td>
 </tr>
 <tr>
-<td>Application Load Balancer (ALB)</td>
-<td class="text-right">~3</td>
-<td class="text-right">~20</td>
+<td>ECS Fargate ARM64, 0,5 vCPU / 1 GB, 2 task</td>
+<td class="text-right">~5,9</td>
+<td class="text-right">35,98</td>
+<td class="text-right">~36–72 (2–4 task, auto scaling)</td>
+</tr>
+<tr>
+<td>Application Load Balancer</td>
+<td class="text-right">~3,1</td>
+<td class="text-right">18,63</td>
 <td class="text-right">~22</td>
 </tr>
 <tr>
-<td>Amazon ECS Fargate (0,5 vCPU, 1 GB RAM)</td>
-<td class="text-right">~2,5</td>
+<td>Public IPv4, 4 địa chỉ</td>
+<td class="text-right">~2,4</td>
+<td class="text-right">14,60</td>
 <td class="text-right">~15</td>
-<td class="text-right">~30</td>
 </tr>
 <tr>
-<td>Public IPv4 Address</td>
-<td class="text-right">~2</td>
-<td class="text-right">~11</td>
-<td class="text-right">~11</td>
+<td>Secrets Manager, 2 secret</td>
+<td class="text-right">0,85</td>
+<td class="text-right">0,85</td>
+<td class="text-right">0,85</td>
 </tr>
 <tr>
-<td>AWS Secrets Manager</td>
-<td class="text-right">0,8</td>
-<td class="text-right">0,8</td>
-<td class="text-right">0,8</td>
-</tr>
-<tr>
-<td>Amazon Bedrock (Nova 2 Lite)</td>
-<td class="text-right">Dưới 1</td>
-<td class="text-right">Dưới 1</td>
+<td>Bedrock (Nova Lite làm giá tham chiếu, Tokyo)</td>
+<td class="text-right">&lt;0,7</td>
+<td class="text-right">0,70</td>
 <td class="text-right">Theo lượng dùng</td>
 </tr>
 <tr>
-<td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
-<td class="text-right">~0–1</td>
-<td class="text-right">~1–3</td>
+<td>CloudFront 1,02 · CloudWatch 1,70 · ECR 0,10 · S3 0,07 · Cognito 0 · CloudTrail 0</td>
+<td class="text-right">~2,9</td>
+<td class="text-right">2,89</td>
 <td class="text-right">~5</td>
 </tr>
+<tr class="total-row">
+<td>Tổng (không WAF)</td>
+<td class="text-right">~27</td>
+<td class="text-right">116,40</td>
+<td class="text-right">~150–190</td>
+</tr>
 <tr>
-<td>AWS WAF (Tùy chọn)</td>
+<td>WAF (tùy chọn, nhóm Optional)</td>
 <td class="text-right">0</td>
-<td class="text-right">~8–10</td>
+<td class="text-right">9,60</td>
 <td class="text-right">~10</td>
 </tr>
 <tr class="total-row">
-<td>Tổng dự kiến (USD/tháng)</td>
-<td class="text-right">~12–18</td>
-<td class="text-right">~65–75</td>
-<td class="text-right">~150–200</td>
+<td>Tổng có WAF</td>
+<td class="text-right">—</td>
+<td class="text-right">126,00</td>
+<td class="text-right">~160–200</td>
 </tr>
 </tbody>
 </table>
 </div>
+<p class="report-p">Cost Explorer ghi nhận 6,44 USD cho 01–21/11/2026, được credit bù toàn bộ. RDS 2,77; ALB 1,29; ECS 1,21; IPv4 0,74; Bedrock 0,21; Secrets Manager 0,20 USD. Các khoản liệt kê là những khoản lớn, không phải phép cộng chi tiết toàn bộ hóa đơn. App chỉ bật khi demo nên không dùng số thực tế này để suy ra mức chạy 24/7. Số thực tế này ghi nhận trước khi bật Multi-AZ.</p>
+<p class="report-p">Bảng giá AWS Pricing Calculator: estimate ngày 25/11/2026. Cột 24/7 lấy đúng số của Calculator (Singapore, riêng Bedrock ở Tokyo). Cột Demo quy đổi từ đó cho khoảng 120 giờ chạy mỗi tháng: các khoản tính theo giờ (RDS instance, Fargate, ALB, IPv4) nhân 120/730, còn ổ đĩa RDS (5,52 USD) và các khoản theo lượng dùng giữ nguyên. Giả định tải: 50 người dùng/tháng, 5 GB CloudFront, khoảng 3.600 câu hỏi AI/tháng (1 câu/phút trong 2 giờ/ngày, 1.500 token vào, 300 token ra). Calculator chưa có Amazon Nova 2 Lite nên dùng Amazon Nova Lite làm giá tham chiếu. Estimate không tính RDS Proxy và Database Insights Advanced vì dự án không dùng.</p>
+</section>
 
-<p class="report-p" style="margin-top: 18px;"><strong>Bảng 2: Chi phí thực tế ghi nhận từ AWS Cost Explorer (01/11 – 21/11/2026):</strong></p>
+<!-- 7. 7. ĐÁNH GIÁ RỦI RO -->
+<section class="report-section">
+<h2 class="report-h2">7. Đánh giá rủi ro</h2>
+<h3 class="report-h3">Ma trận rủi ro</h3>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 50%;">Hạng mục dịch vụ chính</th>
-<th class="text-right" style="width: 25%;">Chi phí phát sinh (USD)</th>
-<th style="width: 25%;">Ghi chú</th>
+<th style="width: 30%;">Rủi ro</th>
+<th style="width: 20%;">Ảnh hưởng</th>
+<th style="width: 25%;">Khả năng</th>
+<th style="width: 25%;">Mức độ</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-<td class="text-right font-bold">2,77</td>
-<td>Instance PostgreSQL và 20 GB gp3 storage.</td>
+<td>Chi phí ngoài dự kiến</td>
+<td>Trung bình</td>
+<td>Trung bình</td>
+<td>Trung bình</td>
 </tr>
 <tr>
-<td>Application Load Balancer (ALB)</td>
-<td class="text-right font-bold">1,29</td>
-<td>Cân bằng tải kiểm thử tích hợp hệ thống.</td>
+<td>Lộ dữ liệu cá nhân</td>
+<td>Cao</td>
+<td>Thấp</td>
+<td>Trung bình</td>
 </tr>
 <tr>
-<td>Amazon ECS Fargate</td>
-<td class="text-right font-bold">1,21</td>
-<td>Tài nguyên container Spring Boot hoạt động.</td>
+<td>AI trả lời sai/y tế</td>
+<td>Cao</td>
+<td>Trung bình</td>
+<td>Cao</td>
 </tr>
 <tr>
-<td>Public IPv4 Address</td>
-<td class="text-right font-bold">0,74</td>
-<td>Địa chỉ IPv4 công cộng cho task trong public subnet.</td>
+<td>Quota Bedrock</td>
+<td>Trung bình</td>
+<td>Cao (đã xảy ra ở Singapore)</td>
+<td>Trung bình</td>
 </tr>
 <tr>
-<td>Amazon Bedrock (Nova 2 Lite)</td>
-<td class="text-right font-bold">0,21</td>
-<td>Token phân tích ngôn ngữ tự nhiên câu hỏi dinh dưỡng.</td>
+<td>HTTP từ CloudFront tới ALB</td>
+<td>Trung bình</td>
+<td>Thấp</td>
+<td>Thấp</td>
 </tr>
 <tr>
-<td>AWS Secrets Manager</td>
-<td class="text-right font-bold">0,20</td>
-<td>Lưu trữ và truy xuất các khóa bí mật hệ thống.</td>
-</tr>
-<tr class="total-row">
-<td>Tổng chi phí các khoản chính</td>
-<td class="text-right">6,44</td>
-<td>Được bù đắp 100% bằng AWS Credits</td>
+<td>Sự cố một Availability Zone</td>
+<td>Cao</td>
+<td>Thấp</td>
+<td>Trung bình (đã giảm nhờ Multi-AZ)</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
-* Ghi chú: Số liệu trên là các khoản chi phí chính ghi nhận trong kỳ đo từ 01/11 đến 21/11/2026, không phải toàn bộ hóa đơn. 
-Phương án Production là kế hoạch đề xuất cho tương lai, chưa triển khai thực tế trong khuôn khổ kỳ thực tập.
-</p>
+<p class="report-p">Cách chấm: Ảnh hưởng và Khả năng theo ba mức Thấp / Trung bình / Cao; Mức độ là kết hợp của hai yếu tố, sau khi tính các biện pháp giảm thiểu bên dưới. Rủi ro AI được xếp Cao vì sai số liệu dinh dưỡng hoặc lời khuyên y tế có thể ảnh hưởng tới sức khỏe người dùng, nên được ưu tiên kiểm soát nhiều lớp.</p>
+<h3 class="report-h3">Biện pháp giảm thiểu</h3>
+<p class="report-p">Chi phí: Budgets 100 USD, alarm và up/down. RDS có thể tự bật sau 7 ngày dừng.</p>
+<p class="report-p">Dữ liệu cá nhân: JWT và phân quyền; tránh log PII, dữ liệu cơ thể không gửi model; người dùng tự xóa hồ sơ.</p>
+<p class="report-p">AI: Guardrails, tool chỉ đọc, số liệu từ DB; đánh giá 45 câu ngày 21/11/2026 đạt an toàn 17/17, tra cứu 27/28, ngưỡng 85%. Câu L01 còn dao động.</p>
+<p class="report-p">Quota: Tokyo thay cho Singapore theo D18; theo dõi quyền ApplyGuardrail.</p>
+<p class="report-p">Origin: prefix list CloudFront và header bí mật giảm truy cập trực tiếp; HTTP tới ALB vẫn là hạn chế. HTTPS origin cần domain và chứng chỉ trong tương lai.</p>
+<h3 class="report-h3">Phương án dự phòng</h3>
+<p class="report-p">Khi Bedrock không gọi được, duy trì catalog và luồng mua hàng, trả lỗi AI có kiểm soát. Nếu chi phí tăng, dùng down theo runbook. Khi cần khôi phục DB, làm theo quy trình snapshot trong docs/runbook.md; biên bản diễn tập vẫn chờ chủ repo thực hiện.</p>
 </section>
 
-<!-- 6. BẢO MẬT VÀ QUẢN LÝ RỦI RO -->
+<!-- 8. 8. KẾT QUẢ KỲ VỌNG -->
 <section class="report-section">
-<h2 class="report-h2">6. Bảo mật và quản lý rủi ro</h2>
-<p class="report-p"><strong>Các cơ chế bảo mật đã triển khai:</strong></p>
-<ul class="report-list">
-<li><strong>Xác thực Stateless với Cognito JWT:</strong> Kiểm tra chữ ký số RSA từ token của Cognito trên mọi API request, loại bỏ hoàn toàn việc lưu session tại máy chủ backend.</li>
-<li><strong>Nguyên tắc đặc quyền tối thiểu (IAM Least Privilege):</strong> Phân quyền qua IAM Task Role chuyên biệt cho ECS; GitHub Actions triển khai qua AWS OIDC không dùng key tĩnh.</li>
-<li><strong>Quản lý bí mật bằng Secrets Manager:</strong> Mật khẩu database và các secret được lưu tập trung và inject vào container lúc khởi động.</li>
-<li><strong>Cách ly mạng Private Subnet:</strong> RDS PostgreSQL nằm hoàn toàn trong Private Subnet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432.</li>
-<li><strong>Kiểm duyệt AI qua Bedrock Guardrails:</strong> Thiết lập bộ lọc ngăn chặn prompt injection và ngăn chặn việc đưa ra lời khuyên y tế sai lệch.</li>
-<li><strong>Bảo vệ ALB bằng Custom Secret Header:</strong> Thiết lập header bí mật giữa CloudFront và ALB; các request gọi trực tiếp vào ALB sẽ bị chặn (403 Forbidden).</li>
-<li><strong>Giám sát ngân sách AWS Budgets & SNS:</strong> Tự động gửi email cảnh báo khi chi phí chạm 80% ngân sách dự kiến.</li>
-<li><strong>AWS WAF (Tùy chọn cho Production):</strong> Tường lửa ứng dụng web phòng chống SQL Injection, XSS và DDoS.</li>
-</ul>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Ma trận đánh giá rủi ro và biện pháp giảm thiểu:</strong></p>
-<div class="report-table-wrapper">
-<table class="report-table">
-<thead>
-<tr>
-<th style="width: 25%;">Rủi ro tiềm ẩn</th>
-<th style="width: 35%;">Mức độ & Tác động</th>
-<th style="width: 40%;">Biện pháp giảm thiểu</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Vượt chi phí (Cost Overrun)</strong></td>
-<td>Trung bình – Có thể phát sinh chi phí nếu quên tắt tài nguyên.</td>
-<td>Cấu hình AWS Budgets cảnh báo qua SNS; chỉ chạy 1 ECS task trong giờ làm việc; dùng Fargate và RDS db.t4g.micro.</td>
-</tr>
-<tr>
-<td><strong>Ảo giác AI (AI Hallucination)</strong></td>
-<td>Nghiêm trọng – Nếu AI tự đưa ra con số calo/macro sai lệch sẽ ảnh hưởng sức khỏe.</td>
-<td>Giới hạn AI chỉ trích xuất intent/filter; 100% số liệu dinh dưỡng được truy vấn từ bảng USDA trong PostgreSQL.</td>
-</tr>
-<tr>
-<td><strong>Sự cố đơn vùng (Single-AZ Failure)</strong></td>
-<td>Thấp (môi trường Demo) – Có thể gặp gián đoạn nếu AZ Singapore gặp lỗi.</td>
-<td>ECS service tự tạo task mới khi crash; kiến trúc Terraform đã sẵn sàng subnet thứ hai để nâng cấp Multi-AZ.</td>
-</tr>
-<tr>
-<td><strong>Dị ứng thực phẩm (Allergen Safety)</strong></td>
-<td>Nghiêm trọng – Bỏ sót chất dị ứng có thể nguy hiểm cho người dùng.</td>
-<td>Áp dụng cơ chế fail-closed: nếu sản phẩm có nghi vấn chứa allergen người dùng chọn, hệ thống tự động loại trừ khỏi kết quả.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-
-<!-- 7. KẾT QUẢ VÀ ĐỊNH HƯỚNG -->
-<section class="report-section">
-<h2 class="report-h2">7. Kết quả và định hướng</h2>
-<p class="report-p"><strong>Kết quả đạt được:</strong></p>
-<ul class="report-list">
-<li>Triển khai thành công nền tảng full-stack thương mại điện tử dinh dưỡng hoàn chỉnh trên hạ tầng đám mây AWS.</li>
-<li>Vận hành ổn định mô hình Serverless Container với Amazon ECS Fargate và cơ sở dữ liệu quan hệ Amazon RDS PostgreSQL.</li>
-<li>Tích hợp thành công Amazon Bedrock Nova 2 Lite trích xuất ý đồ tìm kiếm dinh dưỡng ngôn ngữ tự nhiên chính xác.</li>
-<li>Chuẩn hóa 152 sản phẩm thực phẩm theo nguồn USDA, tích hợp bộ lọc dinh dưỡng, 9 chất dị ứng và 6 chế độ ăn.</li>
-<li>Tự động hóa 100% hạ tầng bằng Terraform và thiết lập quy trình CI/CD an toàn qua GitHub Actions với AWS OIDC.</li>
-<li>Kiểm soát chi phí thực tế xuất sắc: chỉ phát sinh 6,44 USD trong 3 tuần và được tài trợ 100% bằng AWS Credits.</li>
-</ul>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Định hướng nâng cấp Production (Kế hoạch tương lai chưa triển khai):</strong></p>
-<ul class="report-list">
-<li><strong>Chuyển đổi Amazon RDS sang Multi-AZ:</strong> Kích hoạt Standby Replica tự động failover để đạt độ sẵn sàng cao 99.95%.</li>
-<li><strong>Mở rộng cụm ECS Fargate tối thiểu 2 tasks đa vùng:</strong> Thiết lập chính sách tự động co giãn (Auto Scaling Policy) theo CPU/RAM.</li>
-<li><strong>Bảo mật HTTPS toàn trình (Origin SSL/TLS):</strong> Tích hợp chứng chỉ ACM lên ALB với tên miền tùy chỉnh qua Route 53.</li>
-<li><strong>Triển khai AWS WAF thường trực:</strong> Bảo vệ toàn diện tầng CDN CloudFront trước các cuộc tấn công DDoS và khai thác lỗ hổng web.</li>
-<li><strong>Chiến lược sao lưu tự động & Disaster Recovery:</strong> Tự động snapshot RDS hàng ngày và sao chép định kỳ sang AWS Region thứ hai.</li>
-<li><strong>Mở rộng thuật toán phân tích dinh dưỡng:</strong> Bổ sung tính năng lập kế hoạch thực đơn trọn gói theo tuần dựa trên hồ sơ sức khỏe dài hạn.</li>
-</ul>
+<h2 class="report-h2">8. Kết quả kỳ vọng</h2>
+<h3 class="report-h3">Cải thiện kỹ thuật:</h3>
+<p class="report-p">Web React và API trên CloudFront.</p>
+<p class="report-p">Mã nguồn, kiểm thử và workflow OIDC trên GitHub.</p>
+<p class="report-p">Terraform và hướng dẫn vận hành theo buổi demo.</p>
+<p class="report-p">Bộ workshop 7 mục lớn cùng các bước con và báo cáo song ngữ.</p>
+<h3 class="report-h3">Nguồn đối chiếu:</h3>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/architecture.md" target="_blank" rel="noopener noreferrer">docs/architecture.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/decisions.md" target="_blank" rel="noopener noreferrer">docs/decisions.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/api-contract.md" target="_blank" rel="noopener noreferrer">docs/api-contract.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/db-schema.md" target="_blank" rel="noopener noreferrer">docs/db-schema.md</a></p>
+<h3 class="report-h3">Giá trị dài hạn</h3>
+<p class="report-p">Lộ trình production chưa triển khai gồm RDS Multi-AZ, hai task, domain riêng với HTTPS tới ALB và WAF thường trực. Mỗi thay đổi cần plan, đánh giá khả năng chịu lỗi và cập nhật ước tính chi phí.</p>
 </section>
 </div>

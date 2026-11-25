@@ -1651,24 +1651,40 @@ const DEFAULT_BILINGUAL_DATA = {
     vi: [
       {
         id: "event-1",
-        slug: "hoi-thao-hien-dai-hoa-ung-dung-csdl-genai",
-        name: "Sự kiện 1 - First Cloud AI Journey: Hiện đại hóa Ứng dụng & CSDL với GenAI (29/09/2026)",
-        dateTime: "08:00 – 17:00, 29/09/2026",
-        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
-        role: "Người tham dự (Attendee)",
-        speakers: "Jignesh Shah (Giám đốc CSDL Mã nguồn mở), Erica Liu (Chuyên gia AppMod), Fabrianne Effendi (Kiến trúc sư giải pháp Serverless)",
-        shortDesc: "Chuyển đổi kiến trúc nguyên khối sang Microservices hiện đại (Queue, Cache, Messaging), phương pháp Domain-Driven Design (DDD) và ứng dụng trợ lý Amazon Q Developer.",
-        highlights: "• Những hạn chế của kiến trúc nguyên khối truyền thống (chu kỳ phát hành kéo dài, chi phí vận hành cao).\n• Chuyển đổi sang kiến trúc Microservices hiện đại dựa trên 3 trụ cột: Quản lý hàng đợi, Chiến lược bộ nhớ đệm và Xử lý thông điệp linh hoạt.\n• Phương pháp thiết kế hướng tên miền Domain-Driven Design (DDD) gồm 4 bước.\n• Kiến trúc hướng sự kiện Event-Driven Architecture (Pub/Sub, Point-to-Point, Streaming).\n• Ứng dụng trợ lý AI Amazon Q Developer tự động hóa chu trình nâng cấp mã nguồn.",
+        slug: "aws-cloud-ai-day-hanoi-2026",
+        name: "Sự kiện 1 - AWS Cloud and AI Day Hanoi 2026 (29/09/2026)",
+        dateTime: "07:30 – 17:00, 29/09/2026",
+        location: "Theo dõi trực tiếp tại điểm cầu FCAJ HCMC Watch Party, TP. Hồ Chí Minh (Sự kiện chính tại JW Marriott Hotel Hanoi)",
+        role: "Người tham dự Watch Party (Watch Party Attendee)",
+        speakers: "Hoang Minh, Jennifer Wicks, Dr. Werner Vogels, Eric Yeo, Mai Le, Dr. Jens Lottner",
+        topic: "Điện toán Đám mây, Agentic AI và Hiện đại hóa Hạ tầng Doanh nghiệp",
+        category: "Cloud Computing & Agentic AI",
+        shortDesc: "Tham dự theo dõi trực tiếp hội nghị thường niên AWS Cloud and AI Day Hanoi 2026 tại điểm cầu FCAJ HCMC Watch Party: chiến lược AI quốc gia, Agentic AI, Amazon Bedrock và hiện đại hóa hạ tầng doanh nghiệp.",
+        highlights: "• Theo dõi trực tiếp từ Hà Nội tại điểm cầu FCAJ HCMC Watch Party, TP. Hồ Chí Minh.\n• Bài phát biểu của Dr. Werner Vogels (CTO Amazon.com) về tư duy xây dựng hệ thống phân tán tin cậy và vai trò của AI.\n• Chuyên đề Agentic AI, Amazon Bedrock, hiện đại hóa cơ sở dữ liệu và bảo mật đám mây quy mô doanh nghiệp.",
         hasFullReport: true
       },
       {
         id: "event-2",
+        slug: "fireside-chat-dr-werner-vogels",
+        name: "Sự kiện 2 - Fireside Chat with Dr. Werner: Navigating the Future of Cloud & AI in Vietnam (02/10/2026)",
+        dateTime: "08:30 – 12:00, 02/10/2026",
+        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
+        role: "Người tham dự (Attendee)",
+        speakers: "Dr. Werner Vogels (Phó Chủ tịch kiêm CTO, Amazon.com)",
+        topic: "Kỹ thuật xây dựng hệ thống quy mô lớn, Renaissance Developer và tương lai của trí tuệ nhân tạo",
+        category: "Cloud Computing & Artificial Intelligence",
+        shortDesc: "Buổi trò chuyện trực tiếp cùng Dr. Werner Vogels (VP & CTO Amazon.com) về tương lai Cloud & AI tại Việt Nam, nguyên lý thiết kế hệ thống quy mô lớn và hình mẫu Renaissance Developer trong kỷ nguyên AI.",
+        highlights: "• Định hướng tương lai Cloud & AI tại Việt Nam và vai trò của kỹ sư phần mềm trong kỷ nguyên AI.\n• Hình mẫu Renaissance Developer: kết hợp chiều sâu kỹ thuật, tư duy hệ thống và hiểu biết nghiệp vụ.\n• Nguyên lý vận hành hệ thống tin cậy ở quy mô lớn (Design for Failure, Observability, Cost-aware Architecture).",
+        hasFullReport: true
+      },
+      {
+        id: "event-3",
         slug: "first-cloud-ai-journey-24-10-2026",
-        name: "Sự kiện 2 - First Cloud AI Journey Meetup: Khám phá AWS Cloud, Cloud Security & AI Agents (24/10/2026)",
+        name: "Sự kiện 3 - First Cloud AI Journey Meetup: Khám phá AWS Cloud, Cloud Security & AI Agents (24/10/2026)",
         dateTime: "08:00 – 12:00, 24/10/2026",
         location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
         role: "Người tham dự (Attendee)",
-        speakers: "Kiệt Trần, Long Huỳnh, Thịnh Nguyễn, Xuân An, Khoa Kiều, Nghi Danh",
+        speakers: "Kiệt Trần (Revve AI), Long Huỳnh & Thịnh Nguyễn (Styl Solution), Xuân An (HCMUTE), Khoa Kiều (ACB), Nghi Danh (AWS Community Builder)",
         topic: "Khám phá AWS Cloud, Cloud Security và Tương lai của AI Agents",
         category: "Cloud Computing, Cloud Security & AI Agents",
         shortDesc: "Khám phá 5 phiên kỹ thuật chuyên sâu: Voice AI Contact Center độ trễ thấp, chia sẻ tài nguyên AWS RAM, kiểm thử bảo mật Shift-Left DevSecOps, Amazon Bedrock AgentCore và tự động hóa phát triển phần mềm với Kiro Crew.",
@@ -1676,9 +1692,9 @@ const DEFAULT_BILINGUAL_DATA = {
         hasFullReport: true
       },
       {
-        id: "event-3",
+        id: "event-4",
         slug: "enterprise-ai-on-aws-cloud",
-        name: "Sự kiện 3 - Enterprise AI on AWS Cloud: Từ Prototype đến Production (14/11/2026)",
+        name: "Sự kiện 4 - Enterprise AI on AWS Cloud: Từ Prototype đến Production (14/11/2026)",
         dateTime: "09:00 – 12:00, 14/11/2026",
         location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
         role: "Người tham dự (Attendee)",
@@ -1693,20 +1709,36 @@ const DEFAULT_BILINGUAL_DATA = {
     en: [
       {
         id: "event-1",
-        slug: "hoi-thao-hien-dai-hoa-ung-dung-csdl-genai",
-        name: "Event 1 - First Cloud AI Journey: App & DB Modernization with GenAI (September 29, 2026)",
-        dateTime: "08:00 AM – 05:00 PM, September 29, 2026",
-        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
-        role: "Attendee",
-        speakers: "Jignesh Shah (Director, Open Source DBs), Erica Liu (Sr. GTM Specialist), Fabrianne Effendi (Assc. Specialist SA)",
-        shortDesc: "Modernizing legacy monoliths into Microservices via Queue Management, Caching Strategies, Domain-Driven Design (DDD), and Amazon Q Developer transformation agents.",
-        highlights: "• Drawbacks of legacy monolithic architectures (long release cycles, higher costs).\n• Modern Microservices transition built on Queue Management, Caching Strategies, and Message Handling.\n• Domain-Driven Design (DDD): 4-step method (Identify domain events -> arrange timeline -> identify actors -> define bounded contexts).\n• Event-Driven Architecture (Pub/Sub, Point-to-point, Streaming).\n• Amazon Q Developer automated code transformation & modernization agents.",
+        slug: "aws-cloud-ai-day-hanoi-2026",
+        name: "Event 1 - AWS Cloud and AI Day Hanoi 2026 (September 29, 2026)",
+        dateTime: "07:30 AM – 05:00 PM, September 29, 2026",
+        location: "Watched live at FCAJ HCMC Watch Party, Ho Chi Minh City (Main venue: JW Marriott Hotel Hanoi)",
+        role: "Watch Party Attendee",
+        speakers: "Hoang Minh, Jennifer Wicks, Dr. Werner Vogels, Eric Yeo, Mai Le, Dr. Jens Lottner",
+        topic: "Cloud Computing, Agentic AI, and Enterprise Infrastructure Modernization",
+        category: "Cloud Computing & Agentic AI",
+        shortDesc: "Attended the live broadcast of AWS Cloud and AI Day Hanoi 2026 at the FCAJ HCMC Watch Party: national cloud & AI strategy, Agentic AI, Amazon Bedrock, and enterprise infrastructure modernization.",
+        highlights: "• Watched the live stream from Hanoi at the FCAJ HCMC Watch Party in Ho Chi Minh City.\n• Keynote by Dr. Werner Vogels (CTO, Amazon.com) on building reliable distributed systems and the evolving role of AI.\n• Technical tracks on Agentic AI, Amazon Bedrock, database modernization, and enterprise cloud security.",
         hasFullReport: true
       },
       {
         id: "event-2",
+        slug: "fireside-chat-dr-werner-vogels",
+        name: "Event 2 - Fireside Chat with Dr. Werner: Navigating the Future of Cloud & AI in Vietnam (October 2, 2026)",
+        dateTime: "08:30 AM – 12:00 PM, October 2, 2026",
+        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
+        role: "Attendee",
+        speakers: "Dr. Werner Vogels (Vice President & CTO, Amazon.com)",
+        topic: "Engineering at Scale, the Renaissance Developer, and the Future of Artificial Intelligence",
+        category: "Cloud Computing & Artificial Intelligence",
+        shortDesc: "Fireside Chat with Dr. Werner Vogels (VP & CTO, Amazon.com) on the future of Cloud & AI in Vietnam, engineering principles for reliable large-scale systems, and the Renaissance Developer mindset.",
+        highlights: "• Exploring the future of AWS Cloud and AI adoption in Vietnam.\n• The Renaissance Developer model combining deep technical mastery, systems thinking, and domain understanding.\n• Principles for building reliable systems at scale (Design for Failure, Observability, Cost-aware Architecture).",
+        hasFullReport: true
+      },
+      {
+        id: "event-3",
         slug: "first-cloud-ai-journey-24-10-2026",
-        name: "Event 2 - First Cloud AI Journey Meetup: AWS Cloud, Cloud Security & AI Agents (October 24, 2026)",
+        name: "Event 3 - First Cloud AI Journey Meetup: AWS Cloud, Cloud Security & AI Agents (October 24, 2026)",
         dateTime: "08:00 AM – 12:00 PM, October 24, 2026",
         location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
@@ -1718,9 +1750,9 @@ const DEFAULT_BILINGUAL_DATA = {
         hasFullReport: true
       },
       {
-        id: "event-3",
+        id: "event-4",
         slug: "enterprise-ai-on-aws-cloud",
-        name: "Event 3 - Enterprise AI on AWS Cloud: From Prototype to Production (November 14, 2026)",
+        name: "Event 4 - Enterprise AI on AWS Cloud: From Prototype to Production (November 14, 2026)",
         dateTime: "09:00 AM – 12:00 PM, November 14, 2026",
         location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
@@ -1913,8 +1945,9 @@ class AppLanguageManager {
       const slug = currentHash.replace('events/', '');
       renderEventDetail(slug);
     } else {
+      renderEventDetail('aws-cloud-ai-day-hanoi-2026');
+      renderEventDetail('fireside-chat-dr-werner-vogels');
       renderEventDetail('first-cloud-ai-journey-24-10-2026');
-      renderEventDetail('hoi-thao-hien-dai-hoa-ung-dung-csdl-genai');
       renderEventDetail('enterprise-ai-on-aws-cloud');
     }
     if (currentHash.startsWith('blogs/')) {
@@ -2057,7 +2090,8 @@ function navigateTo(pageId) {
   let target = document.getElementById(viewId);
   if (!target && cleanId.startsWith('events/')) {
     target = document.getElementById('view-events-enterprise-ai-on-aws-cloud') ||
-             document.getElementById('view-events-hoi-thao-hien-dai-hoa-ung-dung-csdl-genai') || 
+             document.getElementById('view-events-aws-cloud-ai-day-hanoi-2026') ||
+             document.getElementById('view-events-fireside-chat-dr-werner-vogels') ||
              document.getElementById('view-events-first-cloud-ai-journey-24-10-2026');
   }
   if (!target && cleanId.startsWith('blogs/')) {
@@ -2519,872 +2553,684 @@ function setContent(id, val) {
 // ==========================================
 
 function getProposalViHtml() {
-  const archImg = 'assets/images/proposal/aws-architecture.png';
-  const flowImg = 'assets/images/proposal/application-flow.png';
+  const archImg = 'assets/images/workshop/5.1-overview/aws-architecture.png';
 
   return `
-    <div class="tech-report">
-      <!-- HEADER -->
-      <header>
-        <div class="report-eyebrow">Project Proposal</div>
-        <h1 class="report-title">Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS</h1>
-        <p class="report-subtitle">Personalized Nutrition E-Commerce Platform on AWS</p>
-        <p class="report-intro">
-          Dự án xây dựng nền tảng thương mại điện tử thực phẩm tích hợp trí tuệ nhân tạo (AI) hỗ trợ phân tích và cá nhân hóa nhu cầu dinh dưỡng cho người dùng. 
-          Toàn bộ hệ thống được thiết kế, vận hành và tự động hóa trên nền tảng điện toán đám mây AWS với React, Spring Boot 4, Amazon ECS Fargate, 
-          Amazon Bedrock và Terraform.
-        </p>
-      </header>
+<div class="tech-report">
+  <header>
+    <div class="report-eyebrow">Đề xuất dự án</div>
+    <p class="report-intro">Thiết kế kiến trúc, phạm vi, vấn đề giải quyết, kế hoạch và ước tính chi phí cho dự án workshop.</p>
+    <h1 class="report-title">Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS</h1>
+    <p class="report-subtitle">Tra cứu dinh dưỡng có nguồn và mua sắm trên hạ tầng AWS</p>
+  </header>
 
-      <!-- 1. TỔNG QUAN DỰ ÁN -->
-      <section class="report-section">
-        <h2 class="report-h2">1. Tổng quan dự án</h2>
-        <p class="report-p">
-          Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa là giải pháp hỗ trợ người tiêu dùng tiếp cận thực phẩm lành mạnh 
-          (Eat Clean, Low-Carb, High-Protein, Vegan) dựa trên chỉ số dinh dưỡng rõ ràng và mục tiêu thể trạng cá nhân. 
-          Hệ thống kết hợp giữa kiến trúc backend mạnh mẽ và trợ lý AI thông minh nhằm đơn giản hóa việc tra cứu khẩu phần ăn.
-        </p>
+  <!-- 1. 1. TÓM TẮT ĐỀ XUẤT -->
+  <section class="report-section">
+    <h2 class="report-h2">1. Tóm tắt đề xuất</h2>
+    <p class="report-p">Nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên AWS hỗ trợ tra cứu thực phẩm, mua hàng và gợi ý bữa ăn từ dữ liệu có nguồn. React gọi Spring Boot qua CloudFront và ALB; PostgreSQL lưu dữ liệu, Bedrock chỉ diễn giải yêu cầu. Sản phẩm thiếu dữ liệu bị loại khi lọc dinh dưỡng hoặc allergen. Số liệu trả lời do code lấy từ DB, kết hợp vận hành theo buổi demo để kiểm soát chi phí.</p>
+  </section>
 
-        <h3 class="report-h3">Các công nghệ và dịch vụ nền tảng:</h3>
-        <ul class="report-list">
-          <li><strong>Giao diện người dùng:</strong> React 19, TypeScript, Vite, Tailwind CSS – Ứng dụng Single Page Application (SPA) tối ưu tốc độ phản hồi.</li>
-          <li><strong>Dịch vụ ứng dụng backend:</strong> Spring Boot 4 (Java 21) – RESTful API xử lý nghiệp vụ đơn hàng, danh mục và truy vấn dữ liệu dinh dưỡng.</li>
-          <li><strong>Cơ sở dữ liệu:</strong> PostgreSQL 17 trên Amazon RDS – Lưu trữ chuẩn hóa 152 sản phẩm với hồ sơ dinh dưỡng USDA FoodData Central.</li>
-          <li><strong>Phân phối và lưu trữ tĩnh:</strong> Amazon CloudFront và Amazon S3 – Mạng CDN toàn cầu và lưu trữ an toàn mã nguồn frontend cùng hình ảnh sản phẩm.</li>
-          <li><strong>Môi trường tính toán và cân bằng tải:</strong> Amazon ECS Fargate và Application Load Balancer (ALB) – Vận hành container không máy chủ, tự động quản lý.</li>
-          <li><strong>Quản lý định danh:</strong> Amazon Cognito User Pools – Xác thực tài khoản người dùng và cấp phát JWT token an toàn.</li>
-          <li><strong>Trí tuệ nhân tạo (AI):</strong> Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails – Xử lý ngôn ngữ tự nhiên và kiểm duyệt an toàn nội dung.</li>
-          <li><strong>Hạ tầng như mã nguồn (IaC) và CI/CD:</strong> Terraform và GitHub Actions (AWS OIDC) – Tự động hóa triển khai 100%, bảo mật không lưu Access Key tĩnh.</li>
-        </ul>
+  <!-- 2. 2. VẤN ĐỀ CẦN GIẢI QUYẾT -->
+  <section class="report-section">
+    <h2 class="report-h2">2. Vấn đề cần giải quyết</h2>
+    <h3 class="report-h3">Vấn đề là gì?</h3>
+    <p class="report-p">Người mua khó so sánh thực phẩm khi dữ liệu dinh dưỡng và allergen thiếu nhất quán. Câu trả lời AI có thể chứa con số thiếu căn cứ nếu model tự sinh nội dung.</p>
+    <h3 class="report-h3">Giải pháp</h3>
+    <p class="report-p">Người mua khó đối chiếu dữ liệu dinh dưỡng và allergen giữa các sản phẩm. Chatbot sinh văn bản có thể đưa ra con số không có căn cứ. MVP gồm catalog 152 sản phẩm USDA, tài khoản, bộ lọc theo dinh dưỡng, 9 allergen và 6 nhãn chế độ ăn; phân tích bữa ăn; AI tra cứu chỉ đọc; giỏ hàng, đặt hàng, quản lý sản phẩm, ảnh, đơn, thống kê và nhật ký thanh toán. COD và VNPAY sandbox nằm trong phạm vi.</p>
+    <p class="report-p">D32 bổ sung hồ sơ và gợi ý một bữa gồm món protein, rau/trái cây và tinh bột. Mục tiêu tính bằng Mifflin-St Jeor × mức vận động. Chỉ áp dụng cho tuổi 18–65, BMI 17–35, loại trừ mang thai, cho con bú và bệnh cần giám sát. Không có thanh toán thật, hoàn tiền tự động hoặc tư vấn y tế. Danh tính lấy từ JWT; trừ kho bằng UPDATE có điều kiện trong transaction.</p>
+    <h3 class="report-h3">Lợi ích và hiệu quả đầu tư</h3>
+    <p class="report-p">Người mua tra cứu thông tin từ DB, lọc theo nhu cầu và xem giới hạn dữ liệu. Cửa hàng quản lý catalog, ảnh, đơn và nhật ký thanh toán trong cùng ứng dụng. Cost Explorer ghi 6,44 USD cho 01–21/11/2026, toàn bộ được credit bù. Chưa có số liệu doanh thu hay tiết kiệm lao động để tính ROI tài chính.</p>
+  </section>
 
-        <div class="report-callout">
-          <strong>Nguyên tắc cốt lõi về AI:</strong> Hệ thống tuân thủ nguyên tắc <em>AI chỉ phân tích ý đồ (Intent Classification) và trích xuất tham số lọc (Parameter Extraction)</em> từ câu hỏi tự nhiên của người dùng. Toàn bộ số liệu dinh dưỡng (calo, macro, chất dị ứng) <strong>đều được truy vấn trực tiếp từ cơ sở dữ liệu PostgreSQL chuẩn USDA</strong>, loại bỏ hoàn toàn hiện tượng AI tự sinh số liệu (hallucination).
-        </div>
-      </section>
-
-      <!-- 2. VẤN ĐỀ VÀ GIẢI PHÁP -->
-      <section class="report-section">
-        <h2 class="report-h2">2. Vấn đề và giải pháp</h2>
-        <p class="report-p"><strong>Khó khăn thực tế của người dùng:</strong></p>
-        <ul class="report-list">
-          <li>Thiếu thông tin dinh dưỡng minh bạch và chi tiết trên các sàn thương mại điện tử thực phẩm truyền thống.</li>
-          <li>Khó kiểm soát các chất gây dị ứng nguy hiểm (gluten, đậu phộng, hải sản,...) do thành phần không được ghi rõ ràng.</li>
-          <li>Tốn nhiều thời gian và công sức tính toán macro (Calo, Protein, Carbs, Fat) thủ công cho từng bữa ăn.</li>
-          <li>Thiếu công cụ tìm kiếm và lọc sản phẩm theo mục tiêu dinh dưỡng cá nhân hóa linh hoạt.</li>
-        </ul>
-
-        <p class="report-p"><strong>Các chức năng giải pháp cốt lõi:</strong></p>
-        <ul class="report-list">
-          <li><strong>Catalog 152 sản phẩm USDA:</strong> Dữ liệu thực phẩm sạch được chuẩn hóa theo chuẩn USDA FoodData Central với đầy đủ hàm lượng calo và macro trên từng khẩu phần.</li>
-          <li><strong>Bộ lọc dinh dưỡng đa tiêu chí:</strong> Cho phép lọc chính xác theo khoảng calo, mức protein tối thiểu, giới hạn carb và chất béo.</li>
-          <li><strong>Kiểm soát 9 allergen và 6 chế độ ăn:</strong> Nhận diện và cảnh báo nghiêm ngặt 9 chất gây dị ứng phổ biến (cơ chế fail-closed: loại bỏ khi nghi vấn) và 6 nhãn chế độ ăn (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
-          <li><strong>AI tra cứu sản phẩm thông minh:</strong> Trợ lý Amazon Bedrock Nova 2 Lite chuyển đổi yêu cầu ngôn ngữ tự nhiên thành các tham số truy vấn dữ liệu chuẩn xác.</li>
-          <li><strong>Hồ sơ dinh dưỡng và gợi ý bữa ăn:</strong> Tính toán chỉ số BMR, TDEE và gợi ý cơ cấu một bữa ăn cân bằng macro phù hợp với người dùng.</li>
-          <li><strong>Giỏ hàng và đặt hàng trực tuyến:</strong> Theo dõi tổng lượng dinh dưỡng và biểu đồ phân bổ macro của đơn hàng theo thời gian thực.</li>
-          <li><strong>Thanh toán linh hoạt:</strong> Hỗ trợ thanh toán khi nhận hàng (COD) và tích hợp cổng thanh toán trực tuyến mô phỏng VNPAY Sandbox.</li>
-          <li><strong>Trang quản trị (Admin):</strong> Quản lý danh mục sản phẩm, theo dõi đơn hàng và cập nhật dữ liệu USDA.</li>
-        </ul>
-
-        <div class="report-callout report-callout-disclaimer">
-          <strong>Tuyên bố miễn trừ trách nhiệm y tế (Medical Disclaimer):</strong> Nền tảng được xây dựng nhằm hỗ trợ theo dõi thói quen dinh dưỡng và mua sắm thực phẩm lành mạnh; hệ thống <strong>không phải là thiết bị y tế và không đưa ra chẩn đoán, điều trị hay tư vấn y khoa chuyên nghiệp</strong>. Người dùng có bệnh lý nền cần tham khảo ý kiến bác sĩ hoặc chuyên gia dinh dưỡng.
-        </div>
-      </section>
-
-      <!-- 3. KIẾN TRÚC AWS -->
-      <section class="report-section">
-        <h2 class="report-h2">3. Kiến trúc AWS</h2>
-        <p class="report-p">
-          Hệ thống được thiết kế theo các nguyên tắc của <strong>AWS Well-Architected Framework</strong>, 
-          kết hợp giữa mô hình container không máy chủ, cơ sở dữ liệu quan hệ được quản lý và dịch vụ trí tuệ nhân tạo tạo sinh.
-        </p>
-
-        <!-- HÌNH 1: AWS ARCHITECTURE -->
-        <div class="report-figure">
-          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'Sơ đồ kiến trúc hạ tầng AWS')" title="Nhấp để phóng to">
-            <img src="${archImg}" alt="Sơ đồ kiến trúc hạ tầng AWS" class="report-figure-img" loading="lazy" />
-          </div>
-          <div class="report-figure-caption">Hình 1: Sơ đồ kiến trúc tổng thể AWS (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Nhấp để phóng to</em></div>
-        </div>
-
-        <h3 class="report-h3">Mô tả cấu hình và phân bổ dịch vụ:</h3>
-        <ul class="report-list">
-          <li><strong>Singapore (<code>ap-southeast-1</code>):</strong> Vùng vận hành chính chứa VPC, Subnets, ECS Fargate, ALB, RDS PostgreSQL, S3, Cognito và CloudWatch.</li>
-          <li><strong>Tokyo (<code>ap-northeast-1</code>):</strong> Vùng phục vụ cho Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails nhằm đảm bảo tính khả dụng của mô hình AI.</li>
-          <li><strong>Amazon CloudFront & S3:</strong> CloudFront phân phối giao diện React tĩnh từ S3 và chuyển tiếp API request đến ALB.</li>
-          <li><strong>Application Load Balancer (ALB):</strong> Tiếp nhận yêu cầu từ CloudFront, cân bằng tải và định tuyến đến cụm container Spring Boot trên ECS Fargate.</li>
-          <li><strong>Amazon ECS Fargate:</strong> Chạy container backend Spring Boot 4. Trong môi trường Demo, hệ thống triển khai <strong>1 task duy nhất (Active)</strong> với cấu hình tối ưu chi phí: <strong>0,5 vCPU và 1 GB RAM</strong>.</li>
-          <li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17, instance class <strong>db.t4g.micro, dung lượng 20 GB gp3, Single-AZ</strong>.</li>
-          <li><strong>Phân vùng mạng và tối ưu chi phí:</strong>
-            ECS Task đặt trong Public Subnet (gán Public IPv4) để kéo Docker image từ ECR và gọi Bedrock Tokyo mà <em>không cần khởi tạo NAT Gateway</em> (tiết kiệm ~32 USD/tháng cho mỗi NAT Gateway). 
-            RDS PostgreSQL đặt trong Private Subnet cách ly hoàn toàn Internet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432. 
-            Subnet thứ hai ở AZ-2 đóng vai trò standby resilience (sẵn sàng nâng cấp Multi-AZ trong tương lai), không chạy task đồng thời trong demo.
-          </li>
-          <li><strong>Định danh và giám sát:</strong> Amazon Cognito quản lý định danh người dùng qua JWT; AWS Secrets Manager bảo vệ mật khẩu; CloudWatch, Budgets và SNS giám sát tài nguyên và cảnh báo chi phí.</li>
-          <li><strong>Giới hạn kiến trúc hiện tại:</strong> Giao tiếp từ CloudFront đến ALB hiện sử dụng giao thức HTTP (kết nối Client đến CloudFront là HTTPS, kết hợp Custom Secret Header xác thực giữa CloudFront và ALB để chặn truy cập trực tiếp).</li>
-        </ul>
-
-        <!-- HÌNH 2: APPLICATION FLOW -->
-        <div class="report-figure" style="margin-top: 28px;">
-          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${flowImg}', 'Sơ đồ luồng hoạt động ứng dụng')" title="Nhấp để phóng to">
-            <img src="${flowImg}" alt="Sơ đồ luồng hoạt động ứng dụng" class="report-figure-img" loading="lazy" />
-          </div>
-          <div class="report-figure-caption">Hình 2: Sơ đồ luồng hoạt động ứng dụng (Application Flow Diagram) — <em>Nhấp để phóng to</em></div>
-        </div>
-
-        <h3 class="report-h3">Luồng xử lý 8 bước của ứng dụng:</h3>
-        <ol class="report-list" style="padding-left: 20px;">
-          <li>Người dùng truy cập ứng dụng qua giao thức HTTPS đến tên miền Amazon CloudFront CDN.</li>
-          <li>CloudFront trả về các tệp tĩnh React SPA từ Amazon S3 hoặc chuyển tiếp yêu cầu API <code>/api/*</code> đến ALB.</li>
-          <li>ALB kiểm tra Custom Secret Header từ CloudFront và chuyển tiếp yêu cầu đến container Spring Boot trên ECS Fargate.</li>
-          <li>Người dùng xác thực với Amazon Cognito User Pool; Client đính kèm JWT Bearer token vào Header của mọi request.</li>
-          <li>Spring Security xác thực chữ ký số JWT của Cognito và phân quyền truy cập người dùng/quản trị viên.</li>
-          <li>Khi có câu hỏi tự nhiên về dinh dưỡng, Backend gọi API Amazon Bedrock Nova 2 Lite (Tokyo) để trích xuất ý đồ và tham số lọc.</li>
-          <li>Backend dùng tham số từ AI truy vấn dữ liệu 152 sản phẩm trực tiếp từ PostgreSQL RDS trong Private Subnet.</li>
-          <li>Backend trả về kết quả JSON chứa thông tin dinh dưỡng chuẩn hóa cho Client hiển thị.</li>
-        </ol>
-      </section>
-
-      <!-- 4. CÔNG NGHỆ VÀ KẾ HOẠCH TRIỂN KHAI -->
-      <section class="report-section">
-        <h2 class="report-h2">4. Công nghệ và kế hoạch triển khai</h2>
-        <p class="report-p"><strong>Bảng tổng hợp công nghệ:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 20%;">Lớp kiến trúc</th>
-                <th style="width: 40%;">Công nghệ / Dịch vụ</th>
-                <th style="width: 40%;">Mục đích sử dụng</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Frontend</strong></td>
-                <td>React 19, TypeScript, Vite, Tailwind CSS</td>
-                <td>Single Page Application phản hồi nhanh, giao diện thân thiện và responsive.</td>
-              </tr>
-              <tr>
-                <td><strong>Backend</strong></td>
-                <td>Spring Boot 4.1 (Java 21), Spring Security</td>
-                <td>RESTful API xử lý logic đơn hàng, xác thực JWT và kết nối cơ sở dữ liệu.</td>
-              </tr>
-              <tr>
-                <td><strong>Database</strong></td>
-                <td>PostgreSQL 17 trên Amazon RDS (db.t4g.micro)</td>
-                <td>Lưu trữ dữ liệu quan hệ, người dùng, đơn hàng và 152 sản phẩm chuẩn USDA.</td>
-              </tr>
-              <tr>
-                <td><strong>AI & GenAI</strong></td>
-                <td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
-                <td>Trích xuất ý đồ tìm kiếm dinh dưỡng và kiểm duyệt an toàn nội dung.</td>
-              </tr>
-              <tr>
-                <td><strong>Compute</strong></td>
-                <td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
-                <td>Vận hành container backend không máy chủ (0,5 vCPU, 1 GB RAM active task).</td>
-              </tr>
-              <tr>
-                <td><strong>Networking</strong></td>
-                <td>Amazon CloudFront, Application Load Balancer, VPC</td>
-                <td>Phân phối CDN toàn cầu, cân bằng tải và phân vùng mạng bảo vệ dữ liệu.</td>
-              </tr>
-              <tr>
-                <td><strong>Security</strong></td>
-                <td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
-                <td>Quản lý định danh người dùng và bảo mật thông tin xác thực backend.</td>
-              </tr>
-              <tr>
-                <td><strong>IaC & CI/CD</strong></td>
-                <td>Terraform, GitHub Actions, AWS OIDC</td>
-                <td>Tự động hóa 100% hạ tầng và triển khai liên tục không dùng static keys.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Kế hoạch 5 giai đoạn thực hiện:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 22%;">Giai đoạn</th>
-                <th style="width: 38%;">Hạng mục chính</th>
-                <th style="width: 40%;">Kết quả bàn giao</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>29/10 – 01/11/2026</strong></td>
-                <td>Khởi tạo & Thiết kế</td>
-                <td>Xác định phạm vi, thiết kế kiến trúc AWS và mô hình dữ liệu dinh dưỡng.</td>
-              </tr>
-              <tr>
-                <td><strong>03/11 – 10/11/2026</strong></td>
-                <td>Giao diện & Dữ liệu</td>
-                <td>Phát triển giao diện React, chuẩn hóa 152 sản phẩm USDA và các Entity backend.</td>
-              </tr>
-              <tr>
-                <td><strong>11/11 – 12/11/2026</strong></td>
-                <td>Triển khai hạ tầng</td>
-                <td>Viết Terraform triển khai VPC, Subnets, RDS, ECR, ECS Fargate, ALB và CloudFront.</td>
-              </tr>
-              <tr>
-                <td><strong>13/11 – 18/11/2026</strong></td>
-                <td>AI & Nghiệp vụ</td>
-                <td>Tích hợp Bedrock Nova 2 Lite, cấu hình Guardrails, hoàn thiện giỏ hàng và VNPAY Sandbox.</td>
-              </tr>
-              <tr>
-                <td><strong>20/11 – 22/11/2026</strong></td>
-                <td>Kiểm thử & Tối ưu</td>
-                <td>Kiểm thử tích hợp đầu cuối, tối ưu chi phí thực tế và hoàn tất tài liệu đồ án.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- 5. ƯỚC TÍNH CHI PHÍ -->
-      <section class="report-section">
-        <h2 class="report-h2">5. Ước tính chi phí</h2>
-        <p class="report-p">
-          Chi phí được ước tính dựa trên 3 kịch bản vận hành và được đối chiếu với dữ liệu thực tế từ <strong>AWS Cost Explorer</strong>:
-        </p>
-
-        <p class="report-p"><strong>Bảng 1: So sánh chi phí theo 3 kịch bản vận hành (USD/tháng):</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 40%;">Dịch vụ AWS</th>
-                <th class="text-right" style="width: 20%;">Demo (~4h/ngày)</th>
-                <th class="text-right" style="width: 20%;">24/7</th>
-                <th class="text-right" style="width: 20%;">Production đề xuất</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-                <td class="text-right">~4</td>
-                <td class="text-right">~22</td>
-                <td class="text-right">~70</td>
-              </tr>
-              <tr>
-                <td>Application Load Balancer (ALB)</td>
-                <td class="text-right">~3</td>
-                <td class="text-right">~20</td>
-                <td class="text-right">~22</td>
-              </tr>
-              <tr>
-                <td>Amazon ECS Fargate (0,5 vCPU, 1 GB RAM)</td>
-                <td class="text-right">~2,5</td>
-                <td class="text-right">~15</td>
-                <td class="text-right">~30</td>
-              </tr>
-              <tr>
-                <td>Public IPv4 Address</td>
-                <td class="text-right">~2</td>
-                <td class="text-right">~11</td>
-                <td class="text-right">~11</td>
-              </tr>
-              <tr>
-                <td>AWS Secrets Manager</td>
-                <td class="text-right">0,8</td>
-                <td class="text-right">0,8</td>
-                <td class="text-right">0,8</td>
-              </tr>
-              <tr>
-                <td>Amazon Bedrock (Nova 2 Lite)</td>
-                <td class="text-right">Dưới 1</td>
-                <td class="text-right">Dưới 1</td>
-                <td class="text-right">Theo lượng dùng</td>
-              </tr>
-              <tr>
-                <td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
-                <td class="text-right">~0–1</td>
-                <td class="text-right">~1–3</td>
-                <td class="text-right">~5</td>
-              </tr>
-              <tr>
-                <td>AWS WAF (Tùy chọn)</td>
-                <td class="text-right">0</td>
-                <td class="text-right">~8–10</td>
-                <td class="text-right">~10</td>
-              </tr>
-              <tr class="total-row">
-                <td>Tổng dự kiến (USD/tháng)</td>
-                <td class="text-right">~12–18</td>
-                <td class="text-right">~65–75</td>
-                <td class="text-right">~150–200</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Bảng 2: Chi phí thực tế ghi nhận từ AWS Cost Explorer (01/11 – 21/11/2026):</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 50%;">Hạng mục dịch vụ chính</th>
-                <th class="text-right" style="width: 25%;">Chi phí phát sinh (USD)</th>
-                <th style="width: 25%;">Ghi chú</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-                <td class="text-right font-bold">2,77</td>
-                <td>Instance PostgreSQL và 20 GB gp3 storage.</td>
-              </tr>
-              <tr>
-                <td>Application Load Balancer (ALB)</td>
-                <td class="text-right font-bold">1,29</td>
-                <td>Cân bằng tải kiểm thử tích hợp hệ thống.</td>
-              </tr>
-              <tr>
-                <td>Amazon ECS Fargate</td>
-                <td class="text-right font-bold">1,21</td>
-                <td>Tài nguyên container Spring Boot hoạt động.</td>
-              </tr>
-              <tr>
-                <td>Public IPv4 Address</td>
-                <td class="text-right font-bold">0,74</td>
-                <td>Địa chỉ IPv4 công cộng cho task trong public subnet.</td>
-              </tr>
-              <tr>
-                <td>Amazon Bedrock (Nova 2 Lite)</td>
-                <td class="text-right font-bold">0,21</td>
-                <td>Token phân tích ngôn ngữ tự nhiên câu hỏi dinh dưỡng.</td>
-              </tr>
-              <tr>
-                <td>AWS Secrets Manager</td>
-                <td class="text-right font-bold">0,20</td>
-                <td>Lưu trữ và truy xuất các khóa bí mật hệ thống.</td>
-              </tr>
-              <tr class="total-row">
-                <td>Tổng chi phí các khoản chính</td>
-                <td class="text-right">6,44</td>
-                <td>Được bù đắp 100% bằng AWS Credits</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
-          * Ghi chú: Số liệu trên là các khoản chi phí chính ghi nhận trong kỳ đo từ 01/11 đến 21/11/2026, không phải toàn bộ hóa đơn. 
-          Phương án Production là kế hoạch đề xuất cho tương lai, chưa triển khai thực tế trong khuôn khổ kỳ thực tập.
-        </p>
-      </section>
-
-      <!-- 6. BẢO MẬT VÀ QUẢN LÝ RỦI RO -->
-      <section class="report-section">
-        <h2 class="report-h2">6. Bảo mật và quản lý rủi ro</h2>
-        <p class="report-p"><strong>Các cơ chế bảo mật đã triển khai:</strong></p>
-        <ul class="report-list">
-          <li><strong>Xác thực Stateless với Cognito JWT:</strong> Kiểm tra chữ ký số RSA từ token của Cognito trên mọi API request, loại bỏ hoàn toàn việc lưu session tại máy chủ backend.</li>
-          <li><strong>Nguyên tắc đặc quyền tối thiểu (IAM Least Privilege):</strong> Phân quyền qua IAM Task Role chuyên biệt cho ECS; GitHub Actions triển khai qua AWS OIDC không dùng key tĩnh.</li>
-          <li><strong>Quản lý bí mật bằng Secrets Manager:</strong> Mật khẩu database và các secret được lưu tập trung và inject vào container lúc khởi động.</li>
-          <li><strong>Cách ly mạng Private Subnet:</strong> RDS PostgreSQL nằm hoàn toàn trong Private Subnet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432.</li>
-          <li><strong>Kiểm duyệt AI qua Bedrock Guardrails:</strong> Thiết lập bộ lọc ngăn chặn prompt injection và ngăn chặn việc đưa ra lời khuyên y tế sai lệch.</li>
-          <li><strong>Bảo vệ ALB bằng Custom Secret Header:</strong> Thiết lập header bí mật giữa CloudFront và ALB; các request gọi trực tiếp vào ALB sẽ bị chặn (403 Forbidden).</li>
-          <li><strong>Giám sát ngân sách AWS Budgets & SNS:</strong> Tự động gửi email cảnh báo khi chi phí chạm 80% ngân sách dự kiến.</li>
-          <li><strong>AWS WAF (Tùy chọn cho Production):</strong> Tường lửa ứng dụng web phòng chống SQL Injection, XSS và DDoS.</li>
-        </ul>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Ma trận đánh giá rủi ro và biện pháp giảm thiểu:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 25%;">Rủi ro tiềm ẩn</th>
-                <th style="width: 35%;">Mức độ & Tác động</th>
-                <th style="width: 40%;">Biện pháp giảm thiểu</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Vượt chi phí (Cost Overrun)</strong></td>
-                <td>Trung bình – Có thể phát sinh chi phí nếu quên tắt tài nguyên.</td>
-                <td>Cấu hình AWS Budgets cảnh báo qua SNS; chỉ chạy 1 ECS task trong giờ làm việc; dùng Fargate và RDS db.t4g.micro.</td>
-              </tr>
-              <tr>
-                <td><strong>Ảo giác AI (AI Hallucination)</strong></td>
-                <td>Nghiêm trọng – Nếu AI tự đưa ra con số calo/macro sai lệch sẽ ảnh hưởng sức khỏe.</td>
-                <td>Giới hạn AI chỉ trích xuất intent/filter; 100% số liệu dinh dưỡng được truy vấn từ bảng USDA trong PostgreSQL.</td>
-              </tr>
-              <tr>
-                <td><strong>Sự cố đơn vùng (Single-AZ Failure)</strong></td>
-                <td>Thấp (môi trường Demo) – Có thể gặp gián đoạn nếu AZ Singapore gặp lỗi.</td>
-                <td>ECS service tự tạo task mới khi crash; kiến trúc Terraform đã sẵn sàng subnet thứ hai để nâng cấp Multi-AZ.</td>
-              </tr>
-              <tr>
-                <td><strong>Dị ứng thực phẩm (Allergen Safety)</strong></td>
-                <td>Nghiêm trọng – Bỏ sót chất dị ứng có thể nguy hiểm cho người dùng.</td>
-                <td>Áp dụng cơ chế fail-closed: nếu sản phẩm có nghi vấn chứa allergen người dùng chọn, hệ thống tự động loại trừ khỏi kết quả.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- 7. KẾT QUẢ VÀ ĐỊNH HƯỚNG -->
-      <section class="report-section">
-        <h2 class="report-h2">7. Kết quả và định hướng</h2>
-        <p class="report-p"><strong>Kết quả đạt được:</strong></p>
-        <ul class="report-list">
-          <li>Triển khai thành công nền tảng full-stack thương mại điện tử dinh dưỡng hoàn chỉnh trên hạ tầng đám mây AWS.</li>
-          <li>Vận hành ổn định mô hình Serverless Container với Amazon ECS Fargate và cơ sở dữ liệu quan hệ Amazon RDS PostgreSQL.</li>
-          <li>Tích hợp thành công Amazon Bedrock Nova 2 Lite trích xuất ý đồ tìm kiếm dinh dưỡng ngôn ngữ tự nhiên chính xác.</li>
-          <li>Chuẩn hóa 152 sản phẩm thực phẩm theo nguồn USDA, tích hợp bộ lọc dinh dưỡng, 9 chất dị ứng và 6 chế độ ăn.</li>
-          <li>Tự động hóa 100% hạ tầng bằng Terraform và thiết lập quy trình CI/CD an toàn qua GitHub Actions với AWS OIDC.</li>
-          <li>Kiểm soát chi phí thực tế xuất sắc: chỉ phát sinh 6,44 USD trong 3 tuần và được tài trợ 100% bằng AWS Credits.</li>
-        </ul>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Định hướng nâng cấp Production (Kế hoạch tương lai chưa triển khai):</strong></p>
-        <ul class="report-list">
-          <li><strong>Chuyển đổi Amazon RDS sang Multi-AZ:</strong> Kích hoạt Standby Replica tự động failover để đạt độ sẵn sàng cao 99.95%.</li>
-          <li><strong>Mở rộng cụm ECS Fargate tối thiểu 2 tasks đa vùng:</strong> Thiết lập chính sách tự động co giãn (Auto Scaling Policy) theo CPU/RAM.</li>
-          <li><strong>Bảo mật HTTPS toàn trình (Origin SSL/TLS):</strong> Tích hợp chứng chỉ ACM lên ALB với tên miền tùy chỉnh qua Route 53.</li>
-          <li><strong>Triển khai AWS WAF thường trực:</strong> Bảo vệ toàn diện tầng CDN CloudFront trước các cuộc tấn công DDoS và khai thác lỗ hổng web.</li>
-          <li><strong>Chiến lược sao lưu tự động & Disaster Recovery:</strong> Tự động snapshot RDS hàng ngày và sao chép định kỳ sang AWS Region thứ hai.</li>
-          <li><strong>Mở rộng thuật toán phân tích dinh dưỡng:</strong> Bổ sung tính năng lập kế hoạch thực đơn trọn gói theo tuần dựa trên hồ sơ sức khỏe dài hạn.</li>
-        </ul>
-      </section>
+  <!-- 3. 3. KIẾN TRÚC GIẢI PHÁP -->
+  <section class="report-section">
+    <h2 class="report-h2">3. Kiến trúc giải pháp</h2>
+    <h3 class="report-h3">AWS architecture reference</h3>
+    <p class="report-p">Nhấp vào hình để phóng to / tương tác thu phóng</p>
+    <div class="report-figure">
+      <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'Sơ đồ kiến trúc hạ tầng AWS')" title="Nhấp để phóng to">
+        <img src="${archImg}" alt="Sơ đồ kiến trúc hạ tầng AWS" class="report-figure-img" loading="lazy" />
+      </div>
+      <div class="report-figure-caption">Sơ đồ kiến trúc AWS vẽ trên draw.io bằng bộ AWS Architecture Icons, cập nhật Multi-AZ và AWS STS ngày 25/11/2026</div>
     </div>
+    <p class="report-p">Từ 22/11/2026 (D33), môi trường dev chạy 2 task ECS, mỗi Availability Zone một task, và RDS ở chế độ Multi-AZ với bản dự phòng (Standby) ở AZ thứ hai. Diễn tập Reboot with failover ngày 22/11 chuyển AZ chính từ ap-southeast-1a sang ap-southeast-1b trong khoảng 20–45 giây; API gián đoạn khoảng nửa phút rồi tự phục hồi, không mất dữ liệu.</p>
+    <h3 class="report-h3">Các dịch vụ AWS sử dụng</h3>
+    <p class="report-p">CloudFront + S3 — React SPA và ảnh qua OAC; Function viết lại đường dẫn; hai bucket riêng tư.</p>
+    <p class="report-p">ALB + ECS Fargate + ECR — ALB nhận CloudFront + header bí mật; Spring Boot 4 / Java 21, ARM64, 0,5 vCPU / 1 GB, 2 task ở 2 AZ.</p>
+    <p class="report-p">RDS PostgreSQL + Secrets Manager — db.t4g.micro, 20 GB gp3, Multi-AZ (standby ở AZ thứ hai), private subnet, mã hóa; Flyway V1–V11.</p>
+    <p class="report-p">Cognito — JWT sub và cognito:groups; USER / ADMIN.</p>
+    <p class="report-p">Bedrock + Guardrails — Nova 2 Lite ở Tokyo; tool chỉ đọc, số liệu do code lấy từ DB.</p>
+    <p class="report-p">CloudWatch + SNS + Budgets — Log 14 ngày, 7 alarm, cảnh báo thư điện tử; ngân sách 100 USD.</p>
+    <p class="report-p">CloudTrail + S3 audit + WAF — Audit và ALB logs lưu 30 ngày; WAF chỉ bật khi demo; KMS do AWS quản lý.</p>
+    <p class="report-p">Terraform + IAM + STS + GitHub Actions — State S3 use_lockfile; SSO, boundary; CI/CD qua OIDC, AWS STS cấp quyền tạm thời (AssumeRoleWithWebIdentity), không lưu access key.</p>
+    <p class="report-p">Ứng dụng ở ap-southeast-1, tiền tố nutrition-dev, chỉ một môi trường dev. D15 đặt ECS ở public subnet với IP công khai để tránh chi phí NAT, còn RDS giữ private. D17 chọn một môi trường để phù hợp đồ án. D18 chuyển lời gọi Bedrock và Guardrail sang ap-northeast-1 vì quota Singapore của tài khoản bằng 0; profile jp.amazon.nova-2-lite-v1:0. D24/D31 giới hạn model vào searchProducts với intent search, facts, compare, plan; số liệu do backend ghép. CloudFront → ALB hiện dùng HTTP vì chưa có domain riêng.</p>
+    <h3 class="report-h3">Thiết kế thành phần</h3>
+    <p class="report-p">Frontend React + TypeScript hiển thị catalog, giỏ hàng, hồ sơ, gợi ý và trang quản trị.</p>
+    <p class="report-p">Backend Spring Boot 4 / Java 21: catalog quản lý tra cứu; commerce xử lý giỏ/đơn; payments xác minh IPN; ai trích ý định; admin cung cấp API quản trị; profile tính mục tiêu và gợi ý.</p>
+    <p class="report-p">Database PostgreSQL dùng SQL tham số hóa và Flyway V1–V11.</p>
+    <p class="report-p">AI dùng Nova 2 Lite với Guardrails; code kiểm bộ lọc và ghép số liệu từ DB.</p>
+    <p class="report-p">CI/CD GitHub Actions kiểm thử, build ARM64, lấy quyền tạm thời từ AWS STS qua OIDC, đẩy ECR và deploy.</p>
+  </section>
+
+  <!-- 4. 4. TRIỂN KHAI KỸ THUẬT -->
+  <section class="report-section">
+    <h2 class="report-h2">4. Triển khai kỹ thuật</h2>
+    <p class="report-p">Terraform dựng hạ tầng; Maven wrapper và Flyway quản lý backend/schema; React + TypeScript tạo frontend. Pipeline OIDC build, kiểm thử và triển khai theo nhánh master. Các pha được nhóm theo mốc đã ghi trong repo.</p>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Pha</th>
+            <th style="width: 25%;">Thời gian 2026</th>
+            <th style="width: 60%;">Nội dung thực tế</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>29/10–01/11</td>
+            <td>Repo, khung frontend, catalog backend, Cognito</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>03–10/11</td>
+            <td>Thiết kế giao diện, dữ liệu USDA</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11–12/11</td>
+            <td>Terraform mạng/RDS/ECR/Cognito/ALB/ECS/CloudFront; OIDC; chạy AWS lần đầu</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>13–18/11</td>
+            <td>AI, Guardrails, alarm; tìm kiếm, giới hạn tốc độ, phân tích bữa ăn, VNPAY sandbox, giao diện</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>20–22/11</td>
+            <td>Tokyo, E2E, audit/WAF tùy chọn; AI đủ intent, D32, apply audit và đo chi phí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. 5. KẾ HOẠCH VÀ MỐC TRIỂN KHAI -->
+  <section class="report-section">
+    <h2 class="report-h2">5. Kế hoạch và mốc triển khai</h2>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Ngày</th>
+            <th style="width: 70%;">Mốc thực tế</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>29/10/2026</td>
+            <td>Khởi tạo repo</td>
+          </tr>
+          <tr>
+            <td>01/11/2026</td>
+            <td>Khung frontend, catalog backend, Cognito</td>
+          </tr>
+          <tr>
+            <td>03–06/11/2026</td>
+            <td>Thiết kế lại giao diện</td>
+          </tr>
+          <tr>
+            <td>10/11/2026</td>
+            <td>Dữ liệu USDA</td>
+          </tr>
+          <tr>
+            <td>11/11/2026</td>
+            <td>Terraform mạng, RDS, ECR, Cognito, ALB, ECS và CloudFront</td>
+          </tr>
+          <tr>
+            <td>12/11/2026</td>
+            <td>OIDC, ảnh sản phẩm và lần chạy AWS đầu tiên</td>
+          </tr>
+          <tr>
+            <td>13/11/2026</td>
+            <td>AI, Guardrails, đánh giá và alarm</td>
+          </tr>
+          <tr>
+            <td>14–15/11/2026</td>
+            <td>Tìm kiếm, quên mật khẩu, thống kê, giới hạn tốc độ, Spring Boot 4</td>
+          </tr>
+          <tr>
+            <td>16/11/2026</td>
+            <td>Mở rộng catalog, nhãn chế độ ăn, phân tích bữa, VNPAY sandbox</td>
+          </tr>
+          <tr>
+            <td>17–18/11/2026</td>
+            <td>Hoàn thiện giao diện</td>
+          </tr>
+          <tr>
+            <td>20/11/2026</td>
+            <td>Tokyo, E2E, audit, WAF tùy chọn, nhật ký thanh toán</td>
+          </tr>
+          <tr>
+            <td>21/11/2026</td>
+            <td>AI đủ intent, hồ sơ và gợi ý D32</td>
+          </tr>
+          <tr>
+            <td>22/11/2026</td>
+            <td>Apply audit và đo chi phí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6. 6. ƯỚC TÍNH NGÂN SÁCH -->
+  <section class="report-section">
+    <h2 class="report-h2">6. Ước tính ngân sách</h2>
+    <h3 class="report-h3">Chi phí hạ tầng</h3>
+    <p class="report-p">Ước tính USD/tháng, đối chiếu AWS Pricing Calculator ngày 25/11/2026 cho cấu hình Multi-AZ và 2 task (D33), chưa thuế, sai lệch có thể ±10%. Production là phương án tương lai chưa triển khai. Bedrock thực tế gọi tại Tokyo.</p>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 40%;">Dịch vụ / Cấu hình</th>
+            <th class="text-right" style="width: 20%;">Demo (~4h/ngày)</th>
+            <th class="text-right" style="width: 20%;">24/7 (Pricing Calculator)</th>
+            <th class="text-right" style="width: 20%;">Production đề xuất</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td>
+            <td class="text-right">~11,6</td>
+            <td class="text-right">42,75</td>
+            <td class="text-right">~70 (Multi-AZ, db.t4g.small)</td>
+          </tr>
+          <tr>
+            <td>ECS Fargate ARM64, 0,5 vCPU / 1 GB, 2 task</td>
+            <td class="text-right">~5,9</td>
+            <td class="text-right">35,98</td>
+            <td class="text-right">~36–72 (2–4 task, auto scaling)</td>
+          </tr>
+          <tr>
+            <td>Application Load Balancer</td>
+            <td class="text-right">~3,1</td>
+            <td class="text-right">18,63</td>
+            <td class="text-right">~22</td>
+          </tr>
+          <tr>
+            <td>Public IPv4, 4 địa chỉ</td>
+            <td class="text-right">~2,4</td>
+            <td class="text-right">14,60</td>
+            <td class="text-right">~15</td>
+          </tr>
+          <tr>
+            <td>Secrets Manager, 2 secret</td>
+            <td class="text-right">0,85</td>
+            <td class="text-right">0,85</td>
+            <td class="text-right">0,85</td>
+          </tr>
+          <tr>
+            <td>Bedrock (Nova Lite làm giá tham chiếu, Tokyo)</td>
+            <td class="text-right">&lt;0,7</td>
+            <td class="text-right">0,70</td>
+            <td class="text-right">Theo lượng dùng</td>
+          </tr>
+          <tr>
+            <td>CloudFront 1,02 · CloudWatch 1,70 · ECR 0,10 · S3 0,07 · Cognito 0 · CloudTrail 0</td>
+            <td class="text-right">~2,9</td>
+            <td class="text-right">2,89</td>
+            <td class="text-right">~5</td>
+          </tr>
+          <tr class="total-row">
+            <td>Tổng (không WAF)</td>
+            <td class="text-right">~27</td>
+            <td class="text-right">116,40</td>
+            <td class="text-right">~150–190</td>
+          </tr>
+          <tr>
+            <td>WAF (tùy chọn, nhóm Optional)</td>
+            <td class="text-right">0</td>
+            <td class="text-right">9,60</td>
+            <td class="text-right">~10</td>
+          </tr>
+          <tr class="total-row">
+            <td>Tổng có WAF</td>
+            <td class="text-right">—</td>
+            <td class="text-right">126,00</td>
+            <td class="text-right">~160–200</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="report-p">Cost Explorer ghi nhận 6,44 USD cho 01–21/11/2026, được credit bù toàn bộ. RDS 2,77; ALB 1,29; ECS 1,21; IPv4 0,74; Bedrock 0,21; Secrets Manager 0,20 USD. Các khoản liệt kê là những khoản lớn, không phải phép cộng chi tiết toàn bộ hóa đơn. App chỉ bật khi demo nên không dùng số thực tế này để suy ra mức chạy 24/7. Số thực tế này ghi nhận trước khi bật Multi-AZ.</p>
+    <p class="report-p">Bảng giá AWS Pricing Calculator: estimate ngày 25/11/2026. Cột 24/7 lấy đúng số của Calculator (Singapore, riêng Bedrock ở Tokyo). Cột Demo quy đổi từ đó cho khoảng 120 giờ chạy mỗi tháng: các khoản tính theo giờ (RDS instance, Fargate, ALB, IPv4) nhân 120/730, còn ổ đĩa RDS (5,52 USD) và các khoản theo lượng dùng giữ nguyên. Giả định tải: 50 người dùng/tháng, 5 GB CloudFront, khoảng 3.600 câu hỏi AI/tháng (1 câu/phút trong 2 giờ/ngày, 1.500 token vào, 300 token ra). Calculator chưa có Amazon Nova 2 Lite nên dùng Amazon Nova Lite làm giá tham chiếu. Estimate không tính RDS Proxy và Database Insights Advanced vì dự án không dùng.</p>
+  </section>
+
+  <!-- 7. 7. ĐÁNH GIÁ RỦI RO -->
+  <section class="report-section">
+    <h2 class="report-h2">7. Đánh giá rủi ro</h2>
+    <h3 class="report-h3">Ma trận rủi ro</h3>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Rủi ro</th>
+            <th style="width: 20%;">Ảnh hưởng</th>
+            <th style="width: 25%;">Khả năng</th>
+            <th style="width: 25%;">Mức độ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chi phí ngoài dự kiến</td>
+            <td>Trung bình</td>
+            <td>Trung bình</td>
+            <td>Trung bình</td>
+          </tr>
+          <tr>
+            <td>Lộ dữ liệu cá nhân</td>
+            <td>Cao</td>
+            <td>Thấp</td>
+            <td>Trung bình</td>
+          </tr>
+          <tr>
+            <td>AI trả lời sai/y tế</td>
+            <td>Cao</td>
+            <td>Trung bình</td>
+            <td>Cao</td>
+          </tr>
+          <tr>
+            <td>Quota Bedrock</td>
+            <td>Trung bình</td>
+            <td>Cao (đã xảy ra ở Singapore)</td>
+            <td>Trung bình</td>
+          </tr>
+          <tr>
+            <td>HTTP từ CloudFront tới ALB</td>
+            <td>Trung bình</td>
+            <td>Thấp</td>
+            <td>Thấp</td>
+          </tr>
+          <tr>
+            <td>Sự cố một Availability Zone</td>
+            <td>Cao</td>
+            <td>Thấp</td>
+            <td>Trung bình (đã giảm nhờ Multi-AZ)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="report-p">Cách chấm: Ảnh hưởng và Khả năng theo ba mức Thấp / Trung bình / Cao; Mức độ là kết hợp của hai yếu tố, sau khi tính các biện pháp giảm thiểu bên dưới. Rủi ro AI được xếp Cao vì sai số liệu dinh dưỡng hoặc lời khuyên y tế có thể ảnh hưởng tới sức khỏe người dùng, nên được ưu tiên kiểm soát nhiều lớp.</p>
+    <h3 class="report-h3">Biện pháp giảm thiểu</h3>
+    <p class="report-p">Chi phí: Budgets 100 USD, alarm và up/down. RDS có thể tự bật sau 7 ngày dừng.</p>
+    <p class="report-p">Dữ liệu cá nhân: JWT và phân quyền; tránh log PII, dữ liệu cơ thể không gửi model; người dùng tự xóa hồ sơ.</p>
+    <p class="report-p">AI: Guardrails, tool chỉ đọc, số liệu từ DB; đánh giá 45 câu ngày 21/11/2026 đạt an toàn 17/17, tra cứu 27/28, ngưỡng 85%. Câu L01 còn dao động.</p>
+    <p class="report-p">Quota: Tokyo thay cho Singapore theo D18; theo dõi quyền ApplyGuardrail.</p>
+    <p class="report-p">Origin: prefix list CloudFront và header bí mật giảm truy cập trực tiếp; HTTP tới ALB vẫn là hạn chế. HTTPS origin cần domain và chứng chỉ trong tương lai.</p>
+    <h3 class="report-h3">Phương án dự phòng</h3>
+    <p class="report-p">Khi Bedrock không gọi được, duy trì catalog và luồng mua hàng, trả lỗi AI có kiểm soát. Nếu chi phí tăng, dùng down theo runbook. Khi cần khôi phục DB, làm theo quy trình snapshot trong docs/runbook.md; biên bản diễn tập vẫn chờ chủ repo thực hiện.</p>
+  </section>
+
+  <!-- 8. 8. KẾT QUẢ KỲ VỌNG -->
+  <section class="report-section">
+    <h2 class="report-h2">8. Kết quả kỳ vọng</h2>
+    <h3 class="report-h3">Cải thiện kỹ thuật:</h3>
+    <p class="report-p">Web React và API trên CloudFront.</p>
+    <p class="report-p">Mã nguồn, kiểm thử và workflow OIDC trên GitHub.</p>
+    <p class="report-p">Terraform và hướng dẫn vận hành theo buổi demo.</p>
+    <p class="report-p">Bộ workshop 7 mục lớn cùng các bước con và báo cáo song ngữ.</p>
+    <h3 class="report-h3">Nguồn đối chiếu:</h3>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/architecture.md" target="_blank" rel="noopener noreferrer">docs/architecture.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/decisions.md" target="_blank" rel="noopener noreferrer">docs/decisions.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/api-contract.md" target="_blank" rel="noopener noreferrer">docs/api-contract.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/db-schema.md" target="_blank" rel="noopener noreferrer">docs/db-schema.md</a></p>
+    <h3 class="report-h3">Giá trị dài hạn</h3>
+    <p class="report-p">Lộ trình production chưa triển khai gồm RDS Multi-AZ, hai task, domain riêng với HTTPS tới ALB và WAF thường trực. Mỗi thay đổi cần plan, đánh giá khả năng chịu lỗi và cập nhật ước tính chi phí.</p>
+  </section>
+</div>
   `;
 }
 
 function getProposalEnHtml() {
-  const archImg = 'assets/images/proposal/aws-architecture.png';
-  const flowImg = 'assets/images/proposal/application-flow.png';
+  const archImg = 'assets/images/workshop/5.1-overview/aws-architecture.png';
 
   return `
-    <div class="tech-report">
-      <!-- HEADER -->
-      <header>
-        <div class="report-eyebrow">Project Proposal</div>
-        <h1 class="report-title">Personalized Nutrition E-Commerce Platform on AWS</h1>
-        <p class="report-subtitle">Cloud-native AI-Powered Nutrition E-Commerce Platform</p>
-        <p class="report-intro">
-          An intelligent e-commerce platform integrating generative AI for personalized nutrition analysis and meal planning, 
-          architected and deployed entirely on Amazon Web Services using React, Spring Boot 4, Amazon ECS Fargate, 
-          Amazon Bedrock, and Terraform.
-        </p>
-      </header>
+<div class="tech-report">
+  <header>
+    <div class="report-eyebrow">Project Proposal</div>
+    <p class="report-intro">Architecture design, scope, problem statement, timeline, and cost estimate for the workshop project.</p>
+    <h1 class="report-title">Personalized Nutrition E-Commerce Platform on AWS</h1>
+    <p class="report-subtitle">Sourced nutrition lookup and shopping on AWS infrastructure</p>
+  </header>
 
-      <!-- 1. PROJECT OVERVIEW -->
-      <section class="report-section">
-        <h2 class="report-h2">1. Project Overview</h2>
-        <p class="report-p">
-          The Personalized Nutrition E-Commerce Platform is developed as part of the <strong>AWS First Cloud AI Journey (FCAJ)</strong> program. 
-          The platform delivers a healthy food e-commerce experience (Eat Clean, Low-Carb, High-Protein, Vegan) augmented by an intelligent AI assistant, 
-          empowering consumers to find and purchase products tailored to their nutritional requirements and fitness goals.
-        </p>
+  <!-- 1. 1. PROPOSAL SUMMARY -->
+  <section class="report-section">
+    <h2 class="report-h2">1. Proposal Summary</h2>
+    <p class="report-p">The personalized nutrition e-commerce platform on AWS supports food lookup, purchasing, and meal recommendations from sourced data. React invokes Spring Boot via CloudFront and ALB; PostgreSQL stores data, while Bedrock only interprets requests. Products with missing data are excluded during nutrition or allergen filtering. Response metrics are retrieved by code directly from the DB, combined with demo-session-based operation to control costs.</p>
+  </section>
 
-        <h3 class="report-h3">Core Technologies and AWS Services:</h3>
-        <ul class="report-list">
-          <li><strong>Frontend:</strong> React 19, TypeScript, Vite, Tailwind CSS – Modern responsive Single Page Application.</li>
-          <li><strong>Backend API:</strong> Spring Boot 4 (Java 21) – RESTful microservices-ready architecture handling orders and USDA data.</li>
-          <li><strong>Database:</strong> PostgreSQL 17 on Amazon RDS – Standardized 152-product catalog with detailed USDA nutritional metrics.</li>
-          <li><strong>Distribution & Storage:</strong> Amazon CloudFront & Amazon S3 – Global low-latency CDN and secure static asset hosting.</li>
-          <li><strong>Compute & Load Balancing:</strong> Amazon ECS Fargate & Application Load Balancer (ALB) – Serverless container management.</li>
-          <li><strong>Identity & Authentication:</strong> Amazon Cognito User Pools – Secure stateless JWT Bearer token issuance and RBAC.</li>
-          <li><strong>Artificial Intelligence (AI):</strong> Amazon Bedrock (Nova 2 Lite) & Bedrock Guardrails – Natural Language Understanding and content moderation.</li>
-          <li><strong>Infrastructure as Code (IaC) & CI/CD:</strong> Terraform & GitHub Actions (AWS OIDC) – 100% automated provisioning without long-lived static keys.</li>
-        </ul>
+  <!-- 2. 2. PROBLEM STATEMENT -->
+  <section class="report-section">
+    <h2 class="report-h2">2. Problem Statement</h2>
+    <h3 class="report-h3">What is the problem?</h3>
+    <p class="report-p">Buyers struggle to compare food products when nutrition and allergen data are inconsistent. AI responses may contain unfounded figures if the model generates content autonomously.</p>
+    <h3 class="report-h3">Solution</h3>
+    <p class="report-p">Buyers struggle to cross-reference nutrition and allergen data across products. Text-generating chatbots can produce unfounded figures. The MVP includes a catalog of 152 USDA products, accounts, filtering by nutrition, 9 allergens, and 6 diet labels; meal analysis; read-only AI lookup; shopping cart, ordering, product management, images, orders, analytics, and payment logs. COD and VNPAY sandbox are within scope.</p>
+    <p class="report-p">D32 adds profiles and single-meal recommendations consisting of a protein dish, vegetables/fruit, and carbohydrates. Targets are calculated using Mifflin-St Jeor × activity level. Applicable only for ages 18–65, BMI 17–35, excluding pregnancy, lactation, and conditions requiring medical supervision. There are no real payments, automated refunds, or medical advice. Identity is extracted from JWT; inventory deduction uses conditional UPDATE within transactions.</p>
+    <h3 class="report-h3">Benefits and Return on Investment</h3>
+    <p class="report-p">Buyers look up information from the DB, filter according to needs, and view data limitations. Store owners manage catalog, images, orders, and payment logs within the same application. Cost Explorer recorded 6.44 USD for Nov 01–21, 2026, fully covered by credits. There are no revenue or labor-saving figures yet to calculate financial ROI.</p>
+  </section>
 
-        <div class="report-callout">
-          <strong>Core AI Principle:</strong> The architecture strictly adheres to the rule that <em>AI only performs intent classification and parameter extraction</em> from the user's natural language queries. All numerical nutritional figures (Calories, Protein, Carbohydrates, Fat, and allergens) <strong>are queried directly from the verified PostgreSQL database sourced from USDA FoodData Central</strong>, eliminating AI hallucination.
-        </div>
-      </section>
-
-      <!-- 2. PROBLEMS AND SOLUTIONS -->
-      <section class="report-section">
-        <h2 class="report-h2">2. Problem Statement & Solutions</h2>
-        <p class="report-p"><strong>User Challenges in Traditional Food E-Commerce:</strong></p>
-        <ul class="report-list">
-          <li>Lack of transparent nutritional data on conventional food shopping platforms.</li>
-          <li>Hidden food allergy hazards due to ambiguous ingredient labeling.</li>
-          <li>Tedious manual calculation required to balance daily macro targets.</li>
-          <li>No flexible personalized filtering based on individual fitness goals.</li>
-        </ul>
-
-        <p class="report-p"><strong>Core Solution Capabilities:</strong></p>
-        <ul class="report-list">
-          <li><strong>152 USDA Standardized Catalog:</strong> Clean food catalog standardized against USDA FoodData Central with precise macro/calorie breakdown.</li>
-          <li><strong>Multi-Attribute Nutrition Filter:</strong> Allows users to filter by calorie ranges (Min-Max), minimum protein targets, and carb/fat ceilings.</li>
-          <li><strong>9 Allergens & 6 Diet Tags:</strong> Strict detection of 9 major allergens (fail-closed exclusion) and 6 dietary badges (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
-          <li><strong>AI Natural Language Lookup:</strong> Amazon Bedrock Nova 2 Lite transforms free-text user inquiries into structured SQL query parameters.</li>
-          <li><strong>Nutrition Profile & Meal Suggestions:</strong> Calculates user BMR and TDEE, suggesting balanced single-meal compositions aligned with daily targets.</li>
-          <li><strong>Real-Time Cart Macro Summary:</strong> Automatically tallies cumulative calories and macro distribution in the shopping cart prior to checkout.</li>
-          <li><strong>Flexible Payment Methods:</strong> Supports Cash on Delivery (COD) and secure simulated online payment via VNPAY Sandbox gateway.</li>
-          <li><strong>Administrative Dashboard:</strong> Product inventory management, order processing, and USDA data synchronization.</li>
-        </ul>
-
-        <div class="report-callout report-callout-disclaimer">
-          <strong>Medical Disclaimer:</strong> This application is intended solely for general nutritional guidance and e-commerce shopping. It <strong>is not a medical device and does not offer clinical diagnosis, medical therapy, or licensed dietary treatment</strong>. Users with chronic medical conditions or severe food allergies must consult licensed healthcare professionals.
-        </div>
-      </section>
-
-      <!-- 3. AWS ARCHITECTURE -->
-      <section class="report-section">
-        <h2 class="report-h2">3. AWS Architecture</h2>
-        <p class="report-p">
-          The system architecture follows the <strong>AWS Well-Architected Framework</strong>, combining serverless containers, 
-          managed relational databases, and secure foundation AI services across two Asia-Pacific regions.
-        </p>
-
-        <!-- FIGURE 1: AWS ARCHITECTURE -->
-        <div class="report-figure">
-          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'AWS Architecture Diagram')" title="Click to enlarge">
-            <img src="${archImg}" alt="AWS Architecture Diagram" class="report-figure-img" loading="lazy" />
-          </div>
-          <div class="report-figure-caption">Figure 1: Comprehensive AWS Cloud Architecture Diagram (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Click to enlarge</em></div>
-        </div>
-
-        <h3 class="report-h3">Architectural Specifications & Infrastructure Components:</h3>
-        <ul class="report-list">
-          <li><strong>Primary Region (Singapore - <code>ap-southeast-1</code>):</strong> Hosts all primary compute, database, storage, networking, and security services.</li>
-          <li><strong>AI Services Region (Tokyo - <code>ap-northeast-1</code>):</strong> Direct integration with Amazon Bedrock (Nova 2 Lite) and Bedrock Guardrails.</li>
-          <li><strong>Amazon CloudFront & Amazon S3:</strong> Edge caching distributes the React SPA static build from S3 and securely proxies <code>/api/*</code> traffic to the ALB.</li>
-          <li><strong>Application Load Balancer (ALB):</strong> Ingress controller routing incoming API traffic across ECS Fargate tasks.</li>
-          <li><strong>Amazon ECS Fargate:</strong> Serverless compute hosting Spring Boot 4. In demo mode, it runs <strong>a single active task</strong> provisioned with <strong>0.5 vCPU and 1 GB RAM</strong>.</li>
-          <li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17 engine on instance class <strong>db.t4g.micro with 20 GB gp3 storage in Single-AZ configuration</strong>.</li>
-          <li><strong>Subnet & Network Topology:</strong>
-            ECS Task is placed in a Public Subnet with a Public IPv4 address to pull container images from ECR and call Bedrock (Tokyo) <em>without requiring an AWS NAT Gateway</em> (saving ~$32/month per gateway). 
-            RDS PostgreSQL resides strictly within a Private Subnet isolated from public ingress, strictly permitting connections only from the ECS Security Group on port 5432. 
-            The secondary subnet in AZ-2 serves as standby resilience for future Multi-AZ failover; no concurrent tasks run in AZ-2 during demo.
-          </li>
-          <li><strong>Identity & Monitoring:</strong> Amazon Cognito User Pool manages authentication via stateless JWT tokens; AWS Secrets Manager stores credentials; CloudWatch, Budgets, and SNS provide monitoring and cost alerts.</li>
-          <li><strong>Current Architectural Constraint:</strong> Transport between CloudFront and ALB currently uses <strong>HTTP</strong> (Client-to-CloudFront is HTTPS; communication is secured with a Custom Secret Header validating origin).</li>
-        </ul>
-
-        <!-- FIGURE 2: APPLICATION FLOW -->
-        <div class="report-figure" style="margin-top: 28px;">
-          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${flowImg}', 'Application Flow Diagram')" title="Click to enlarge">
-            <img src="${flowImg}" alt="Application Flow Diagram" class="report-figure-img" loading="lazy" />
-          </div>
-          <div class="report-figure-caption">Figure 2: Application Flow Diagram — Complete transaction lifecycle from Client to CloudFront, Cognito, ALB, ECS, Bedrock Tokyo, and RDS — <em>Click to enlarge</em></div>
-        </div>
-
-        <h3 class="report-h3">Eight-Step Application Execution Flow:</h3>
-        <ol class="report-list" style="padding-left: 20px;">
-          <li>Client sends secure HTTPS requests to the Amazon CloudFront edge distribution domain.</li>
-          <li>CloudFront serves cached React assets from S3 or routes <code>/api/*</code> calls to the Application Load Balancer.</li>
-          <li>ALB verifies the Custom Secret Header from CloudFront and routes requests to the Spring Boot container on ECS Fargate.</li>
-          <li>Users authenticate against Amazon Cognito User Pool; Client attaches JWT Bearer token to API request headers.</li>
-          <li>Spring Security validates RSA JWT cryptographic signature and enforces Role-Based Access Control (RBAC).</li>
-          <li>For natural language queries, Spring Boot invokes Bedrock Nova 2 Lite in Tokyo to extract structured nutrient filter parameters.</li>
-          <li>Backend executes SQL queries with extracted parameters against the isolated PostgreSQL RDS instance in the Private Subnet.</li>
-          <li>Backend returns standardized JSON containing USDA-verified nutritional items to the React SPA for immediate rendering.</li>
-        </ol>
-      </section>
-
-      <!-- 4. TECHNOLOGIES AND IMPLEMENTATION PLAN -->
-      <section class="report-section">
-        <h2 class="report-h2">4. Technologies & Implementation Plan</h2>
-        <p class="report-p"><strong>Technology Stack Summary:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 20%;">Layer</th>
-                <th style="width: 40%;">Technology / Service</th>
-                <th style="width: 40%;">Role in Architecture</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Frontend</strong></td>
-                <td>React 19, TypeScript, Vite, Tailwind CSS</td>
-                <td>Responsive Single Page Application with optimized bundle delivery.</td>
-              </tr>
-              <tr>
-                <td><strong>Backend</strong></td>
-                <td>Spring Boot 4.1 (Java 21), Spring Security</td>
-                <td>High-throughput RESTful API with automated database migrations and security filtering.</td>
-              </tr>
-              <tr>
-                <td><strong>Database</strong></td>
-                <td>PostgreSQL 17 on Amazon RDS (db.t4g.micro)</td>
-                <td>Relational data persistence storing users, orders, and 152 USDA food items.</td>
-              </tr>
-              <tr>
-                <td><strong>AI & GenAI</strong></td>
-                <td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
-                <td>Nutritional natural language parsing and prompt safety moderation.</td>
-              </tr>
-              <tr>
-                <td><strong>Compute</strong></td>
-                <td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
-                <td>Serverless container execution (0.5 vCPU, 1 GB RAM active task).</td>
-              </tr>
-              <tr>
-                <td><strong>Networking</strong></td>
-                <td>Amazon CloudFront, Application Load Balancer, VPC</td>
-                <td>Global CDN acceleration, Layer-7 load balancing, and private network isolation.</td>
-              </tr>
-              <tr>
-                <td><strong>Security</strong></td>
-                <td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
-                <td>Identity provider, centralized credential vault, and least-privilege policies.</td>
-              </tr>
-              <tr>
-                <td><strong>IaC & CI/CD</strong></td>
-                <td>Terraform, GitHub Actions, AWS OIDC</td>
-                <td>100% Infrastructure as Code and automated delivery pipeline without static access keys.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Five Project Phases:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 22%;">Phase Timeline</th>
-                <th style="width: 38%;">Key Activities</th>
-                <th style="width: 40%;">Deliverables</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Oct 29 – Nov 01, 2026</strong></td>
-                <td>Project Inception & Architecture</td>
-                <td>Scope specification, AWS Well-Architected design, and USDA data model definition.</td>
-              </tr>
-              <tr>
-                <td><strong>Nov 03 – Nov 10, 2026</strong></td>
-                <td>Frontend UI & USDA Dataset</td>
-                <td>React components, Tailwind layouts, 152-product USDA data ingestion and JPA entities.</td>
-              </tr>
-              <tr>
-                <td><strong>Nov 11 – Nov 12, 2026</strong></td>
-                <td>AWS Infrastructure Provisioning</td>
-                <td>Terraform modules deploying VPC, Subnets, RDS, ECR, ECS Fargate, ALB, and CloudFront.</td>
-              </tr>
-              <tr>
-                <td><strong>Nov 13 – Nov 18, 2026</strong></td>
-                <td>AI Integration & Business Logic</td>
-                <td>Bedrock Nova 2 Lite prompt engineering, Guardrails configuration, cart, and VNPAY Sandbox.</td>
-              </tr>
-              <tr>
-                <td><strong>Nov 20 – Nov 22, 2026</strong></td>
-                <td>End-to-End Testing & Optimization</td>
-                <td>Integration testing, cost reconciliation, security hardening, and final technical report.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- 5. AWS COST ESTIMATION -->
-      <section class="report-section">
-        <h2 class="report-h2">5. AWS Cost Estimation</h2>
-        <p class="report-p">
-          Expenditures are modeled across three operational scenarios and reconciled against empirical data from <strong>AWS Cost Explorer</strong>:
-        </p>
-
-        <p class="report-p"><strong>Table 1: Three-Scenario Monthly Cost Comparison (USD/month):</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 40%;">AWS Service</th>
-                <th class="text-right" style="width: 20%;">Demo (~4h/day)</th>
-                <th class="text-right" style="width: 20%;">24/7 Continuous</th>
-                <th class="text-right" style="width: 20%;">Proposed Production</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-                <td class="text-right">~4</td>
-                <td class="text-right">~22</td>
-                <td class="text-right">~70</td>
-              </tr>
-              <tr>
-                <td>Application Load Balancer (ALB)</td>
-                <td class="text-right">~3</td>
-                <td class="text-right">~20</td>
-                <td class="text-right">~22</td>
-              </tr>
-              <tr>
-                <td>Amazon ECS Fargate (0.5 vCPU, 1 GB RAM)</td>
-                <td class="text-right">~2.5</td>
-                <td class="text-right">~15</td>
-                <td class="text-right">~30</td>
-              </tr>
-              <tr>
-                <td>Public IPv4 Address</td>
-                <td class="text-right">~2</td>
-                <td class="text-right">~11</td>
-                <td class="text-right">~11</td>
-              </tr>
-              <tr>
-                <td>AWS Secrets Manager</td>
-                <td class="text-right">0.8</td>
-                <td class="text-right">0.8</td>
-                <td class="text-right">0.8</td>
-              </tr>
-              <tr>
-                <td>Amazon Bedrock (Nova 2 Lite)</td>
-                <td class="text-right">&lt; 1</td>
-                <td class="text-right">&lt; 1</td>
-                <td class="text-right">Usage-based</td>
-              </tr>
-              <tr>
-                <td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
-                <td class="text-right">~0–1</td>
-                <td class="text-right">~1–3</td>
-                <td class="text-right">~5</td>
-              </tr>
-              <tr>
-                <td>AWS WAF (Optional)</td>
-                <td class="text-right">0</td>
-                <td class="text-right">~8–10</td>
-                <td class="text-right">~10</td>
-              </tr>
-              <tr class="total-row">
-                <td>Projected Total (USD/month)</td>
-                <td class="text-right">~12–18</td>
-                <td class="text-right">~65–75</td>
-                <td class="text-right">~150–200</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Table 2: Empirical Spending from AWS Cost Explorer (Nov 01 – Nov 21, 2026):</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 50%;">Primary AWS Service Item</th>
-                <th class="text-right" style="width: 25%;">Actual Incurred Cost (USD)</th>
-                <th style="width: 25%;">Operational Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-                <td class="text-right font-bold">2.77</td>
-                <td>Instance hours and 20 GB gp3 storage.</td>
-              </tr>
-              <tr>
-                <td>Application Load Balancer (ALB)</td>
-                <td class="text-right font-bold">1.29</td>
-                <td>Load balancer active hours and integration testing traffic.</td>
-              </tr>
-              <tr>
-                <td>Amazon ECS Fargate</td>
-                <td class="text-right font-bold">1.21</td>
-                <td>Serverless container compute runtime for active tasks.</td>
-              </tr>
-              <tr>
-                <td>Public IPv4 Address</td>
-                <td class="text-right font-bold">0.74</td>
-                <td>Public IPv4 allocation fees for task in public subnet.</td>
-              </tr>
-              <tr>
-                <td>Amazon Bedrock (Nova 2 Lite)</td>
-                <td class="text-right font-bold">0.21</td>
-                <td>Token processing for nutrition natural language queries.</td>
-              </tr>
-              <tr>
-                <td>AWS Secrets Manager</td>
-                <td class="text-right font-bold">0.20</td>
-                <td>Encrypted credential storage and retrieval API calls.</td>
-              </tr>
-              <tr class="total-row">
-                <td>Total Major Services Spend</td>
-                <td class="text-right">6.44</td>
-                <td>100% Offset by Promotional AWS Credits</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
-          * Note: Figures represent dominant expenditures incurred from Nov 01 to Nov 21, 2026. 
-          The production scenario reflects future architectural recommendations not yet deployed during the internship.
-        </p>
-      </section>
-
-      <!-- 6. SECURITY AND RISK MANAGEMENT -->
-      <section class="report-section">
-        <h2 class="report-h2">6. Security & Risk Management</h2>
-        <p class="report-p"><strong>Implemented Multi-Layered Security Controls:</strong></p>
-        <ul class="report-list">
-          <li><strong>Stateless Authentication with Cognito JWT:</strong> RSA cryptographic validation on incoming bearer tokens; completely stateless backend without session affinity.</li>
-          <li><strong>IAM Least Privilege & OIDC:</strong> Dedicated IAM Task and Execution Roles; GitHub Actions deployments use AWS OIDC without static long-lived credentials.</li>
-          <li><strong>AWS Secrets Manager:</strong> Database credentials and API keys are encrypted at rest and injected directly at container boot.</li>
-          <li><strong>Network Isolation & Private Subnets:</strong> RDS PostgreSQL resides strictly within private subnets, accepting ingress only from the ECS task Security Group on port 5432.</li>
-          <li><strong>Bedrock Guardrails Safety:</strong> Proactive defense filtering prompt injection attempts and blocking unauthorized clinical advice.</li>
-          <li><strong>Custom Secret Header Defense:</strong> CloudFront injects a custom cryptographic header; direct requests to the ALB public DNS are rejected with 403 Forbidden.</li>
-          <li><strong>AWS Budgets & SNS Alerting:</strong> Real-time budget threshold monitors dispatching immediate email alerts via Amazon SNS if spend crosses 80%.</li>
-          <li><strong>AWS WAF (Production Proposal):</strong> Web Application Firewall evaluating managed rulesets against SQLi, XSS, and volumetric attacks.</li>
-        </ul>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Risk Analysis and Mitigation Strategy:</strong></p>
-        <div class="report-table-wrapper">
-          <table class="report-table">
-            <thead>
-              <tr>
-                <th style="width: 25%;">Identified Risk</th>
-                <th style="width: 35%;">Severity & Impact</th>
-                <th style="width: 40%;">Implemented Mitigation</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Cloud Cost Overrun</strong></td>
-                <td>Medium – Potential budget depletion from forgotten running resources.</td>
-                <td>AWS Budgets configured with SNS alerts; single active ECS task running during demo hours; lightweight db.t4g.micro RDS instance.</td>
-              </tr>
-              <tr>
-                <td><strong>AI Hallucination</strong></td>
-                <td>High – Fabricated calorie or macro figures posing potential health concerns.</td>
-                <td>AI scope strictly restricted to intent parsing; 100% of nutritional figures are retrieved directly from PostgreSQL USDA tables.</td>
-              </tr>
-              <tr>
-                <td><strong>Single-AZ Outage</strong></td>
-                <td>Low (Demo Environment) – Brief downtime if the primary Singapore AZ experiences disruption.</td>
-                <td>ECS service automatically restarts containers upon failure; Terraform manifests already define a secondary standby subnet for Multi-AZ upgrades.</td>
-              </tr>
-              <tr>
-                <td><strong>Allergen Ingestion Risk</strong></td>
-                <td>High – Undetected allergens posing severe health threats to consumers.</td>
-                <td>Fail-closed verification: if an item has ambiguous allergen tags matching user exclusion criteria, it is automatically omitted from suggestions.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- 7. RESULTS AND FUTURE ROADMAP -->
-      <section class="report-section">
-        <h2 class="report-h2">7. Results & Future Roadmap</h2>
-        <p class="report-p"><strong>Key Project Accomplishments:</strong></p>
-        <ul class="report-list">
-          <li>End-to-end cloud deployment of a full-stack personalized nutrition platform on AWS.</li>
-          <li>Robust serverless container operation using Amazon ECS Fargate and managed PostgreSQL RDS.</li>
-          <li>Accurate nutritional intent extraction with Amazon Bedrock Nova 2 Lite in Tokyo.</li>
-          <li>152 items standardized with 9 allergen filters and 6 dietary tags according to USDA FoodData Central.</li>
-          <li>100% Terraform coverage with secure GitHub Actions OIDC CI/CD automated deployment.</li>
-          <li>Incurred only $6.44 over three weeks, fully offset by promotional AWS credits.</li>
-        </ul>
-
-        <p class="report-p" style="margin-top: 18px;"><strong>Production Roadmap (Future Enhancements - Not Yet Deployed):</strong></p>
-        <ul class="report-list">
-          <li><strong>Amazon RDS Multi-AZ Deployment:</strong> Enable automatic synchronous standby replica failover achieving 99.95% availability SLA.</li>
-          <li><strong>Multi-Task ECS Fargate Auto-Scaling:</strong> Scale from 1 task to minimum 2 tasks distributed across multiple AZs with metric-based autoscaling.</li>
-          <li><strong>End-to-End HTTPS Origin Encryption:</strong> Attach AWS Certificate Manager (ACM) public certificates to the ALB with custom Route 53 domain routing.</li>
-          <li><strong>Permanent AWS WAF Protection:</strong> Deploy AWS WAF at the CloudFront tier with managed rule groups against layer-7 exploitation.</li>
-          <li><strong>Automated Backups & Cross-Region DR:</strong> Automated daily snapshots with asynchronous cross-region replication for disaster recovery.</li>
-          <li><strong>Deep Nutrition Algorithms:</strong> Expand to automated weekly meal planning workflows based on long-term user health metrics.</li>
-        </ul>
-      </section>
+  <!-- 3. 3. SOLUTION ARCHITECTURE -->
+  <section class="report-section">
+    <h2 class="report-h2">3. Solution Architecture</h2>
+    <h3 class="report-h3">AWS architecture reference</h3>
+    <p class="report-p">Click on the image to expand / interactive zoom</p>
+    <div class="report-figure">
+      <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'AWS Architecture Diagram')" title="Click to zoom">
+        <img src="${archImg}" alt="AWS Architecture Diagram" class="report-figure-img" loading="lazy" />
+      </div>
+      <div class="report-figure-caption">AWS architecture diagram drawn on draw.io using AWS Architecture Icons, updated with Multi-AZ and AWS STS on Nov 25, 2026</div>
     </div>
+    <p class="report-p">From Nov 22, 2026 (D33), the dev environment runs 2 ECS tasks, one task per Availability Zone, and RDS in Multi-AZ mode with a standby replica in the second AZ. Reboot with failover drill on Nov 22 switched the primary AZ from ap-southeast-1a to ap-southeast-1b in about 20–45 seconds; API experienced roughly half a minute of disruption then automatically recovered, with zero data loss.</p>
+    <h3 class="report-h3">AWS services used</h3>
+    <p class="report-p">CloudFront + S3 — React SPA and images via OAC; Function for path rewrites; two private buckets.</p>
+    <p class="report-p">ALB + ECS Fargate + ECR — ALB accepts CloudFront + secret header; Spring Boot 4 / Java 21, ARM64, 0.5 vCPU / 1 GB, 2 tasks across 2 AZs.</p>
+    <p class="report-p">RDS PostgreSQL + Secrets Manager — db.t4g.micro, 20 GB gp3, Multi-AZ (standby in the second AZ), private subnet, encrypted; Flyway V1–V11.</p>
+    <p class="report-p">Cognito — JWT sub and cognito:groups; USER / ADMIN.</p>
+    <p class="report-p">Bedrock + Guardrails — Nova 2 Lite in Tokyo; read-only tools, metrics retrieved by code from the DB.</p>
+    <p class="report-p">CloudWatch + SNS + Budgets — 14-day logs, 7 alarms, email alerts; 100 USD budget.</p>
+    <p class="report-p">CloudTrail + S3 audit + WAF — Audit and ALB logs retained for 30 days; WAF only enabled during demo; AWS-managed KMS.</p>
+    <p class="report-p">Terraform + IAM + STS + GitHub Actions — S3 state use_lockfile; SSO, boundary; CI/CD via OIDC, AWS STS grants temporary credentials (AssumeRoleWithWebIdentity), no static access keys stored.</p>
+    <p class="report-p">Application deployed in ap-southeast-1, prefix nutrition-dev, single dev environment. D15 places ECS in public subnets with public IP to avoid NAT costs, while RDS remains private. D17 chooses a single environment to fit the capstone project. D18 shifts Bedrock and Guardrail invocations to ap-northeast-1 because Singapore quota for the account is 0; profile jp.amazon.nova-2-lite-v1:0. D24/D31 restricts model to searchProducts with search, facts, compare, plan intents; metrics are assembled by the backend. CloudFront → ALB currently uses HTTP due to lack of a custom domain.</p>
+    <h3 class="report-h3">Component design</h3>
+    <p class="report-p">Frontend React + TypeScript displays catalog, shopping cart, profiles, recommendations, and admin dashboard.</p>
+    <p class="report-p">Backend Spring Boot 4 / Java 21: catalog manages lookups; commerce handles cart/orders; payments verifies IPN; ai extracts intent; admin provides management APIs; profile calculates targets and recommendations.</p>
+    <p class="report-p">Database PostgreSQL uses parameterized SQL and Flyway V1–V11.</p>
+    <p class="report-p">AI uses Nova 2 Lite with Guardrails; code validates filters and aggregates metrics from DB.</p>
+    <p class="report-p">CI/CD GitHub Actions runs tests, builds ARM64, obtains temporary credentials from AWS STS via OIDC, pushes to ECR, and deploys.</p>
+  </section>
+
+  <!-- 4. 4. TECHNICAL IMPLEMENTATION -->
+  <section class="report-section">
+    <h2 class="report-h2">4. Technical Implementation</h2>
+    <p class="report-p">Terraform provisions infrastructure; Maven wrapper and Flyway manage backend/schema; React + TypeScript builds frontend. OIDC pipeline builds, tests, and deploys along the master branch. Phases are grouped according to milestones recorded in the repository.</p>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Phase</th>
+            <th style="width: 25%;">2026 Timeline</th>
+            <th style="width: 60%;">Actual Scope</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Oct 29–Nov 01</td>
+            <td>Repository, frontend skeleton, catalog backend, Cognito</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Nov 03–10</td>
+            <td>UI design, USDA data</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nov 11–12</td>
+            <td>Terraform network/RDS/ECR/Cognito/ALB/ECS/CloudFront; OIDC; first AWS run</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Nov 13–18</td>
+            <td>AI, Guardrails, alarms; search, rate limiting, meal analysis, VNPAY sandbox, UI</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Nov 20–22</td>
+            <td>Tokyo, E2E, audit/optional WAF; AI full intent, D32, audit apply and cost measurement</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. 5. IMPLEMENTATION PLAN AND MILESTONES -->
+  <section class="report-section">
+    <h2 class="report-h2">5. Implementation Plan and Milestones</h2>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Date</th>
+            <th style="width: 70%;">Actual Milestone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>29/10/2026</td>
+            <td>Repository initialization</td>
+          </tr>
+          <tr>
+            <td>01/11/2026</td>
+            <td>Frontend skeleton, catalog backend, Cognito</td>
+          </tr>
+          <tr>
+            <td>03–06/11/2026</td>
+            <td>UI redesign</td>
+          </tr>
+          <tr>
+            <td>10/11/2026</td>
+            <td>USDA data</td>
+          </tr>
+          <tr>
+            <td>11/11/2026</td>
+            <td>Terraform networking, RDS, ECR, Cognito, ALB, ECS, and CloudFront</td>
+          </tr>
+          <tr>
+            <td>12/11/2026</td>
+            <td>OIDC, product images, and first AWS run</td>
+          </tr>
+          <tr>
+            <td>13/11/2026</td>
+            <td>AI, Guardrails, evaluation, and alarms</td>
+          </tr>
+          <tr>
+            <td>14–15/11/2026</td>
+            <td>Search, password reset, statistics, rate limiting, Spring Boot 4</td>
+          </tr>
+          <tr>
+            <td>16/11/2026</td>
+            <td>Catalog expansion, diet labels, meal analysis, VNPAY sandbox</td>
+          </tr>
+          <tr>
+            <td>17–18/11/2026</td>
+            <td>UI finalization</td>
+          </tr>
+          <tr>
+            <td>20/11/2026</td>
+            <td>Tokyo, E2E, audit, optional WAF, payment logs</td>
+          </tr>
+          <tr>
+            <td>21/11/2026</td>
+            <td>AI full intent, profiles, and D32 recommendations</td>
+          </tr>
+          <tr>
+            <td>22/11/2026</td>
+            <td>Audit apply and cost measurement</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6. 6. BUDGET ESTIMATE -->
+  <section class="report-section">
+    <h2 class="report-h2">6. Budget Estimate</h2>
+    <h3 class="report-h3">Infrastructure cost</h3>
+    <p class="report-p">Estimated USD/month, cross-referenced with AWS Pricing Calculator on Nov 25, 2026 for Multi-AZ configuration and 2 tasks (D33), exclusive of tax, variance may be ±10%. Production is a future proposal not yet deployed. Bedrock actually invoked in Tokyo.</p>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 40%;">Service / Configuration</th>
+            <th class="text-right" style="width: 20%;">Demo (~4h/day)</th>
+            <th class="text-right" style="width: 20%;">24/7 (Pricing Calculator)</th>
+            <th class="text-right" style="width: 20%;">Proposed Production</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td>
+            <td class="text-right">~11.6</td>
+            <td class="text-right">42.75</td>
+            <td class="text-right">~70 (Multi-AZ, db.t4g.small)</td>
+          </tr>
+          <tr>
+            <td>ECS Fargate ARM64, 0.5 vCPU / 1 GB, 2 tasks</td>
+            <td class="text-right">~5.9</td>
+            <td class="text-right">35.98</td>
+            <td class="text-right">~36–72 (2–4 tasks, auto scaling)</td>
+          </tr>
+          <tr>
+            <td>Application Load Balancer</td>
+            <td class="text-right">~3.1</td>
+            <td class="text-right">18.63</td>
+            <td class="text-right">~22</td>
+          </tr>
+          <tr>
+            <td>Public IPv4, 4 addresses</td>
+            <td class="text-right">~2.4</td>
+            <td class="text-right">14.60</td>
+            <td class="text-right">~15</td>
+          </tr>
+          <tr>
+            <td>Secrets Manager, 2 secrets</td>
+            <td class="text-right">0.85</td>
+            <td class="text-right">0.85</td>
+            <td class="text-right">0.85</td>
+          </tr>
+          <tr>
+            <td>Bedrock (Nova Lite as pricing reference, Tokyo)</td>
+            <td class="text-right">&lt;0.7</td>
+            <td class="text-right">0.70</td>
+            <td class="text-right">Based on usage</td>
+          </tr>
+          <tr>
+            <td>CloudFront 1.02 · CloudWatch 1.70 · ECR 0.10 · S3 0.07 · Cognito 0 · CloudTrail 0</td>
+            <td class="text-right">~2.9</td>
+            <td class="text-right">2.89</td>
+            <td class="text-right">~5</td>
+          </tr>
+          <tr class="total-row">
+            <td>Total (without WAF)</td>
+            <td class="text-right">~27</td>
+            <td class="text-right">116.40</td>
+            <td class="text-right">~150–190</td>
+          </tr>
+          <tr>
+            <td>WAF (optional, Optional group)</td>
+            <td class="text-right">0</td>
+            <td class="text-right">9.60</td>
+            <td class="text-right">~10</td>
+          </tr>
+          <tr class="total-row">
+            <td>Total with WAF</td>
+            <td class="text-right">—</td>
+            <td class="text-right">126.00</td>
+            <td class="text-right">~160–200</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="report-p">Cost Explorer recorded 6.44 USD for Nov 01–21, 2026, fully covered by credits. RDS 2.77; ALB 1.29; ECS 1.21; IPv4 0.74; Bedrock 0.21; Secrets Manager 0.20 USD. The listed items represent the major charges, not an itemized sum of the entire invoice. Since the app is only turned on during demo sessions, these actual numbers must not be used to extrapolate 24/7 operation. These actual figures were recorded before enabling Multi-AZ.</p>
+    <p class="report-p">AWS Pricing Calculator estimate dated Nov 25, 2026. The 24/7 column uses the exact figures from Calculator (Singapore, except Bedrock in Tokyo). The Demo column converts from that for approximately 120 operating hours per month: hourly charges (RDS instance, Fargate, ALB, IPv4) multiplied by 120/730, while RDS storage (5.52 USD) and usage-based items remain unchanged. Load assumptions: 50 users/month, 5 GB CloudFront, approximately 3,600 AI queries/month (1 query/minute for 2 hours/day, 1,500 input tokens, 300 output tokens). Since the Calculator did not yet list Amazon Nova 2 Lite, Amazon Nova Lite was used as the pricing reference. The estimate excludes RDS Proxy and Database Insights Advanced as they are not used by the project.</p>
+  </section>
+
+  <!-- 7. 7. RISK ASSESSMENT -->
+  <section class="report-section">
+    <h2 class="report-h2">7. Risk Assessment</h2>
+    <h3 class="report-h3">Risk matrix</h3>
+    <div class="report-table-wrapper">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th style="width: 30%;">Risk</th>
+            <th style="width: 20%;">Impact</th>
+            <th style="width: 25%;">Probability</th>
+            <th style="width: 25%;">Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Unexpected cost</td>
+            <td>Medium</td>
+            <td>Medium</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Personal data exposure</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>AI incorrect/medical response</td>
+            <td>High</td>
+            <td>Medium</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>Bedrock quota</td>
+            <td>Medium</td>
+            <td>High (already occurred in Singapore)</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>HTTP from CloudFront to ALB</td>
+            <td>Medium</td>
+            <td>Low</td>
+            <td>Low</td>
+          </tr>
+          <tr>
+            <td>Single Availability Zone failure</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>Medium (reduced via Multi-AZ)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="report-p">Scoring methodology: Impact and Probability are evaluated across three levels: Low / Medium / High; Level is a combination of the two factors, after factoring in mitigation measures below. AI risk is classified as High because incorrect nutrition figures or medical advice can affect user health, thus prioritized for multi-layered controls.</p>
+    <h3 class="report-h3">Mitigation measures</h3>
+    <p class="report-p">Cost: 100 USD Budgets, alarms, and up/down scripts. RDS may automatically turn back on after 7 days stopped.</p>
+    <p class="report-p">Personal data: JWT and authorization; avoid logging PII, physical biometric data is not sent to the model; users can delete their own profiles.</p>
+    <p class="report-p">AI: Guardrails, read-only tools, metrics from DB; evaluation of 45 queries on Nov 21, 2026 achieved 17/17 safety, 27/28 lookup, 85% threshold. Query L01 still fluctuates.</p>
+    <p class="report-p">Quota: Tokyo replaces Singapore per D18; monitor ApplyGuardrail permissions.</p>
+    <p class="report-p">Origin: CloudFront prefix list and secret header reduce direct access; HTTP to ALB remains a constraint. HTTPS origin will require a custom domain and certificate in the future.</p>
+    <h3 class="report-h3">Contingency plan</h3>
+    <p class="report-p">When Bedrock is unreachable, maintain catalog and shopping flows, returning controlled AI errors. If costs rise, scale down following the runbook. When DB restoration is needed, follow the snapshot procedure in docs/runbook.md; drill record still awaits repository owner execution.</p>
+  </section>
+
+  <!-- 8. 8. EXPECTED OUTCOMES -->
+  <section class="report-section">
+    <h2 class="report-h2">8. Expected Outcomes</h2>
+    <h3 class="report-h3">Technical improvements:</h3>
+    <p class="report-p">React Web and API on CloudFront.</p>
+    <p class="report-p">Source code, tests, and OIDC workflow on GitHub.</p>
+    <p class="report-p">Terraform and demo-session operational guidelines.</p>
+    <p class="report-p">Workshop package with 7 major sections, sub-steps, and bilingual report.</p>
+    <h3 class="report-h3">Reference sources:</h3>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/architecture.md" target="_blank" rel="noopener noreferrer">docs/architecture.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/decisions.md" target="_blank" rel="noopener noreferrer">docs/decisions.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/api-contract.md" target="_blank" rel="noopener noreferrer">docs/api-contract.md</a></p>
+    <p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/db-schema.md" target="_blank" rel="noopener noreferrer">docs/db-schema.md</a></p>
+    <h3 class="report-h3">Long-term value</h3>
+    <p class="report-p">The yet-to-be-deployed production roadmap includes RDS Multi-AZ, two tasks, a custom domain with HTTPS to ALB, and persistent WAF. Every change requires planning, fault-tolerance assessment, and updated cost estimates.</p>
+  </section>
+</div>
   `;
 }
 
@@ -5799,14 +5645,17 @@ function renderEventsList() {
 
     let badgeText = '';
     let badgeClass = 'badge-blue';
-    if (ev.id === 'event-1' || ev.slug === 'hoi-thao-hien-dai-hoa-ung-dung-csdl-genai') {
+    if (ev.id === 'event-1' || ev.slug === 'aws-cloud-ai-day-hanoi-2026') {
       badgeText = lang === 'vi' ? 'Sự kiện 1 • 29/09/2026' : 'Event 1 • 29/09/2026';
       badgeClass = 'badge-blue';
-    } else if (ev.id === 'event-2' || ev.slug === 'first-cloud-ai-journey-24-10-2026') {
-      badgeText = lang === 'vi' ? 'Sự kiện 2 • 24/10/2026' : 'Event 2 • 24/10/2026';
+    } else if (ev.id === 'event-2' || ev.slug === 'fireside-chat-dr-werner-vogels') {
+      badgeText = lang === 'vi' ? 'Sự kiện 2 • 02/10/2026' : 'Event 2 • 02/10/2026';
       badgeClass = 'badge-purple';
-    } else if (ev.id === 'event-3' || ev.slug === 'enterprise-ai-on-aws-cloud') {
-      badgeText = lang === 'vi' ? 'Sự kiện 3 • 14/11/2026' : 'Event 3 • 14/11/2026';
+    } else if (ev.id === 'event-3' || ev.slug === 'first-cloud-ai-journey-24-10-2026') {
+      badgeText = lang === 'vi' ? 'Sự kiện 3 • 24/10/2026' : 'Event 3 • 24/10/2026';
+      badgeClass = 'badge-purple';
+    } else if (ev.id === 'event-4' || ev.slug === 'enterprise-ai-on-aws-cloud') {
+      badgeText = lang === 'vi' ? 'Sự kiện 4 • 14/11/2026' : 'Event 4 • 14/11/2026';
       badgeClass = 'badge-blue';
     } else {
       badgeText = ev.hasFullReport ? (lang === 'vi' ? 'Báo cáo chuyên sâu' : 'Full Report Available') : t('eventBadge');
@@ -5867,17 +5716,29 @@ function renderEventsList() {
 }
 
 function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
-  const containerId = slug === 'hoi-thao-hien-dai-hoa-ung-dung-csdl-genai'
-    ? 'event-detail-modernization-container'
-    : (slug === 'enterprise-ai-on-aws-cloud'
-      ? 'event-detail-enterprise-ai-container'
-      : 'event-detail-content-container');
+  const containerId = slug === 'aws-cloud-ai-day-hanoi-2026'
+    ? 'event-detail-cloud-ai-day-container'
+    : (slug === 'fireside-chat-dr-werner-vogels'
+      ? 'event-detail-fireside-chat-container'
+      : (slug === 'hoi-thao-hien-dai-hoa-ung-dung-csdl-genai'
+        ? 'event-detail-modernization-container'
+        : (slug === 'enterprise-ai-on-aws-cloud'
+          ? 'event-detail-enterprise-ai-container'
+          : 'event-detail-content-container')));
   const container = document.getElementById(containerId);
   if (!container) return;
 
   const lang = app.currentLang || 'vi';
   const targetSlug = slug || 'first-cloud-ai-journey-24-10-2026';
 
+  if (targetSlug === 'aws-cloud-ai-day-hanoi-2026') {
+    renderCloudAIDayEventDetail(container, lang);
+    return;
+  }
+  if (targetSlug === 'fireside-chat-dr-werner-vogels') {
+    renderFiresideChatEventDetail(container, lang);
+    return;
+  }
   if (targetSlug === 'enterprise-ai-on-aws-cloud') {
     renderEnterpriseAIEventDetail(container, lang);
     return;
@@ -6805,12 +6666,1114 @@ function renderModernizationEventDetail(container, lang = 'vi') {
 }
 
 
+
+function renderCloudAIDayEventDetail(container, lang = 'vi') {
+  const isVi = lang === 'vi';
+  container.innerHTML = isVi
+    ? `<article class="event-report-article">
+<!-- Breadcrumb & Back Navigation Bar -->
+<nav class="report-nav-bar" aria-label="Breadcrumb">
+<div class="report-breadcrumbs">
+<a href="#/events" onclick="navigateTo('events'); return false;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+<span>Sự kiện tham gia</span>
+</a>
+<span class="sep">/</span>
+<span class="current">Sự kiện 1 - AWS Cloud and AI Day Hanoi 2026 (29/09/2026)</span>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="navigateTo('events'); return false;">
+<span>← Quay lại sự kiện</span>
+</button>
+</nav>
+
+<!-- Hero Header -->
+<header class="report-hero">
+<div class="report-hero-badge-row">
+<span class="badge badge-purple">BÁO CÁO THU HOẠCH SỰ KIỆN</span>
+<span class="badge badge-blue">Cloud Computing &amp; Agentic AI</span>
+<span class="badge badge-gray">Chính thức • AWS FCAJ</span>
+</div>
+<h1 class="report-main-title">AWS CLOUD AND AI DAY HANOI 2026</h1>
+<p class="report-main-subtitle">Hội nghị toàn thể về Điện toán Đám mây, Trí tuệ nhân tạo Agentic AI và Hiện đại hóa Hạ tầng Doanh nghiệp</p>
+
+<!-- Standardized Compact Event Metadata Strip -->
+<div class="report-meta-compact-strip">
+<div class="meta-strip-item">
+<span class="meta-strip-label">Tên sự kiện:</span>
+<span class="meta-strip-val"><strong>AWS Cloud and AI Day Hanoi 2026</strong></span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Thời gian:</span>
+<span class="meta-strip-val">07:30 – 17:00, Thứ Ba, 29/09/2026</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Địa điểm chính:</span>
+<span class="meta-strip-val">JW Marriott Hotel Hanoi, Hà Nội, Việt Nam</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Hình thức tham dự:</span>
+<span class="meta-strip-val">Theo dõi trực tiếp từ Hà Nội tại điểm cầu FCAJ HCMC Watch Party, TP. Hồ Chí Minh</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Vai trò:</span>
+<span class="meta-strip-val"><strong>Người tham dự Watch Party (Watch Party Attendee)</strong></span>
+</div>
+</div>
+</header>
+
+<!-- Event 1 Check-in Photo -->
+<div id="event-1-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0; display: block; text-align: center;">
+<div class="event-uploaded-img-wrap" title="Nhấp để xem ảnh độ nét cao (HD)">
+<img id="event-1-cover-img" src="assets/images/events/event-1.jpg"  alt="AWS Cloud and AI Day Hanoi 2026 – FCAJ HCMC Watch Party" class="event-uploaded-img" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 6px;" loading="eager" />
+</div>
+<div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+Ảnh minh chứng sinh viên tham dự theo dõi trực tiếp sự kiện AWS Cloud and AI Day Hanoi 2026 tại điểm cầu FCAJ HCMC Watch Party (29/09/2026)
+</div>
+</div>
+
+<!-- SECTION 1 – EVENT INFORMATION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">01</span>
+<h2 class="report-section-title">1. Thông tin sự kiện (Event Information)</h2>
+</div>
+<div class="report-prose">
+<p><strong>AWS Cloud and AI Day Hanoi 2026</strong> là hội nghị thường niên quy mô lớn do Amazon Web Services (AWS) tổ chức, quy tụ các kỹ sư giải pháp, kiến trúc sư trưởng, lãnh đạo công nghệ cùng đại diện các cơ quan ban ngành và doanh nghiệp đối tác hàng đầu tại Việt Nam.</p>
+<ul>
+<li><strong>Tên chính thức:</strong> AWS Cloud and AI Day Hanoi 2026</li>
+<li><strong>Ngày diễn ra:</strong> Thứ Ba, ngày 29 tháng 09 năm 2026</li>
+<li><strong>Địa điểm chính:</strong> Khách sạn JW Marriott Hotel Hanoi, Hà Nội, Việt Nam</li>
+<li><strong>Hình thức tham dự thực tế:</strong> Tham dự điểm cầu trực tiếp <em>FCAJ HCMC Watch Party</em> tại TP. Hồ Chí Minh, theo dõi tiếp sóng trực tuyến toàn bộ chương trình và các bài thuyết trình kỹ thuật từ Hà Nội.</li>
+<li><strong>Vai trò:</strong> Người tham dự Watch Party (Watch Party Attendee).</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 2 – KEYNOTE SPEAKERS -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">02</span>
+<h2 class="report-section-title">2. Diễn giả chính (Keynote Speakers)</h2>
+</div>
+<div class="report-prose">
+<p>Hội nghị quy tụ các diễn giả và nhà lãnh đạo công nghệ cấp cao trình bày tại phiên khai mạc toàn thể (Keynote):</p>
+
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 35%;">Diễn giả (Speaker)</th>
+<th style="width: 65%;">Chức vụ &amp; Đơn vị công tác (Role &amp; Organization)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hoang Minh</strong></td>
+<td>Thứ trưởng Bộ Khoa học và Công nghệ (Deputy Minister of Science and Technology)</td>
+</tr>
+<tr>
+<td><strong>Jennifer Wicks</strong></td>
+<td>Đại sứ Hợp chủng quốc Hoa Kỳ tại Việt Nam (U.S. Ambassador to Vietnam)</td>
+</tr>
+<tr>
+<td><strong>Dr. Werner Vogels</strong></td>
+<td>Giám đốc Công nghệ (Chief Technology Officer), Amazon.com</td>
+</tr>
+<tr>
+<td><strong>Eric Yeo</strong></td>
+<td>Tổng Giám đốc AWS khu vực Malaysia, Việt Nam và Đông Dương (AWS Country General Manager for Malaysia, Vietnam, and Indochina)</td>
+</tr>
+<tr>
+<td><strong>Mai Le</strong></td>
+<td>Giám đốc Quản lý Sản phẩm (Director of Product Management), Katalon</td>
+</tr>
+<tr>
+<td><strong>Dr. Jens Lottner</strong></td>
+<td>Tổng Giám đốc (Chief Executive Officer), Techcombank</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #0284c7; border-radius: 6px; padding: 12px 16px; margin: 16px 0;">
+<p style="margin: 0; font-size: 13.5px; color: #1e293b;">
+<strong>Danh sách 6 diễn giả chính thức:</strong> <strong>Hoang Minh, Jennifer Wicks, Dr. Werner Vogels, Eric Yeo, Mai Le, Dr. Jens Lottner</strong>.
+</p>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3 – EVENT OVERVIEW -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">03</span>
+<h2 class="report-section-title">3. Tổng quan sự kiện (Event Overview)</h2>
+</div>
+<div class="report-prose">
+<p>Hội nghị tập trung vào các trụ cột công nghệ trọng tâm: Điện toán đám mây hiện đại, dữ liệu nền tảng cho AI (AI-ready Data), ứng dụng các tác tử thông minh (Agentic AI) trong phát triển phần mềm, quy trình di chuyển hạ tầng và tối ưu hóa vận hành đám mây.</p>
+
+<h4 style="font-size: 14.5px; font-weight: 700; color: #171717; margin: 16px 0 8px 0;">Lịch trình hoạt động tổng thể (Official Schedule)</h4>
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 25%;">Thời gian (UTC+7)</th>
+<th style="width: 75%;">Hoạt động chính (Activity)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30</td>
+<td>Đón khách, check-in và mở cửa khu vực triển lãm công nghệ (Expo)</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td>Phiên khai mạc chính thức (Keynote KEY001) tại Grand Ballroom Hà Nội</td>
+</tr>
+<tr>
+<td>10:15</td>
+<td>Giải lao kết nối mạng lưới (Networking break) và tham quan triển lãm Expo</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td>Chuỗi các phiên thuyết trình kỹ thuật buổi sáng (Morning Technical Sessions)</td>
+</tr>
+<tr>
+<td>12:05</td>
+<td>Nghỉ trưa, networking và trải nghiệm giải pháp tại khu triển lãm</td>
+</tr>
+<tr>
+<td>13:10</td>
+<td>Chuỗi các phiên kỹ thuật chuyên sâu đầu giờ chiều (Early Afternoon Sessions)</td>
+</tr>
+<tr>
+<td>14:50</td>
+<td>Nghỉ giải lao kỹ thuật và trao đổi với các chuyên gia AWS</td>
+</tr>
+<tr>
+<td>15:20</td>
+<td>Chuỗi các phiên kỹ thuật cuối buổi chiều (Late Afternoon Sessions)</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>Bế mạc hội nghị (Event Close)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Tại điểm cầu <em>FCAJ HCMC Watch Party</em>, sinh viên và cộng đồng kỹ sư tại TP. Hồ Chí Minh đã theo dõi trực tiếp bài Keynote KEY001 từ 09:00 và tham gia thảo luận song song phiên kỹ thuật <strong>DVT205 (HCMC Watch Party)</strong> kết nối đồng bộ với phiên <strong>DVT203 (Building software like never before with agentic AI)</strong> tại Grand Ballroom 3 Hà Nội.</p>
+</div>
+</section>
+
+<!-- SECTION 4 – MAIN TOPICS AND ACTIVITIES -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">04</span>
+<h2 class="report-section-title">4. Nội dung chính và hoạt động kỹ thuật (Main Topics & Activities)</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:20px 0 10px 0;">4.1. Keynote và Agentic AI trong phát triển phần mềm</h3>
+<ul>
+<li><strong>Phiên Keynote KEY001:</strong> Đặt ra bài toán giải quyết các thách thức công nghệ phức tạp bằng các công cụ đám mây thế hệ mới, định hình ba xu hướng chủ đạo: áp dụng AI Agent trong vòng đời phần mềm, hiện đại hóa tải công việc và bảo vệ an ninh hệ thống ngay từ khâu thiết kế.</li>
+<li><strong>Phiên DVT205 / DVT203 (Building software like never before with agentic AI):</strong> Phân tích cách thức các tác tử AI tham gia trực tiếp vào quy trình kỹ thuật phần mềm, tự động hóa phân tích mã nguồn, sinh kiểm thử và hỗ trợ lập trình viên cộng tác.</li>
+<li><strong>Chuyển đổi từ thử nghiệm sang vận hành thực tế:</strong> Các phiên AIM201 (From Demo to Deployment) và AIM301 (Scaling Multi-Agent Architectures) giải quyết rào cản đưa tác tử AI vào dây chuyền sản xuất; kết hợp cùng phiên PRT301-S và PRT201-S nhấn mạnh yếu tố tin cậy, an toàn và duy trì quyền kiểm soát con người trong luồng nghiệp vụ.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.2. Phân tích dữ liệu và Hạ tầng sẵn sàng cho AI (Data Analytics & AI-Ready Infrastructure)</h3>
+<ul>
+<li><strong>Nền tảng dữ liệu cho AI:</strong> Các phiên ANT202 và ANT211 làm rõ tầm quan trọng của việc chuẩn hóa chất lượng dữ liệu (Data Quality) và cấu trúc dữ liệu AI-ready trước khi áp dụng các mô hình học máy và tác tử thông minh.</li>
+<li><strong>Ứng dụng trong khối tài chính ngân hàng:</strong> Phiên ANT201 hướng dẫn xây dựng các Agent dựa trên dữ liệu cho ngành FSI, kết hợp cùng phiên ANT214 chia sẻ hành trình VPBank quy mô hóa nền tảng dữ liệu với Amazon Redshift.</li>
+<li><strong>Xóa bỏ ốc đảo dữ liệu:</strong> Phiên ANT205 trình bày phương thức liên kết các nguồn dữ liệu rời rạc thông qua Amazon Quick Suite, hỗ trợ trích xuất thông tin chi tiết phục vụ kinh doanh.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.3. Hiện đại hóa ứng dụng và An ninh đám mây (Application Modernization & Cloud Security)</h3>
+<ul>
+<li><strong>Platform Engineering trên EKS:</strong> Phiên DEV205 phân tích mô hình nền tảng lập trình viên nội bộ trên nền tảng Amazon EKS quy mô lớn; phiên DEV208 chia sẻ bài học di chuyển ứng dụng NestJS từ EC2/PM2 sang EKS áp dụng GitOps tự động hóa.</li>
+<li><strong>Phân rã nguyên khối sang Microservices:</strong> Phiên MAM203 chia sẻ phương pháp chia nhỏ hệ thống Monolith lên EKS, cùng phiên AIM303 ứng dụng AWS Transform AI Agent để hiện đại hóa đồng bộ các ứng dụng .NET và CSDL SQL Server.</li>
+<li><strong>Bảo mật danh tính và ứng dụng:</strong> Phiên DEV401 hướng dẫn kỹ thuật quản trị danh tính khối lượng công việc (Workload Identity); phiên DVT305 giới thiệu AWS Security Agent bảo vệ an ninh ứng dụng chủ động từ thiết kế đến triển khai; phiên AIM203 xây dựng cơ chế phòng thủ chiều sâu (Defense in Depth) cho tải công việc AI.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.4. Vận hành đám mây và Tối ưu hóa chi phí (Cloud Operations & Cost Optimization)</h3>
+<ul>
+<li><strong>Tối ưu hóa chi phí lưu trữ:</strong> Phiên DEV204 do cộng đồng FCAJ đóng góp hướng dẫn làm chủ các hạng lưu trữ Amazon S3 (S3 Storage Classes), giảm lãng phí tài nguyên lưu trữ dữ liệu tĩnh.</li>
+<li><strong>Tự động xử lý lệch hạ tầng:</strong> Phiên DEV206 ứng dụng hệ thống Multi-Agent tự động phát hiện và khắc phục độ lệch hạ tầng (Infrastructure Drift Remediation) trong mã hạ tầng IaC.</li>
+<li><strong>Kiểm soát chi phí AI quy mô lớn:</strong> Phiên DEV210 chia sẻ giải pháp thực thi giới hạn ngân sách và giám sát chi tiêu Amazon Bedrock theo thời gian thực tại Vietnam International Bank.</li>
+<li><strong>Giám sát toàn diện:</strong> Phiên PRT203-S (Datadog) giới thiệu phương pháp giám sát các chỉ số vận hành vượt ra ngoài Golden Signals truyền thống trong kỷ nguyên GenAI.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 5 – KNOWLEDGE AND LESSONS LEARNED -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">05</span>
+<h2 class="report-section-title">5. Kiến thức và bài học tiếp thu (Knowledge & Lessons Learned)</h2>
+</div>
+<div class="report-prose">
+<p>Thông qua chuỗi bài thuyết trình và thảo luận chuyên sâu tại sự kiện, các bài học kỹ thuật cốt lõi được đúc kết bao gồm:</p>
+
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 25%;">Trụ cột kiến thức</th>
+<th style="width: 75%;">Nội dung đúc kết &amp; Ứng dụng thực tế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. AI Reliability &amp; Security</strong></td>
+<td>Xác định rõ phạm vi quyền hạn và cơ chế xác thực kết quả của tác tử AI trước khi tích hợp vào hệ thống. Cần thiết lập kiểm soát tính chính xác, tỷ lệ lỗi và luôn có cơ chế người duyệt (Human-in-the-loop) đối với các hành động quan trọng.</td>
+</tr>
+<tr>
+<td><strong>2. Data Quality</strong></td>
+<td>Dữ liệu là nền móng của hệ thống AI. Cần xác định rõ nguồn dữ liệu có thẩm quyền (authoritative source), thiết lập kiểm soát phân quyền truy cập chặt chẽ và cơ chế đồng bộ làm mới dữ liệu liên tục.</td>
+</tr>
+<tr>
+<td><strong>3. Cloud Architecture</strong></td>
+<td>Lựa chọn giải pháp hiện đại hóa ứng dụng phù hợp với hiện trạng hệ thống: chuyển đổi sang container trên Amazon ECS hoặc EKS, kết hợp triển khai tự động qua GitOps để rút ngắn chu kỳ release và giảm thiểu sự cố thủ công.</td>
+</tr>
+<tr>
+<td><strong>4. Monitoring &amp; Cost</strong></td>
+<td>Tính toán chi phí và vận hành ngay từ giai đoạn thiết kế kiến trúc. Áp dụng chính sách vòng đời S3 Lifecycle theo tần suất truy cập; đồng thời giám sát lưu lượng token, độ trễ và tỷ lệ lỗi để tối ưu ngân sách Amazon Bedrock.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 10px 0;">Ứng dụng thực tiễn vào Dự án nhóm (Nutrition E-Commerce)</h4>
+<p>Các kiến thức thu hoạch từ sự kiện được đối chiếu và áp dụng trực tiếp vào kiến trúc của dự án nhóm <strong>Nutrition E-Commerce</strong>:</p>
+<ul>
+<li><strong>Tích hợp Amazon Bedrock cho dữ liệu dinh dưỡng:</strong> Áp dụng Amazon Bedrock để trích xuất tự động thành phần dinh dưỡng từ bảng nhãn thực phẩm và hồ sơ sản phẩm, đồng thời xây dựng giao diện cho phép người dùng xem xét, hiệu chỉnh trước khi lưu vào cơ sở dữ liệu.</li>
+<li><strong>Tối ưu hóa chi phí lưu trữ ảnh với Amazon S3:</strong> Phân loại các nhóm dữ liệu hình ảnh sản phẩm và tài liệu kiểm định dinh dưỡng; áp dụng chính sách vòng đời lưu trữ tự động chuyển từ S3 Standard sang S3 Standard-IA sau 30 ngày và S3 Glacier Flexible Retrieval sau 90 ngày cho dữ liệu lịch sử.</li>
+<li><strong>Hiện đại hóa nền tảng triển khai với Amazon ECS Fargate:</strong> Đóng gói các dịch vụ API dinh dưỡng vào container và triển khai trên hạ tầng không máy chủ AWS Fargate, kết hợp cấu hình kiểm tra sức khỏe tác vụ (health checks) và Application Load Balancer để đảm bảo độ tin cậy vận hành.</li>
+<li><strong>Bảo mật danh tính và quản trị chi phí:</strong> Thiết lập IAM least privilege và Workload Identity cho các microservices, mã hóa dữ liệu với AWS KMS, và giám sát chi tiêu API Amazon Bedrock qua CloudWatch Metrics.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 6 – PERSONAL REFLECTION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">06</span>
+<h2 class="report-section-title">6. Cảm nhận cá nhân (Personal Reflection)</h2>
+</div>
+<div class="report-prose">
+<p>Việc tham gia theo dõi sự kiện <strong>AWS Cloud and AI Day Hanoi 2026</strong> tại điểm cầu <em>FCAJ HCMC Watch Party</em> là một trải nghiệm học tập công nghệ giá trị trong quá trình thực tập. Dù tham dự từ xa qua tiếp sóng trực tiếp, không khí trao đổi kỹ thuật sôi nổi cùng các đồng nghiệp và cố vấn tại TP. Hồ Chí Minh đã giúp tôi tiếp thu kiến thức một cách chủ động và sâu sắc.</p>
+<p>Các bài chia sẻ thực tế từ các diễn giả đầu ngành (Techcombank, VPBank, Katalon, AWS) đã mở rộng tầm nhìn của tôi về bức tranh chuyển đổi số: việc áp dụng Trí tuệ nhân tạo không dừng lại ở mức mô hình trình diễn (demo) mà đòi hỏi nền tảng dữ liệu sạch, kiến trúc đám mây vững chắc, khả năng kiểm soát ngân sách vận hành và an ninh đa tầng. Đây là những nguyên lý chỉ đạo trực tiếp giúp tôi hoàn thiện hệ thống báo cáo thực tập và đóng góp hiệu quả vào dự án công nghệ của nhóm.</p>
+</div>
+</section>
+
+</article>`
+    : `<article class="event-report-article">
+<!-- Breadcrumb & Back Navigation Bar -->
+<nav class="report-nav-bar" aria-label="Breadcrumb">
+<div class="report-breadcrumbs">
+<a href="#/events" onclick="navigateTo('events'); return false;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+<span>Events Participated</span>
+</a>
+<span class="sep">/</span>
+<span class="current">Event 1 - AWS Cloud and AI Day Hanoi 2026 (September 29, 2026)</span>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="navigateTo('events'); return false;">
+<span>← Back to Events</span>
+</button>
+</nav>
+
+<!-- Hero Header -->
+<header class="report-hero">
+<div class="report-hero-badge-row">
+<span class="badge badge-purple">EVENT HARVEST REPORT</span>
+<span class="badge badge-blue">Cloud Computing &amp; Agentic AI</span>
+<span class="badge badge-gray">Official • AWS FCAJ</span>
+</div>
+<h1 class="report-main-title">AWS CLOUD AND AI DAY HANOI 2026</h1>
+<p class="report-main-subtitle">Flagship Conference on Cloud Computing, Agentic AI, and Enterprise Infrastructure Modernization</p>
+
+<!-- Standardized Compact Event Metadata Strip -->
+<div class="report-meta-compact-strip">
+<div class="meta-strip-item">
+<span class="meta-strip-label">Event Name:</span>
+<span class="meta-strip-val"><strong>AWS Cloud and AI Day Hanoi 2026</strong></span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Date &amp; Time:</span>
+<span class="meta-strip-val">07:30 AM – 05:00 PM, Tuesday, September 29, 2026</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Main Venue:</span>
+<span class="meta-strip-val">JW Marriott Hotel Hanoi, Hanoi, Vietnam</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Actual Participation:</span>
+<span class="meta-strip-val">Watched the live stream from Hanoi at the FCAJ HCMC Watch Party in Ho Chi Minh City</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Role:</span>
+<span class="meta-strip-val"><strong>Watch Party Attendee</strong></span>
+</div>
+</div>
+</header>
+
+<!-- Event 1 Check-in Photo -->
+<div id="event-1-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0; display: block; text-align: center;">
+<div class="event-uploaded-img-wrap" title="Click to view high-definition image">
+<img id="event-1-cover-img" src="assets/images/events/event-1.jpg"  alt="AWS Cloud and AI Day Hanoi 2026 – FCAJ HCMC Watch Party" class="event-uploaded-img" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 6px;" loading="eager" />
+</div>
+<div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+Authentic student check-in evidence attending the live broadcast of AWS Cloud and AI Day Hanoi 2026 at the FCAJ HCMC Watch Party (September 29, 2026)
+</div>
+</div>
+
+<!-- SECTION 1 – EVENT INFORMATION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">01</span>
+<h2 class="report-section-title">1. Event Information</h2>
+</div>
+<div class="report-prose">
+<p><strong>AWS Cloud and AI Day Hanoi 2026</strong> was a major one-day flagship conference organized by Amazon Web Services (AWS), bringing together solutions architects, lead engineers, enterprise technology executives, and government representatives in Vietnam.</p>
+<ul>
+<li><strong>Official Event Name:</strong> AWS Cloud and AI Day Hanoi 2026</li>
+<li><strong>Date:</strong> Tuesday, September 29, 2026</li>
+<li><strong>Main Venue:</strong> JW Marriott Hotel Hanoi, Hanoi, Vietnam</li>
+<li><strong>Actual Participation:</strong> Watched the live stream from Hanoi at the <em>FCAJ HCMC Watch Party</em> in Ho Chi Minh City, actively participating in technical discussions with peers and mentors.</li>
+<li><strong>Role:</strong> Watch Party Attendee.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 2 – KEYNOTE SPEAKERS -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">02</span>
+<h2 class="report-section-title">2. Keynote Speakers</h2>
+</div>
+<div class="report-prose">
+<p>The conference featured distinguished keynote speakers and senior executives at the plenary opening session:</p>
+
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 35%;">Speaker</th>
+<th style="width: 65%;">Role &amp; Organization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hoang Minh</strong></td>
+<td>Deputy Minister of Science and Technology</td>
+</tr>
+<tr>
+<td><strong>Jennifer Wicks</strong></td>
+<td>U.S. Ambassador to Vietnam</td>
+</tr>
+<tr>
+<td><strong>Dr. Werner Vogels</strong></td>
+<td>Chief Technology Officer, Amazon.com</td>
+</tr>
+<tr>
+<td><strong>Eric Yeo</strong></td>
+<td>AWS Country General Manager for Malaysia, Vietnam, and Indochina</td>
+</tr>
+<tr>
+<td><strong>Mai Le</strong></td>
+<td>Director of Product Management, Katalon</td>
+</tr>
+<tr>
+<td><strong>Dr. Jens Lottner</strong></td>
+<td>Chief Executive Officer, Techcombank</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #0284c7; border-radius: 6px; padding: 12px 16px; margin: 16px 0;">
+<p style="margin: 0; font-size: 13.5px; color: #1e293b;">
+<strong>Official Keynote Speakers:</strong> <strong>Hoang Minh, Jennifer Wicks, Dr. Werner Vogels, Eric Yeo, Mai Le, Dr. Jens Lottner</strong>.
+</p>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3 – EVENT OVERVIEW -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">03</span>
+<h2 class="report-section-title">3. Event Overview</h2>
+</div>
+<div class="report-prose">
+<p>The program comprehensively explored foundational pillars of enterprise technology: modern cloud computing, AI-ready data infrastructure, agentic AI in software engineering, workload migration, and cloud operational excellence.</p>
+
+<h4 style="font-size: 14.5px; font-weight: 700; color: #171717; margin: 16px 0 8px 0;">Main Event Schedule (UTC+7)</h4>
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 25%;">Time</th>
+<th style="width: 75%;">Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30</td>
+<td>Check-in, badge collection, and Expo opening</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td>Opening Keynote (KEY001) at Grand Ballroom, JW Marriott Hanoi</td>
+</tr>
+<tr>
+<td>10:15</td>
+<td>Networking break and technology exhibition exploration</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td>Morning technical breakout sessions</td>
+</tr>
+<tr>
+<td>12:05</td>
+<td>Networking lunch and partner showcase</td>
+</tr>
+<tr>
+<td>13:10</td>
+<td>Early afternoon specialized technical tracks</td>
+</tr>
+<tr>
+<td>14:50</td>
+<td>Technical break and consultations with AWS specialists</td>
+</tr>
+<tr>
+<td>15:20</td>
+<td>Late afternoon deep-dive sessions</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>Event close</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>At the <em>FCAJ HCMC Watch Party</em>, attendees joined the live stream of the KEY001 keynote at 09:00 and engaged directly with the <strong>DVT205 (HCMC Watch Party)</strong> session, which matched the topic of <strong>DVT203 (Building software like never before with agentic AI)</strong> held in Grand Ballroom 3 in Hanoi.</p>
+</div>
+</section>
+
+<!-- SECTION 4 – MAIN TOPICS AND ACTIVITIES -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">04</span>
+<h2 class="report-section-title">4. Main Topics &amp; Technical Activities</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:20px 0 10px 0;">4.1. Keynote and Agentic AI in Software Development</h3>
+<ul>
+<li><strong>Keynote KEY001:</strong> Framed around solving ambitious technological challenges with cloud and AI primitives, highlighting three core directions: embedding AI agents in software pipelines, workload modernization, and defense-in-depth system security.</li>
+<li><strong>DVT205 / DVT203 (Building software like never before with agentic AI):</strong> Detailed how autonomous AI agents actively assist developers throughout the software lifecycle, from requirements analysis and code generation to automated testing and code review.</li>
+<li><strong>Transitioning from Demo to Production:</strong> Sessions AIM201 (From Demo to Deployment) and AIM301 (Scaling Multi-Agent Architectures) addressed practical hurdles in operationalizing AI agents; PRT301-S and PRT201-S emphasized human governance, reliability, and security guardrails.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.2. Data Analytics and AI-Ready Infrastructure</h3>
+<ul>
+<li><strong>Building AI-Ready Data Foundations:</strong> Sessions ANT202 and ANT211 established the critical necessity of authoritative data quality, cataloging, and low-latency access before deploying generative AI models.</li>
+<li><strong>Financial Services Industry Applications:</strong> ANT201 provided builder guidance on data-driven agents for FSI, complemented by ANT214 highlighting VPBank's experience scaling enterprise data on Amazon Redshift.</li>
+<li><strong>Unifying Siloed Data:</strong> ANT205 demonstrated cross-silo analytics using Amazon Quick Suite to derive complete business insights.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.3. Application Modernization and Cloud Security</h3>
+<ul>
+<li><strong>Internal Developer Platforms on EKS:</strong> DEV205 illustrated platform engineering at scale on Amazon EKS; DEV208 shared lessons from migrating NestJS workloads from EC2/PM2 to EKS powered by GitOps.</li>
+<li><strong>Monolith to Microservices:</strong> MAM203 outlined structured patterns for decomposing monolithic services onto EKS; AIM303 introduced AWS Transform AI Agent to automate the modernization of .NET and SQL Server workloads.</li>
+<li><strong>Workload Identity &amp; AppSec:</strong> DEV401 explored advanced workload identity engineering; DVT305 showcased AWS Security Agent for proactive security from code to production; AIM203 addressed multi-tier defense in depth for agentic systems.</li>
+</ul>
+
+<h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4.4. Cloud Operations and Cost Optimization</h3>
+<ul>
+<li><strong>Storage Cost Optimization:</strong> DEV204, contributed by FCAJ, provided practical strategies for mastering Amazon S3 Storage Classes to eliminate unnecessary cloud expenditure.</li>
+<li><strong>Infrastructure Drift Remediation:</strong> DEV206 detailed multi-agent workflows for automated drift detection and correction in Terraform / IaC repositories.</li>
+<li><strong>Amazon Bedrock Spend Governance:</strong> DEV210 analyzed real-time cost control mechanisms and spend enforcement for enterprise Amazon Bedrock deployments at scale.</li>
+<li><strong>Observability in the GenAI Era:</strong> PRT203-S (Datadog) detailed monitoring strategies beyond traditional golden signals for non-deterministic AI workloads.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 5 – KNOWLEDGE AND LESSONS LEARNED -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">05</span>
+<h2 class="report-section-title">5. Knowledge &amp; Lessons Learned</h2>
+</div>
+<div class="report-prose">
+<p>Key takeaways and technical insights acquired from the conference tracks:</p>
+
+<div class="minimal-table-wrap">
+<table class="minimal-table">
+<thead>
+<tr>
+<th style="width: 25%;">Core Domain</th>
+<th style="width: 75%;">Key Insights &amp; Engineering Principles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. AI Reliability &amp; Security</strong></td>
+<td>Define explicit boundaries, evaluation metrics, and verification mechanisms before deploying autonomous agents. Ensure strict guardrails against hallucinations, measure error rates, and mandate human-in-the-loop sign-off for state-modifying actions.</td>
+</tr>
+<tr>
+<td><strong>2. Data Quality</strong></td>
+<td>Authoritative, well-governed, and continuously refreshed data is the non-negotiable foundation for intelligent agents and analytics workloads.</td>
+</tr>
+<tr>
+<td><strong>3. Cloud Architecture</strong></td>
+<td>Align application modernization with concrete operational bottlenecks: leverage containerization (Amazon ECS/EKS) and declarative GitOps delivery to shorten release cycles and minimize deployment blast radius.</td>
+</tr>
+<tr>
+<td><strong>4. Monitoring &amp; Cost</strong></td>
+<td>Integrate operational observability and cost tracking into system architecture from day one. Apply lifecycle tiering to Amazon S3 data and continuously track token spend and inference latency on Amazon Bedrock.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 10px 0;">Application to Nutrition E-Commerce Project</h4>
+<p>The architectural concepts gained from the conference directly inform our group capstone project, <strong>Nutrition E-Commerce</strong>:</p>
+<ul>
+<li><strong>Amazon Bedrock for Nutrition Extraction:</strong> Deploying foundation models on Amazon Bedrock to extract nutritional profiles and allergen data from food label uploads, accompanied by a verification UI where users confirm extracted information before database persistence.</li>
+<li><strong>S3 Storage Lifecycle Optimization:</strong> Applying automated S3 Lifecycle policies to product imagery and inspection documents, transitioning files from S3 Standard to S3 Standard-IA after 30 days and archiving historical compliance logs to S3 Glacier Flexible Retrieval after 90 days.</li>
+<li><strong>Microservices on Amazon ECS Fargate:</strong> Containerizing the core product catalog and nutritional recommendation APIs onto serverless AWS Fargate, paired with automated Application Load Balancer health checks for high service availability.</li>
+<li><strong>Identity &amp; Cost Control:</strong> Enforcing least-privilege IAM roles and Workload Identity for containerized services, encrypting sensitive personal dietary records with AWS KMS, and implementing CloudWatch budget alerts on Amazon Bedrock invocation costs.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 6 – PERSONAL REFLECTION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">06</span>
+<h2 class="report-section-title">6. Personal Reflection</h2>
+</div>
+<div class="report-prose">
+<p>Attending the live broadcast of <strong>AWS Cloud and AI Day Hanoi 2026</strong> from the <em>FCAJ HCMC Watch Party</em> in Ho Chi Minh City provided immense technical value and inspiration. Participating in discussions alongside fellow student builders and experienced AWS community mentors helped bridge theoretical cloud concepts with enterprise realities.</p>
+<p>Presentations from enterprise leaders (Techcombank, VPBank, Katalon, and AWS) reinforced that sustainable AI adoption requires more than proof-of-concept demos—it demands dependable data engineering, robust container platforms, strict governance, and real-time operational discipline. These takeaways directly guided my contributions to our team project and elevated the technical rigor of this internship report.</p>
+</div>
+</section>
+
+</article>`;
+}
+
+function renderFiresideChatEventDetail(container, lang = 'vi') {
+  const isVi = lang === 'vi';
+  container.innerHTML = isVi
+    ? `<article class="event-report-article">
+<!-- Breadcrumb & Back Navigation Bar -->
+<nav class="report-nav-bar" aria-label="Breadcrumb">
+<div class="report-breadcrumbs">
+<a href="#/events" onclick="navigateTo('events'); return false;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+<span>Sự kiện tham gia</span>
+</a>
+<span class="sep">/</span>
+<span class="current">Sự kiện 2 - Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</span>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="navigateTo('events'); return false;">
+<span>← Quay lại sự kiện</span>
+</button>
+</nav>
+
+<!-- Hero Header -->
+<header class="report-hero">
+<div class="report-hero-badge-row">
+<span class="badge badge-purple">BÁO CÁO THU HOẠCH SỰ KIỆN</span>
+<span class="badge badge-blue">Điện toán Đám mây &amp; Trí tuệ Nhân tạo</span>
+<span class="badge badge-gray">Chính thức • AWS Community</span>
+</div>
+<h1 class="report-main-title">FIRESIDE CHAT WITH DR. WERNER VOGELS</h1>
+<p class="report-main-subtitle">Kỹ thuật xây dựng hệ thống quy mô lớn, Renaissance Developer và tương lai của trí tuệ nhân tạo</p>
+
+<!-- Standardized Compact Event Metadata Strip -->
+<div class="report-meta-compact-strip">
+<div class="meta-strip-item">
+<span class="meta-strip-label">Tên sự kiện:</span>
+<span class="meta-strip-val"><strong>Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</strong></span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Ngày tổ chức:</span>
+<span class="meta-strip-val">Thứ Sáu, ngày 02/10/2026</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Thời gian:</span>
+<span class="meta-strip-val">08:30 – 12:00 (giờ Việt Nam)</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Địa điểm / Hình thức:</span>
+<span class="meta-strip-val">Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Diễn giả:</span>
+<span class="meta-strip-val"><strong>Dr. Werner Vogels</strong> (Phó Chủ tịch kiêm CTO, Amazon.com)</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Vai trò:</span>
+<span class="meta-strip-val"><strong>Người tham dự (Attendee)</strong></span>
+</div>
+</div>
+</header>
+
+<!-- Event 2 Cover Photo -->
+<div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0; display: block; text-align: center;">
+<div class="event-uploaded-img-wrap" title="Nhấp để xem ảnh độ nét cao (HD)">
+<img id="event-2-cover-img" src="assets/images/events/event-2.jpg"  alt="Fireside Chat with Dr. Werner Vogels – Cloud &amp; AI in Vietnam" class="event-uploaded-img" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 6px;" loading="eager" />
+</div>
+<div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+Ảnh 1: Hình ảnh tập thể tại sự kiện Fireside Chat với Dr. Werner Vogels – Navigating the Future of Cloud & AI in Vietnam, ngày 02/10/2026.
+</div>
+</div>
+
+<!-- PHẦN 1 – THÔNG TIN SỰ KIỆN -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">01</span>
+<h2 class="report-section-title">1. Thông tin sự kiện</h2>
+</div>
+<div class="report-prose">
+<ul>
+<li><strong>Tên sự kiện:</strong> Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</li>
+<li><strong>Ngày tổ chức:</strong> Thứ Sáu, ngày 02/10/2026</li>
+<li><strong>Thời gian:</strong> 08:30 – 12:00 (giờ Việt Nam)</li>
+<li><strong>Diễn giả:</strong> Dr. Werner Vogels</li>
+<li><strong>Chức danh:</strong> Phó Chủ tịch kiêm Giám đốc Công nghệ (CTO), Amazon.com</li>
+<li><strong>Vai trò:</strong> Người tham dự</li>
+<li><strong>Địa điểm / Hình thức tham gia:</strong> Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</li>
+<li><strong>Video sự kiện:</strong> <a href="https://www.youtube.com/watch?v=jWjOIfMA9qc&t=1s" target="_blank" rel="noopener noreferrer">Xem trên YouTube</a></li>
+</ul>
+</div>
+</section>
+
+<!-- PHẦN 2 – MỤC TIÊU SỰ KIỆN -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">02</span>
+<h2 class="report-section-title">2. Mục tiêu sự kiện</h2>
+</div>
+<div class="report-prose">
+<p>Buổi Fireside Chat mang đến những góc nhìn về tương lai của điện toán đám mây và trí tuệ nhân tạo tại Việt Nam.</p>
+<p>Các mục tiêu chính gồm:</p>
+<ul>
+<li>Tìm hiểu xu hướng phát triển AWS Cloud và AI tại Việt Nam.</li>
+<li>Tiếp cận tư duy thiết kế, xây dựng và vận hành hệ thống quy mô lớn.</li>
+<li>Khám phá sự thay đổi của quy trình phát triển ứng dụng khi AI ngày càng phổ biến.</li>
+<li>Hiểu rõ vai trò và trách nhiệm của lập trình viên trong kỷ nguyên AI.</li>
+<li>Học hỏi tư duy kỹ thuật từ lãnh đạo công nghệ của Amazon.</li>
+</ul>
+</div>
+</section>
+
+<!-- PHẦN 3 – DIỄN GIẢ -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">03</span>
+<h2 class="report-section-title">3. Diễn giả</h2>
+</div>
+<div class="report-prose">
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #f59e0b; border-radius: 6px; padding: 16px; margin: 16px 0;">
+<h3 style="margin: 0 0 6px 0; font-size: 16px; color: #0f172a;">Dr. Werner Vogels</h3>
+<p style="margin: 0; font-size: 14px; color: #475569; font-weight: 600;">Phó Chủ tịch kiêm Giám đốc Công nghệ (CTO), Amazon.com</p>
+</div>
+<p>Dr. Werner Vogels là nhà lãnh đạo công nghệ có nhiều kinh nghiệm trong lĩnh vực điện toán đám mây, hệ thống phân tán và kiến trúc phần mềm quy mô lớn.</p>
+<p>Trong buổi trao đổi, ông chia sẻ những góc nhìn về sự hình thành và phát triển của AWS, tư duy xây dựng hệ thống lớn và tương lai của ngành phát triển phần mềm dưới tác động của AI.</p>
+<p>Những nội dung này nhấn mạnh vai trò lâu dài của kiến thức nền tảng, khả năng đưa ra quyết định kỹ thuật và tinh thần học tập liên tục.</p>
+</div>
+</section>
+
+<!-- PHẦN 4 – NỘI DUNG NỔI BẬT -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">04</span>
+<h2 class="report-section-title">4. Nội dung nổi bật</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 16px 0 8px 0;">4.1. Sự hình thành và phát triển của AWS</h3>
+<p>Buổi trao đổi đề cập đến quá trình hình thành Amazon Web Services và sự phát triển của nền tảng điện toán đám mây.</p>
+<p>Các nội dung chính gồm:</p>
+<ul>
+<li>Tư duy ban đầu trong việc xây dựng hạ tầng đám mây.</li>
+<li>Phát triển dịch vụ phù hợp với nhiều nhóm khách hàng.</li>
+<li>Thiết kế hệ thống có thể mở rộng từ ứng dụng nhỏ đến quy mô toàn cầu.</li>
+<li>Lấy nhu cầu thực tế của khách hàng làm cơ sở cho các quyết định công nghệ.</li>
+</ul>
+<p>Chủ đề này cho thấy điện toán đám mây giúp tổ chức tiếp cận hạ tầng linh hoạt mà không cần tự xây dựng toàn bộ hệ thống.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.2. Tư duy kỹ thuật khi xây dựng hệ thống quy mô lớn</h3>
+<p>Một chủ đề quan trọng khác là những thách thức trong thiết kế và vận hành hệ thống phục vụ lượng lớn người dùng.</p>
+<p>Các yếu tố được nhấn mạnh gồm:</p>
+<ul>
+<li>Khả năng mở rộng hệ thống (Scalability).</li>
+<li>Độ tin cậy và tính sẵn sàng (Reliability &amp; Availability).</li>
+<li>Tự động hóa quy trình vận hành (Operational Automation).</li>
+<li>Khả năng phục hồi khi xảy ra sự cố (Resilience).</li>
+<li>Giám sát và bảo trì hệ thống lâu dài (Observability &amp; Maintainability).</li>
+</ul>
+<p>Qua đó, tôi hiểu rằng phát triển phần mềm không chỉ là xây dựng chức năng mà còn phải đảm bảo hệ thống có khả năng vận hành ổn định trong dài hạn.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.3. Khái niệm Renaissance Developer</h3>
+<p>Dr. Werner Vogels giới thiệu khái niệm <em>Renaissance Developer</em>, thể hiện sự thay đổi trong vai trò của lập trình viên khi các công cụ AI ngày càng phát triển.</p>
+<p>Lập trình viên hiện đại không chỉ cần biết viết mã nguồn mà còn cần hiểu kiến trúc hệ thống, có khả năng giải quyết vấn đề, giao tiếp hiệu quả và đánh giá các quyết định kỹ thuật.</p>
+<p>Các công cụ AI có thể hỗ trợ công việc phát triển phần mềm, nhưng kiến thức và trách nhiệm của con người vẫn giữ vai trò quan trọng.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.4. AI, phát triển nguyên mẫu và trách nhiệm kỹ thuật</h3>
+<p>Trí tuệ nhân tạo giúp rút ngắn thời gian chuyển ý tưởng thành sản phẩm nguyên mẫu.</p>
+<p>AI có thể hỗ trợ sinh mã, gợi ý giải pháp và tự động hóa các công việc lặp lại.</p>
+<p>Tuy nhiên, tốc độ phát triển nhanh hơn không đồng nghĩa với chất lượng phần mềm tốt hơn.</p>
+<p>Lập trình viên vẫn cần:</p>
+<ul>
+<li>Kiểm tra mã nguồn do AI tạo ra.</li>
+<li>Xác minh hoạt động của ứng dụng.</li>
+<li>Kiểm thử các chức năng quan trọng.</li>
+<li>Xác định những rủi ro bảo mật và độ tin cậy.</li>
+<li>Đưa ra quyết định thiết kế kiến trúc phù hợp.</li>
+</ul>
+<p>Điều này cho thấy AI là công cụ hỗ trợ năng lực kỹ thuật, không thay thế trách nhiệm của người phát triển.</p>
+</div>
+</section>
+
+<!-- PHẦN 5 – KIẾN THỨC VÀ BÀI HỌC TIẾP THU -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">05</span>
+<h2 class="report-section-title">5. Kiến thức và bài học tiếp thu</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 16px 0 8px 0;">5.1. Tư duy kỹ thuật và kiến trúc hệ thống</h3>
+<ul>
+<li><strong>Tư duy khả năng mở rộng:</strong> Khi thiết kế ứng dụng, cần cân nhắc khả năng mở rộng trong tương lai nhưng vẫn phải lựa chọn kiến trúc phù hợp với yêu cầu thực tế.</li>
+<li><strong>Tư duy xây dựng nguyên mẫu:</strong> AI có thể giúp thử nghiệm ý tưởng nhanh hơn. Tuy nhiên, trước khi triển khai thực tế, nguyên mẫu vẫn cần được kiểm thử và đánh giá.</li>
+<li><strong>Kiến thức nền tảng:</strong> Kiến thức về lập trình, kiến trúc hệ thống, hệ thống phân tán và kỹ năng giải quyết vấn đề vẫn cần thiết ngay cả khi công cụ AI ngày càng hiện đại.</li>
+</ul>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.2. Sự thay đổi của ngành phát triển phần mềm</h3>
+<p>Buổi trao đổi giúp tôi hiểu rõ hơn sự thay đổi trong vai trò của kỹ sư phần mềm.</p>
+<p>Lập trình viên cần kết hợp kỹ năng lập trình với tư duy kiến trúc, khả năng phân tích và kỹ năng sử dụng AI một cách hiệu quả.</p>
+<p>AI có thể giảm bớt những công việc lặp lại để lập trình viên dành nhiều thời gian hơn cho các vấn đề kỹ thuật phức tạp và chất lượng sản phẩm.</p>
+<p>Việc liên tục học hỏi và cập nhật công nghệ là yếu tố quan trọng đối với định hướng nghề nghiệp.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.3. Ứng dụng thực tế</h3>
+<ul>
+<li><strong>Tích hợp AI vào quy trình phát triển:</strong> Có thể sử dụng các công cụ AI để hỗ trợ lập trình, viết tài liệu, chuẩn bị kiểm thử và xây dựng nguyên mẫu. Tuy nhiên, kết quả do AI tạo ra vẫn cần được kiểm tra.</li>
+<li><strong>Cải thiện thiết kế hệ thống:</strong> Tư duy xây dựng hệ thống quy mô lớn có thể được vận dụng trong thiết kế kiến trúc, triển khai, giám sát và đảm bảo độ tin cậy cho các dự án cá nhân hoặc dự án nhóm.</li>
+<li><strong>Nâng cao khả năng tự học:</strong> Sự kiện khuyến khích tinh thần chủ động tìm hiểu AWS Cloud, AI và các công nghệ mới thông qua tài liệu chính thức, dự án thực tế và chương trình First Cloud AI Journey.</li>
+</ul>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.4. Liên hệ với dự án Nutrition E-Commerce</h3>
+<p>Những kiến thức từ buổi Fireside Chat có thể liên hệ với dự án nhóm Nutrition E-Commerce:</p>
+<ul>
+<li><strong>Kiến trúc đám mây:</strong> Tìm hiểu vai trò của Amazon ECS Fargate, Application Load Balancer, Amazon RDS và Amazon CloudFront trong thiết kế tổng thể.</li>
+<li><strong>Tích hợp AI:</strong> Xem xét cách Amazon Bedrock hỗ trợ các chức năng ứng dụng và tầm quan trọng của việc đánh giá kết quả AI.</li>
+<li><strong>Độ tin cậy phần mềm:</strong> Hiểu rõ vai trò của kiểm thử, xác minh triển khai và giám sát hệ thống trước khi đưa ứng dụng vào sử dụng.</li>
+<li><strong>Năng suất phát triển:</strong> Tìm hiểu cách AI hỗ trợ xây dựng nguyên mẫu và tài liệu kỹ thuật nhưng không thay thế việc đánh giá của lập trình viên.</li>
+</ul>
+<p><em>Đây là những nội dung liên hệ kiến thức với dự án, không phải khẳng định tôi đã trực tiếp triển khai tất cả dịch vụ trong buổi sự kiện.</em></p>
+</div>
+</section>
+
+<!-- PHẦN 6 – TRẢI NGHIỆM VÀ CẢM NHẬN CÁ NHÂN -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">06</span>
+<h2 class="report-section-title">6. Trải nghiệm và cảm nhận cá nhân</h2>
+</div>
+<div class="report-prose">
+<p>Tham gia buổi Fireside Chat với Dr. Werner Vogels là cơ hội hữu ích để tìm hiểu tương lai của điện toán đám mây và trí tuệ nhân tạo dưới góc nhìn của một nhà lãnh đạo công nghệ giàu kinh nghiệm.</p>
+<p>Có hai nội dung khiến tôi đặc biệt quan tâm:</p>
+<ul>
+<li><strong>Học hỏi từ chuyên gia công nghệ:</strong> Buổi trao đổi giúp tôi có góc nhìn rộng hơn về những nguyên tắc xây dựng nền tảng đám mây và các thách thức khi phát triển hệ thống có quy mô lớn.</li>
+<li><strong>Nhận thức về Renaissance Developer:</strong> Tôi hiểu rõ hơn rằng lập trình viên hiện đại không chỉ cần kiến thức lập trình mà còn phải có tư duy hệ thống, kỹ năng giao tiếp, khả năng đánh giá kỹ thuật và tinh thần học hỏi liên tục.</li>
+</ul>
+<div class="report-quote-box" style="border-left-color: #171717; font-weight: 700; color: #171717; font-size: 15px; margin: 22px 0;">
+“AI có thể giúp tăng tốc quá trình phát triển phần mềm, nhưng con người vẫn phải chịu trách nhiệm về chất lượng, bảo mật và độ tin cậy của sản phẩm.”
+</div>
+<p>Trải nghiệm này giúp tôi có thêm động lực tiếp tục học tập AWS Cloud, kiến trúc ứng dụng và các công nghệ AI trong chương trình First Cloud AI Journey.</p>
+
+<!-- Tags -->
+<div style="margin:24px 0 10px 0; font-size:13px; color:#555555; line-height:1.8; word-spacing:4px; border-top:1px solid #E5E5E5; padding-top:16px;">
+#AWS #WernerVogels #FiresideChat #CloudAI #RenaissanceDeveloper #EngineeringAtScale #FirstCloudAIJourney
+</div>
+</div>
+</section>
+
+<!-- Bottom Navigation Actions -->
+<div class="report-bottom-actions">
+<button type="button" class="btn btn-outline" onclick="navigateTo('events'); return false;">
+<span>← Quay lại sự kiện</span>
+</button>
+<button type="button" class="btn btn-primary" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+<span>↑ Lên đầu trang</span>
+</button>
+</div>
+</article>`
+    : `<article class="event-report-article">
+<!-- Breadcrumb & Back Navigation Bar -->
+<nav class="report-nav-bar" aria-label="Breadcrumb">
+<div class="report-breadcrumbs">
+<a href="#/events" onclick="navigateTo('events'); return false;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+<span>Events Participated</span>
+</a>
+<span class="sep">/</span>
+<span class="current">Event 2 - Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</span>
+</div>
+<button type="button" class="btn btn-outline btn-sm" onclick="navigateTo('events'); return false;">
+<span>← Back to Events</span>
+</button>
+</nav>
+
+<!-- Hero Header -->
+<header class="report-hero">
+<div class="report-hero-badge-row">
+<span class="badge badge-purple">EVENT HARVEST REPORT</span>
+<span class="badge badge-blue">Cloud Computing &amp; Artificial Intelligence</span>
+<span class="badge badge-gray">Official • AWS Community</span>
+</div>
+<h1 class="report-main-title">FIRESIDE CHAT WITH DR. WERNER VOGELS</h1>
+<p class="report-main-subtitle">Engineering at Scale, the Renaissance Developer, and the Future of Artificial Intelligence</p>
+
+<!-- Standardized Compact Event Metadata Strip -->
+<div class="report-meta-compact-strip">
+<div class="meta-strip-item">
+<span class="meta-strip-label">Event Name:</span>
+<span class="meta-strip-val"><strong>Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</strong></span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Event Date:</span>
+<span class="meta-strip-val">Friday, October 2, 2026</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Date &amp; Time:</span>
+<span class="meta-strip-val">08:30 AM – 12:00 PM, October 2, 2026 (UTC+7)</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Location / Format:</span>
+<span class="meta-strip-val">26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Speaker:</span>
+<span class="meta-strip-val"><strong>Dr. Werner Vogels</strong> (Vice President &amp; CTO, Amazon.com)</span>
+</div>
+<div class="meta-strip-item">
+<span class="meta-strip-label">Role:</span>
+<span class="meta-strip-val"><strong>Attendee</strong></span>
+</div>
+</div>
+</header>
+
+<!-- Event 2 Cover Photo -->
+<div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0; display: block; text-align: center;">
+<div class="event-uploaded-img-wrap" title="Click to view high-definition image">
+<img id="event-2-cover-img" src="assets/images/events/event-2.jpg"  alt="Fireside Chat with Dr. Werner Vogels – Cloud &amp; AI in Vietnam" class="event-uploaded-img" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 6px;" loading="eager" />
+</div>
+<div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+Photo 1: Group photo from the Fireside Chat with Dr. Werner Vogels – Navigating the Future of Cloud & AI in Vietnam, October 2, 2026.
+</div>
+</div>
+
+<!-- SECTION 1 – EVENT INFORMATION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">01</span>
+<h2 class="report-section-title">1. Event Information</h2>
+</div>
+<div class="report-prose">
+<ul>
+<li><strong>Event Name:</strong> Fireside Chat with Dr. Werner: Navigating the Future of Cloud &amp; AI in Vietnam</li>
+<li><strong>Event Date:</strong> Friday, October 2, 2026</li>
+<li><strong>Date &amp; Time:</strong> 08:30 AM – 12:00 PM, October 2, 2026 (UTC+7)</li>
+<li><strong>Speaker:</strong> Dr. Werner Vogels</li>
+<li><strong>Speaker Position:</strong> Vice President and Chief Technology Officer (CTO), Amazon.com</li>
+<li><strong>Participation Role:</strong> Attendee</li>
+<li><strong>Event Location / Participation Format:</strong> 26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam</li>
+<li><strong>Event Video:</strong> <a href="https://www.youtube.com/watch?v=jWjOIfMA9qc&t=1s" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 2 – EVENT OBJECTIVES -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">02</span>
+<h2 class="report-section-title">2. Event Objectives</h2>
+</div>
+<div class="report-prose">
+<p>The Fireside Chat aimed to provide insights into the future of cloud computing and artificial intelligence in Vietnam.</p>
+<p>The main objectives included:</p>
+<ul>
+<li>Exploring the future of AWS Cloud and AI adoption in Vietnam.</li>
+<li>Understanding engineering principles for building reliable systems at scale.</li>
+<li>Discovering how AI is transforming application development and software engineering.</li>
+<li>Learning about the evolving responsibilities of developers in the AI era.</li>
+<li>Developing a broader engineering mindset through the experiences of AWS technology leadership.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION 3 – SPEAKER -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">03</span>
+<h2 class="report-section-title">3. Speaker</h2>
+</div>
+<div class="report-prose">
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #f59e0b; border-radius: 6px; padding: 16px; margin: 16px 0;">
+<h3 style="margin: 0 0 6px 0; font-size: 16px; color: #0f172a;">Dr. Werner Vogels</h3>
+<p style="margin: 0; font-size: 14px; color: #475569; font-weight: 600;">Vice President and Chief Technology Officer (CTO), Amazon.com</p>
+</div>
+<p>Dr. Werner Vogels is a technology leader known for his experience in cloud computing, distributed systems, and large-scale software architectures.</p>
+<p>During the discussion, he shared perspectives on the development of AWS, engineering at scale, and the future of software development in an AI-driven world.</p>
+<p>His insights emphasized the continuing importance of engineering fundamentals, technical judgment, and lifelong learning.</p>
+</div>
+</section>
+
+<!-- SECTION 4 – KEY HIGHLIGHTS -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">04</span>
+<h2 class="report-section-title">4. Key Highlights</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 16px 0 8px 0;">4.1. The Origins and Evolution of AWS</h3>
+<p>The discussion explored the origins of Amazon Web Services and its evolution into a major cloud computing platform.</p>
+<p>Key points included:</p>
+<ul>
+<li>The early thinking behind developing cloud infrastructure.</li>
+<li>Building cloud services that support different customer needs.</li>
+<li>Designing systems that can grow from small applications to global-scale workloads.</li>
+<li>Using customer requirements to guide technology decisions.</li>
+</ul>
+<p>This topic highlighted how cloud computing enables organizations to access scalable infrastructure without building every component themselves.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.2. Engineering at Scale</h3>
+<p>Another major theme was the challenge of designing and operating systems serving large numbers of users.</p>
+<p>Important engineering considerations included:</p>
+<ul>
+<li>Scalability and workload growth.</li>
+<li>Reliability and service availability.</li>
+<li>Automation and operational efficiency.</li>
+<li>Resilient system design.</li>
+<li>Monitoring and long-term maintainability.</li>
+</ul>
+<p>The discussion emphasized that successful software engineering involves more than building features. Systems must also remain dependable as their complexity and usage increase.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.3. The Renaissance Developer</h3>
+<p>Dr. Werner Vogels introduced the concept of the <em>Renaissance Developer</em>, describing how software engineers must adapt as AI tools become more capable.</p>
+<p>Modern developers need to develop skills beyond writing source code.</p>
+<p>They should also understand system architecture, solve complex problems, communicate effectively, and evaluate technical decisions.</p>
+<p>AI assistants can support everyday development activities, but human knowledge and responsibility remain essential.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">4.4. AI, Prototyping, and Engineering Responsibility</h3>
+<p>Artificial intelligence can significantly accelerate the process of turning ideas into working prototypes.</p>
+<p>AI tools may help developers generate initial code, explore solutions, and automate repetitive tasks.</p>
+<p>However, faster development does not automatically guarantee software quality.</p>
+<p>Developers must still:</p>
+<ul>
+<li>Review AI-generated code.</li>
+<li>Validate application behavior.</li>
+<li>Test important functionalities.</li>
+<li>Identify security and reliability risks.</li>
+<li>Make informed architectural decisions.</li>
+</ul>
+<p>The discussion reinforced the idea that AI should support engineering expertise rather than replace it.</p>
+</div>
+</section>
+
+<!-- SECTION 5 – KEY LEARNINGS -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">05</span>
+<h2 class="report-section-title">5. Key Learnings</h2>
+</div>
+<div class="report-prose">
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 16px 0 8px 0;">5.1. Engineering Mindset and Architecture</h3>
+<ul>
+<li><strong>Scalability-first thinking:</strong> Developers should consider how their systems might evolve as application requirements and workloads change. Scalability is important, but the chosen architecture should remain appropriate to actual project needs.</li>
+<li><strong>Prototyping mindset:</strong> AI tools can help teams evaluate ideas quickly and experiment with different approaches. Before deployment, prototypes still require testing, refinement, and technical validation.</li>
+<li><strong>Engineering fundamentals:</strong> Core knowledge of programming, system architecture, distributed systems, and problem-solving remains valuable even as development tools evolve.</li>
+</ul>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.2. The Evolution of Software Development</h3>
+<p>The discussion helped me better understand the changing role of software engineers.</p>
+<p>Developers are increasingly expected to combine coding skills with architecture, analytical thinking, and the ability to work effectively with AI assistants.</p>
+<p>AI can reduce repetitive work, allowing developers to devote more attention to technical challenges and software quality.</p>
+<p>Continuous learning is essential to staying current with cloud computing and AI technologies.</p>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.3. Practical Applications</h3>
+<ul>
+<li><strong>Integrating AI into development workflows:</strong> AI assistants can support coding, documentation, code review, testing preparation, and rapid prototyping. Their results still require human validation.</li>
+<li><strong>Improving system design:</strong> Engineering-at-scale principles can guide decisions about reliability, deployment, monitoring, and scalability in individual or group projects.</li>
+<li><strong>Strengthening self-learning:</strong> The session encouraged proactive learning through AWS documentation, practical projects, and programs such as First Cloud AI Journey.</li>
+</ul>
+
+<h3 style="font-size: 15px; font-weight: 700; color: #0F172A; margin: 24px 0 8px 0;">5.4. Application to Nutrition E-Commerce</h3>
+<p>The ideas discussed in the Fireside Chat are relevant to the Nutrition E-Commerce group project:</p>
+<ul>
+<li><strong>Cloud architecture:</strong> Reviewing the roles of Amazon ECS Fargate, Application Load Balancer, Amazon RDS, and Amazon CloudFront in the overall system design.</li>
+<li><strong>AI integration:</strong> Considering how Amazon Bedrock can support application features while maintaining appropriate validation and security controls.</li>
+<li><strong>Software reliability:</strong> Understanding the importance of testing, deployment verification, and monitoring before considering an application ready for users.</li>
+<li><strong>Development productivity:</strong> Exploring how AI-assisted development can help with prototyping and documentation without replacing human technical judgment.</li>
+</ul>
+<p><em>These points describe how the session's concepts relate to the project. They do not imply that every technology was personally implemented during the event.</em></p>
+</div>
+</section>
+
+<!-- SECTION 6 – EVENT EXPERIENCE AND PERSONAL REFLECTION -->
+<section class="report-section-block">
+<div class="report-section-header">
+<span class="report-section-num">06</span>
+<h2 class="report-section-title">6. Event Experience and Personal Reflection</h2>
+</div>
+<div class="report-prose">
+<p>Attending the Fireside Chat with Dr. Werner Vogels was a valuable opportunity to explore the future of cloud computing and artificial intelligence from the perspective of an experienced technology leader.</p>
+<p>Two ideas stood out to me:</p>
+<ul>
+<li><strong>Learning from technology leadership:</strong> The discussion provided a broader perspective on the principles behind cloud platforms and the challenges of building reliable systems at scale.</li>
+<li><strong>Understanding the Renaissance Developer:</strong> I gained a clearer understanding that modern developers need more than programming knowledge. They must develop systems thinking, communication skills, technical judgment, and the ability to learn continuously.</li>
+</ul>
+<div class="report-quote-box" style="border-left-color: #171717; font-weight: 700; color: #171717; font-size: 15px; margin: 22px 0;">
+“AI can make software development faster, but developers remain responsible for the quality, security, and reliability of their solutions.”
+</div>
+<p>This experience strengthened my motivation to continue learning AWS Cloud, application architecture, and AI technologies throughout my First Cloud AI Journey.</p>
+
+<!-- Tags -->
+<div style="margin:24px 0 10px 0; font-size:13px; color:#555555; line-height:1.8; word-spacing:4px; border-top:1px solid #E5E5E5; padding-top:16px;">
+#AWS #WernerVogels #FiresideChat #CloudAI #RenaissanceDeveloper #EngineeringAtScale #FirstCloudAIJourney
+</div>
+</div>
+</section>
+
+<!-- Bottom Navigation Actions -->
+<div class="report-bottom-actions">
+<button type="button" class="btn btn-outline" onclick="navigateTo('events'); return false;">
+<span>← Back to Events</span>
+</button>
+<button type="button" class="btn btn-primary" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+<span>↑ Back to top</span>
+</button>
+</div>
+</article>`;
+}
+
 function renderMeetupEventDetail(container, lang = 'vi') {
   const isVi = lang === 'vi';
 
   const t = {
     breadcrumbEvents: isVi ? "Sự kiện tham gia" : "Events Participated",
-    breadcrumbCurrent: isVi ? "Sự kiện 2 - First Cloud AI Journey Meetup (24/10/2026)" : "Event 2 - First Cloud AI Journey Meetup (October 24, 2026)",
+    breadcrumbCurrent: isVi ? "Sự kiện 3 - First Cloud AI Journey Meetup (24/10/2026)" : "Event 3 - First Cloud AI Journey Meetup (October 24, 2026)",
     btnBack: isVi ? "← Quay lại sự kiện" : "← Back to Events",
     badgeReport: isVi ? "BÁO CÁO THU HOẠCH SỰ KIỆN" : "EVENT HARVEST REPORT",
     badgeCategory: "Cloud Computing, Cloud Security & AI Agents",
@@ -6879,14 +7842,14 @@ function renderMeetupEventDetail(container, lang = 'vi') {
       </header>
 
       <!-- Event 2 Check-in Photo -->
-      <div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
-        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-2.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
-          <img id="event-2-cover-img"
-               src="assets/images/events/event-2.jpg"
+      <div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-3.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+          <img id="event-3-cover-img"
+               src="assets/images/events/event-3.jpg"
                alt="${escapeHtml(t.eventName)}"
                class="event-uploaded-img"
-               onload="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='block';"
-               onerror="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='none';"
+               onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';"
+               onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';"
                loading="eager" />
         </div>
         <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
@@ -7321,7 +8284,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
 
   const t = {
     breadcrumbEvents: isVi ? "Sự kiện tham gia" : "Events Participated",
-    breadcrumbCurrent: isVi ? "Sự kiện 3 - Enterprise AI on AWS Cloud (14/11/2026)" : "Event 3 - Enterprise AI on AWS Cloud (November 14, 2026)",
+    breadcrumbCurrent: isVi ? "Sự kiện 4 - Enterprise AI on AWS Cloud (14/11/2026)" : "Event 4 - Enterprise AI on AWS Cloud (November 14, 2026)",
     btnBack: isVi ? "← Quay lại sự kiện" : "← Back to Events",
     badgeReport: isVi ? "BÁO CÁO THU HOẠCH SỰ KIỆN" : "EVENT HARVEST REPORT",
     badgeCategory: "Artificial Intelligence & Cloud Computing",
@@ -7390,14 +8353,14 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
       </header>
 
       <!-- Event 3 Check-in Photo -->
-      <div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
-        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-3.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
-          <img id="event-3-cover-img"
-               src="assets/images/events/event-3.jpg"
+      <div id="event-4-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-4.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+          <img id="event-4-cover-img"
+               src="assets/images/events/event-4.jpg"
                alt="${escapeHtml(t.eventName)}"
                class="event-uploaded-img"
-               onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';"
-               onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';"
+               onload="const w = document.getElementById('event-4-cover-wrap'); if (w) w.style.display='block';"
+               onerror="const w = document.getElementById('event-4-cover-wrap'); if (w) w.style.display='none';"
                loading="eager" />
         </div>
         <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
@@ -10503,8 +11466,10 @@ function setupSearchAndMobile() {
       else if (q.includes('event-driven') || q.includes('race condition') || q.includes('dynamodb cas')) navigateTo('blogs/aws-event-driven-architecture');
       else if (q.includes('cô lập ec2') || q.includes('identity') || q.includes('containment') || q.includes('quarantine') || q.includes('imds')) navigateTo('blogs/aws-ec2-identity-containment');
       else if (q.includes('blog') || q.includes('bài viết')) navigateTo('blogs-posted');
-      else if (q.includes('enterprise ai') || q.includes('multi-agent') || q.includes('multi agent') || q.includes('prototype to production') || q.includes('sự kiện 3') || q.includes('event 3')) navigateTo('events/enterprise-ai-on-aws-cloud');
-      else if (q.includes('voice ai') || q.includes('contact center') || q.includes('kiệt trần') || q.includes('meet up') || q.includes('meetup') || q.includes('aws ram') || q.includes('ram') || q.includes('agentcore') || q.includes('kiro crew') || q.includes('pentest') || q.includes('sự kiện 2') || q.includes('event 2')) navigateTo('events/first-cloud-ai-journey-24-10-2026');
+      else if (q.includes('cloud and ai day') || q.includes('hanoi') || q.includes('watch party') || q.includes('sự kiện 1') || q.includes('event 1')) navigateTo('events/aws-cloud-ai-day-hanoi-2026');
+  else if (q.includes('werner') || q.includes('fireside') || q.includes('renaissance') || q.includes('sự kiện 2') || q.includes('event 2')) navigateTo('events/fireside-chat-dr-werner-vogels');
+  else if (q.includes('enterprise ai') || q.includes('multi-agent') || q.includes('multi agent') || q.includes('prototype to production') || q.includes('sự kiện 4') || q.includes('event 4')) navigateTo('events/enterprise-ai-on-aws-cloud');
+  else if (q.includes('voice ai') || q.includes('contact center') || q.includes('kiệt trần') || q.includes('meet up') || q.includes('meetup') || q.includes('aws ram') || q.includes('ram') || q.includes('agentcore') || q.includes('kiro crew') || q.includes('pentest') || q.includes('sự kiện 3') || q.includes('event 3')) navigateTo('events/first-cloud-ai-journey-24-10-2026');
       else if (q.includes('event') || q.includes('sự kiện') || q.includes('bitexco')) navigateTo('events');
       else if (q.includes('workshop') || q.includes('s3') || q.includes('endpoint') || q.includes('thực hành')) navigateTo('workshop');
       else if (q.includes('đánh giá') || q.includes('self') || q.includes('assessment')) navigateTo('self-evaluation');
@@ -10566,6 +11531,8 @@ window.navigateTo = navigateTo;
 window.renderEventsList = renderEventsList;
 window.renderEventDetail = renderEventDetail;
 window.renderModernizationEventDetail = renderModernizationEventDetail;
+window.renderCloudAIDayEventDetail = renderCloudAIDayEventDetail;
+window.renderFiresideChatEventDetail = renderFiresideChatEventDetail;
 window.renderMeetupEventDetail = renderMeetupEventDetail;
 window.renderEnterpriseAIEventDetail = renderEnterpriseAIEventDetail;
 window.selectWeek = selectWeek;

@@ -7,429 +7,336 @@ pre: " <b> 2. </b> "
 ---
 
 <div class="tech-report">
-<!-- HEADER -->
 <header>
 <div class="report-eyebrow">Project Proposal</div>
+<p class="report-intro">Architecture design, scope, problem statement, timeline, and cost estimate for the workshop project.</p>
 <h1 class="report-title">Personalized Nutrition E-Commerce Platform on AWS</h1>
-<p class="report-subtitle">Cloud-native AI-Powered Nutrition E-Commerce Platform</p>
-<p class="report-intro">
-An intelligent e-commerce platform integrating generative AI for personalized nutrition analysis and meal planning, 
-architected and deployed entirely on Amazon Web Services using React, Spring Boot 4, Amazon ECS Fargate, 
-Amazon Bedrock, and Terraform.
-</p>
+<p class="report-subtitle">Sourced nutrition lookup and shopping on AWS infrastructure</p>
 </header>
 
-<!-- 1. PROJECT OVERVIEW -->
+<!-- 1. 1. PROPOSAL SUMMARY -->
 <section class="report-section">
-<h2 class="report-h2">1. Project Overview</h2>
-<p class="report-p">
-The Personalized Nutrition E-Commerce Platform is developed as part of the <strong>AWS First Cloud AI Journey (FCAJ)</strong> program. 
-The platform delivers a healthy food e-commerce experience (Eat Clean, Low-Carb, High-Protein, Vegan) augmented by an intelligent AI assistant, 
-empowering consumers to find and purchase products tailored to their nutritional requirements and fitness goals.
-</p>
-
-<h3 class="report-h3">Core Technologies and AWS Services:</h3>
-<ul class="report-list">
-<li><strong>Frontend:</strong> React 19, TypeScript, Vite, Tailwind CSS – Modern responsive Single Page Application.</li>
-<li><strong>Backend API:</strong> Spring Boot 4 (Java 21) – RESTful microservices-ready architecture handling orders and USDA data.</li>
-<li><strong>Database:</strong> PostgreSQL 17 on Amazon RDS – Standardized 152-product catalog with detailed USDA nutritional metrics.</li>
-<li><strong>Distribution & Storage:</strong> Amazon CloudFront & Amazon S3 – Global low-latency CDN and secure static asset hosting.</li>
-<li><strong>Compute & Load Balancing:</strong> Amazon ECS Fargate & Application Load Balancer (ALB) – Serverless container management.</li>
-<li><strong>Identity & Authentication:</strong> Amazon Cognito User Pools – Secure stateless JWT Bearer token issuance and RBAC.</li>
-<li><strong>Artificial Intelligence (AI):</strong> Amazon Bedrock (Nova 2 Lite) & Bedrock Guardrails – Natural Language Understanding and content moderation.</li>
-<li><strong>Infrastructure as Code (IaC) & CI/CD:</strong> Terraform & GitHub Actions (AWS OIDC) – 100% automated provisioning without long-lived static keys.</li>
-</ul>
-
-<div class="report-callout">
-<strong>Core AI Principle:</strong> The architecture strictly adheres to the rule that <em>AI only performs intent classification and parameter extraction</em> from the user's natural language queries. All numerical nutritional figures (Calories, Protein, Carbohydrates, Fat, and allergens) <strong>are queried directly from the verified PostgreSQL database sourced from USDA FoodData Central</strong>, eliminating AI hallucination.
-</div>
+<h2 class="report-h2">1. Proposal Summary</h2>
+<p class="report-p">The personalized nutrition e-commerce platform on AWS supports food lookup, purchasing, and meal recommendations from sourced data. React invokes Spring Boot via CloudFront and ALB; PostgreSQL stores data, while Bedrock only interprets requests. Products with missing data are excluded during nutrition or allergen filtering. Response metrics are retrieved by code directly from the DB, combined with demo-session-based operation to control costs.</p>
 </section>
 
-<!-- 2. PROBLEMS AND SOLUTIONS -->
+<!-- 2. 2. PROBLEM STATEMENT -->
 <section class="report-section">
-<h2 class="report-h2">2. Problem Statement & Solutions</h2>
-<p class="report-p"><strong>User Challenges in Traditional Food E-Commerce:</strong></p>
-<ul class="report-list">
-<li>Lack of transparent nutritional data on conventional food shopping platforms.</li>
-<li>Hidden food allergy hazards due to ambiguous ingredient labeling.</li>
-<li>Tedious manual calculation required to balance daily macro targets.</li>
-<li>No flexible personalized filtering based on individual fitness goals.</li>
-</ul>
-
-<p class="report-p"><strong>Core Solution Capabilities:</strong></p>
-<ul class="report-list">
-<li><strong>152 USDA Standardized Catalog:</strong> Clean food catalog standardized against USDA FoodData Central with precise macro/calorie breakdown.</li>
-<li><strong>Multi-Attribute Nutrition Filter:</strong> Allows users to filter by calorie ranges (Min-Max), minimum protein targets, and carb/fat ceilings.</li>
-<li><strong>9 Allergens & 6 Diet Tags:</strong> Strict detection of 9 major allergens (fail-closed exclusion) and 6 dietary badges (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
-<li><strong>AI Natural Language Lookup:</strong> Amazon Bedrock Nova 2 Lite transforms free-text user inquiries into structured SQL query parameters.</li>
-<li><strong>Nutrition Profile & Meal Suggestions:</strong> Calculates user BMR and TDEE, suggesting balanced single-meal compositions aligned with daily targets.</li>
-<li><strong>Real-Time Cart Macro Summary:</strong> Automatically tallies cumulative calories and macro distribution in the shopping cart prior to checkout.</li>
-<li><strong>Flexible Payment Methods:</strong> Supports Cash on Delivery (COD) and secure simulated online payment via VNPAY Sandbox gateway.</li>
-<li><strong>Administrative Dashboard:</strong> Product inventory management, order processing, and USDA data synchronization.</li>
-</ul>
-
-<div class="report-callout report-callout-disclaimer">
-<strong>Medical Disclaimer:</strong> This application is intended solely for general nutritional guidance and e-commerce shopping. It <strong>is not a medical device and does not offer clinical diagnosis, medical therapy, or licensed dietary treatment</strong>. Users with chronic medical conditions or severe food allergies must consult licensed healthcare professionals.
-</div>
+<h2 class="report-h2">2. Problem Statement</h2>
+<h3 class="report-h3">What is the problem?</h3>
+<p class="report-p">Buyers struggle to compare food products when nutrition and allergen data are inconsistent. AI responses may contain unfounded figures if the model generates content autonomously.</p>
+<h3 class="report-h3">Solution</h3>
+<p class="report-p">Buyers struggle to cross-reference nutrition and allergen data across products. Text-generating chatbots can produce unfounded figures. The MVP includes a catalog of 152 USDA products, accounts, filtering by nutrition, 9 allergens, and 6 diet labels; meal analysis; read-only AI lookup; shopping cart, ordering, product management, images, orders, analytics, and payment logs. COD and VNPAY sandbox are within scope.</p>
+<p class="report-p">D32 adds profiles and single-meal recommendations consisting of a protein dish, vegetables/fruit, and carbohydrates. Targets are calculated using Mifflin-St Jeor × activity level. Applicable only for ages 18–65, BMI 17–35, excluding pregnancy, lactation, and conditions requiring medical supervision. There are no real payments, automated refunds, or medical advice. Identity is extracted from JWT; inventory deduction uses conditional UPDATE within transactions.</p>
+<h3 class="report-h3">Benefits and Return on Investment</h3>
+<p class="report-p">Buyers look up information from the DB, filter according to needs, and view data limitations. Store owners manage catalog, images, orders, and payment logs within the same application. Cost Explorer recorded 6.44 USD for Nov 01–21, 2026, fully covered by credits. There are no revenue or labor-saving figures yet to calculate financial ROI.</p>
 </section>
 
-<!-- 3. AWS ARCHITECTURE -->
+<!-- 3. 3. SOLUTION ARCHITECTURE -->
 <section class="report-section">
-<h2 class="report-h2">3. AWS Architecture</h2>
-<p class="report-p">
-The system architecture follows the <strong>AWS Well-Architected Framework</strong>, combining serverless containers, 
-managed relational databases, and secure foundation AI services across two Asia-Pacific regions.
-</p>
-
-<!-- FIGURE 1: AWS ARCHITECTURE -->
+<h2 class="report-h2">3. Solution Architecture</h2>
+<h3 class="report-h3">AWS architecture reference</h3>
+<p class="report-p">Click on the image to expand / interactive zoom</p>
 <div class="report-figure">
-<div class="report-figure-img-wrap"  title="Click to enlarge">
-<img src="/fcaj-report/images/proposal/aws-architecture.png" alt="AWS Architecture Diagram" class="report-figure-img" loading="lazy" />
+<a href="/fcaj-report/images/workshop/5.1-overview/aws-architecture.png" target="_blank" class="report-figure-img-wrap" title="Click to zoom">
+<img src="/fcaj-report/images/workshop/5.1-overview/aws-architecture.png" alt="AWS Architecture Diagram" class="report-figure-img" loading="lazy" />
+</a>
+<div class="report-figure-caption">AWS architecture diagram drawn on draw.io using AWS Architecture Icons, updated with Multi-AZ and AWS STS on Nov 25, 2026</div>
 </div>
-<div class="report-figure-caption">Figure 1: Comprehensive AWS Cloud Architecture Diagram (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Click to enlarge</em></div>
-</div>
-
-<h3 class="report-h3">Architectural Specifications & Infrastructure Components:</h3>
-<ul class="report-list">
-<li><strong>Primary Region (Singapore - <code>ap-southeast-1</code>):</strong> Hosts all primary compute, database, storage, networking, and security services.</li>
-<li><strong>AI Services Region (Tokyo - <code>ap-northeast-1</code>):</strong> Direct integration with Amazon Bedrock (Nova 2 Lite) and Bedrock Guardrails.</li>
-<li><strong>Amazon CloudFront & Amazon S3:</strong> Edge caching distributes the React SPA static build from S3 and securely proxies <code>/api/*</code> traffic to the ALB.</li>
-<li><strong>Application Load Balancer (ALB):</strong> Ingress controller routing incoming API traffic across ECS Fargate tasks.</li>
-<li><strong>Amazon ECS Fargate:</strong> Serverless compute hosting Spring Boot 4. In demo mode, it runs <strong>a single active task</strong> provisioned with <strong>0.5 vCPU and 1 GB RAM</strong>.</li>
-<li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17 engine on instance class <strong>db.t4g.micro with 20 GB gp3 storage in Single-AZ configuration</strong>.</li>
-<li><strong>Subnet & Network Topology:</strong>
-ECS Task is placed in a Public Subnet with a Public IPv4 address to pull container images from ECR and call Bedrock (Tokyo) <em>without requiring an AWS NAT Gateway</em> (saving ~$32/month per gateway). 
-RDS PostgreSQL resides strictly within a Private Subnet isolated from public ingress, strictly permitting connections only from the ECS Security Group on port 5432. 
-The secondary subnet in AZ-2 serves as standby resilience for future Multi-AZ failover; no concurrent tasks run in AZ-2 during demo.
-</li>
-<li><strong>Identity & Monitoring:</strong> Amazon Cognito User Pool manages authentication via stateless JWT tokens; AWS Secrets Manager stores credentials; CloudWatch, Budgets, and SNS provide monitoring and cost alerts.</li>
-<li><strong>Current Architectural Constraint:</strong> Transport between CloudFront and ALB currently uses <strong>HTTP</strong> (Client-to-CloudFront is HTTPS; communication is secured with a Custom Secret Header validating origin).</li>
-</ul>
-
-<!-- FIGURE 2: APPLICATION FLOW -->
-<div class="report-figure" style="margin-top: 28px;">
-<div class="report-figure-img-wrap"  title="Click to enlarge">
-<img src="/fcaj-report/images/proposal/application-flow.png" alt="Application Flow Diagram" class="report-figure-img" loading="lazy" />
-</div>
-<div class="report-figure-caption">Figure 2: Application Flow Diagram — Complete transaction lifecycle from Client to CloudFront, Cognito, ALB, ECS, Bedrock Tokyo, and RDS — <em>Click to enlarge</em></div>
-</div>
-
-<h3 class="report-h3">Eight-Step Application Execution Flow:</h3>
-<ol class="report-list" style="padding-left: 20px;">
-<li>Client sends secure HTTPS requests to the Amazon CloudFront edge distribution domain.</li>
-<li>CloudFront serves cached React assets from S3 or routes <code>/api/*</code> calls to the Application Load Balancer.</li>
-<li>ALB verifies the Custom Secret Header from CloudFront and routes requests to the Spring Boot container on ECS Fargate.</li>
-<li>Users authenticate against Amazon Cognito User Pool; Client attaches JWT Bearer token to API request headers.</li>
-<li>Spring Security validates RSA JWT cryptographic signature and enforces Role-Based Access Control (RBAC).</li>
-<li>For natural language queries, Spring Boot invokes Bedrock Nova 2 Lite in Tokyo to extract structured nutrient filter parameters.</li>
-<li>Backend executes SQL queries with extracted parameters against the isolated PostgreSQL RDS instance in the Private Subnet.</li>
-<li>Backend returns standardized JSON containing USDA-verified nutritional items to the React SPA for immediate rendering.</li>
-</ol>
+<p class="report-p">From Nov 22, 2026 (D33), the dev environment runs 2 ECS tasks, one task per Availability Zone, and RDS in Multi-AZ mode with a standby replica in the second AZ. Reboot with failover drill on Nov 22 switched the primary AZ from ap-southeast-1a to ap-southeast-1b in about 20–45 seconds; API experienced roughly half a minute of disruption then automatically recovered, with zero data loss.</p>
+<h3 class="report-h3">AWS services used</h3>
+<p class="report-p">CloudFront + S3 — React SPA and images via OAC; Function for path rewrites; two private buckets.</p>
+<p class="report-p">ALB + ECS Fargate + ECR — ALB accepts CloudFront + secret header; Spring Boot 4 / Java 21, ARM64, 0.5 vCPU / 1 GB, 2 tasks across 2 AZs.</p>
+<p class="report-p">RDS PostgreSQL + Secrets Manager — db.t4g.micro, 20 GB gp3, Multi-AZ (standby in the second AZ), private subnet, encrypted; Flyway V1–V11.</p>
+<p class="report-p">Cognito — JWT sub and cognito:groups; USER / ADMIN.</p>
+<p class="report-p">Bedrock + Guardrails — Nova 2 Lite in Tokyo; read-only tools, metrics retrieved by code from the DB.</p>
+<p class="report-p">CloudWatch + SNS + Budgets — 14-day logs, 7 alarms, email alerts; 100 USD budget.</p>
+<p class="report-p">CloudTrail + S3 audit + WAF — Audit and ALB logs retained for 30 days; WAF only enabled during demo; AWS-managed KMS.</p>
+<p class="report-p">Terraform + IAM + STS + GitHub Actions — S3 state use_lockfile; SSO, boundary; CI/CD via OIDC, AWS STS grants temporary credentials (AssumeRoleWithWebIdentity), no static access keys stored.</p>
+<p class="report-p">Application deployed in ap-southeast-1, prefix nutrition-dev, single dev environment. D15 places ECS in public subnets with public IP to avoid NAT costs, while RDS remains private. D17 chooses a single environment to fit the capstone project. D18 shifts Bedrock and Guardrail invocations to ap-northeast-1 because Singapore quota for the account is 0; profile jp.amazon.nova-2-lite-v1:0. D24/D31 restricts model to searchProducts with search, facts, compare, plan intents; metrics are assembled by the backend. CloudFront → ALB currently uses HTTP due to lack of a custom domain.</p>
+<h3 class="report-h3">Component design</h3>
+<p class="report-p">Frontend React + TypeScript displays catalog, shopping cart, profiles, recommendations, and admin dashboard.</p>
+<p class="report-p">Backend Spring Boot 4 / Java 21: catalog manages lookups; commerce handles cart/orders; payments verifies IPN; ai extracts intent; admin provides management APIs; profile calculates targets and recommendations.</p>
+<p class="report-p">Database PostgreSQL uses parameterized SQL and Flyway V1–V11.</p>
+<p class="report-p">AI uses Nova 2 Lite with Guardrails; code validates filters and aggregates metrics from DB.</p>
+<p class="report-p">CI/CD GitHub Actions runs tests, builds ARM64, obtains temporary credentials from AWS STS via OIDC, pushes to ECR, and deploys.</p>
 </section>
 
-<!-- 4. TECHNOLOGIES AND IMPLEMENTATION PLAN -->
+<!-- 4. 4. TECHNICAL IMPLEMENTATION -->
 <section class="report-section">
-<h2 class="report-h2">4. Technologies & Implementation Plan</h2>
-<p class="report-p"><strong>Technology Stack Summary:</strong></p>
+<h2 class="report-h2">4. Technical Implementation</h2>
+<p class="report-p">Terraform provisions infrastructure; Maven wrapper and Flyway manage backend/schema; React + TypeScript builds frontend. OIDC pipeline builds, tests, and deploys along the master branch. Phases are grouped according to milestones recorded in the repository.</p>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 20%;">Layer</th>
-<th style="width: 40%;">Technology / Service</th>
-<th style="width: 40%;">Role in Architecture</th>
+<th style="width: 15%;">Phase</th>
+<th style="width: 25%;">2026 Timeline</th>
+<th style="width: 60%;">Actual Scope</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Frontend</strong></td>
-<td>React 19, TypeScript, Vite, Tailwind CSS</td>
-<td>Responsive Single Page Application with optimized bundle delivery.</td>
+<td>1</td>
+<td>Oct 29–Nov 01</td>
+<td>Repository, frontend skeleton, catalog backend, Cognito</td>
 </tr>
 <tr>
-<td><strong>Backend</strong></td>
-<td>Spring Boot 4.1 (Java 21), Spring Security</td>
-<td>High-throughput RESTful API with automated database migrations and security filtering.</td>
+<td>2</td>
+<td>Nov 03–10</td>
+<td>UI design, USDA data</td>
 </tr>
 <tr>
-<td><strong>Database</strong></td>
-<td>PostgreSQL 17 on Amazon RDS (db.t4g.micro)</td>
-<td>Relational data persistence storing users, orders, and 152 USDA food items.</td>
+<td>3</td>
+<td>Nov 11–12</td>
+<td>Terraform network/RDS/ECR/Cognito/ALB/ECS/CloudFront; OIDC; first AWS run</td>
 </tr>
 <tr>
-<td><strong>AI & GenAI</strong></td>
-<td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
-<td>Nutritional natural language parsing and prompt safety moderation.</td>
+<td>4</td>
+<td>Nov 13–18</td>
+<td>AI, Guardrails, alarms; search, rate limiting, meal analysis, VNPAY sandbox, UI</td>
 </tr>
 <tr>
-<td><strong>Compute</strong></td>
-<td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
-<td>Serverless container execution (0.5 vCPU, 1 GB RAM active task).</td>
-</tr>
-<tr>
-<td><strong>Networking</strong></td>
-<td>Amazon CloudFront, Application Load Balancer, VPC</td>
-<td>Global CDN acceleration, Layer-7 load balancing, and private network isolation.</td>
-</tr>
-<tr>
-<td><strong>Security</strong></td>
-<td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
-<td>Identity provider, centralized credential vault, and least-privilege policies.</td>
-</tr>
-<tr>
-<td><strong>IaC & CI/CD</strong></td>
-<td>Terraform, GitHub Actions, AWS OIDC</td>
-<td>100% Infrastructure as Code and automated delivery pipeline without static access keys.</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Five Project Phases:</strong></p>
-<div class="report-table-wrapper">
-<table class="report-table">
-<thead>
-<tr>
-<th style="width: 22%;">Phase Timeline</th>
-<th style="width: 38%;">Key Activities</th>
-<th style="width: 40%;">Deliverables</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Oct 29 – Nov 01, 2026</strong></td>
-<td>Project Inception & Architecture</td>
-<td>Scope specification, AWS Well-Architected design, and USDA data model definition.</td>
-</tr>
-<tr>
-<td><strong>Nov 03 – Nov 10, 2026</strong></td>
-<td>Frontend UI & USDA Dataset</td>
-<td>React components, Tailwind layouts, 152-product USDA data ingestion and JPA entities.</td>
-</tr>
-<tr>
-<td><strong>Nov 11 – Nov 12, 2026</strong></td>
-<td>AWS Infrastructure Provisioning</td>
-<td>Terraform modules deploying VPC, Subnets, RDS, ECR, ECS Fargate, ALB, and CloudFront.</td>
-</tr>
-<tr>
-<td><strong>Nov 13 – Nov 18, 2026</strong></td>
-<td>AI Integration & Business Logic</td>
-<td>Bedrock Nova 2 Lite prompt engineering, Guardrails configuration, cart, and VNPAY Sandbox.</td>
-</tr>
-<tr>
-<td><strong>Nov 20 – Nov 22, 2026</strong></td>
-<td>End-to-End Testing & Optimization</td>
-<td>Integration testing, cost reconciliation, security hardening, and final technical report.</td>
+<td>5</td>
+<td>Nov 20–22</td>
+<td>Tokyo, E2E, audit/optional WAF; AI full intent, D32, audit apply and cost measurement</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 
-<!-- 5. AWS COST ESTIMATION -->
+<!-- 5. 5. IMPLEMENTATION PLAN AND MILESTONES -->
 <section class="report-section">
-<h2 class="report-h2">5. AWS Cost Estimation</h2>
-<p class="report-p">
-Expenditures are modeled across three operational scenarios and reconciled against empirical data from <strong>AWS Cost Explorer</strong>:
-</p>
-
-<p class="report-p"><strong>Table 1: Three-Scenario Monthly Cost Comparison (USD/month):</strong></p>
+<h2 class="report-h2">5. Implementation Plan and Milestones</h2>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 40%;">AWS Service</th>
+<th style="width: 30%;">Date</th>
+<th style="width: 70%;">Actual Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29/10/2026</td>
+<td>Repository initialization</td>
+</tr>
+<tr>
+<td>01/11/2026</td>
+<td>Frontend skeleton, catalog backend, Cognito</td>
+</tr>
+<tr>
+<td>03–06/11/2026</td>
+<td>UI redesign</td>
+</tr>
+<tr>
+<td>10/11/2026</td>
+<td>USDA data</td>
+</tr>
+<tr>
+<td>11/11/2026</td>
+<td>Terraform networking, RDS, ECR, Cognito, ALB, ECS, and CloudFront</td>
+</tr>
+<tr>
+<td>12/11/2026</td>
+<td>OIDC, product images, and first AWS run</td>
+</tr>
+<tr>
+<td>13/11/2026</td>
+<td>AI, Guardrails, evaluation, and alarms</td>
+</tr>
+<tr>
+<td>14–15/11/2026</td>
+<td>Search, password reset, statistics, rate limiting, Spring Boot 4</td>
+</tr>
+<tr>
+<td>16/11/2026</td>
+<td>Catalog expansion, diet labels, meal analysis, VNPAY sandbox</td>
+</tr>
+<tr>
+<td>17–18/11/2026</td>
+<td>UI finalization</td>
+</tr>
+<tr>
+<td>20/11/2026</td>
+<td>Tokyo, E2E, audit, optional WAF, payment logs</td>
+</tr>
+<tr>
+<td>21/11/2026</td>
+<td>AI full intent, profiles, and D32 recommendations</td>
+</tr>
+<tr>
+<td>22/11/2026</td>
+<td>Audit apply and cost measurement</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- 6. 6. BUDGET ESTIMATE -->
+<section class="report-section">
+<h2 class="report-h2">6. Budget Estimate</h2>
+<h3 class="report-h3">Infrastructure cost</h3>
+<p class="report-p">Estimated USD/month, cross-referenced with AWS Pricing Calculator on Nov 25, 2026 for Multi-AZ configuration and 2 tasks (D33), exclusive of tax, variance may be ±10%. Production is a future proposal not yet deployed. Bedrock actually invoked in Tokyo.</p>
+<div class="report-table-wrapper">
+<table class="report-table">
+<thead>
+<tr>
+<th style="width: 40%;">Service / Configuration</th>
 <th class="text-right" style="width: 20%;">Demo (~4h/day)</th>
-<th class="text-right" style="width: 20%;">24/7 Continuous</th>
+<th class="text-right" style="width: 20%;">24/7 (Pricing Calculator)</th>
 <th class="text-right" style="width: 20%;">Proposed Production</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-<td class="text-right">~4</td>
-<td class="text-right">~22</td>
-<td class="text-right">~70</td>
+<td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td>
+<td class="text-right">~11.6</td>
+<td class="text-right">42.75</td>
+<td class="text-right">~70 (Multi-AZ, db.t4g.small)</td>
 </tr>
 <tr>
-<td>Application Load Balancer (ALB)</td>
-<td class="text-right">~3</td>
-<td class="text-right">~20</td>
+<td>ECS Fargate ARM64, 0.5 vCPU / 1 GB, 2 tasks</td>
+<td class="text-right">~5.9</td>
+<td class="text-right">35.98</td>
+<td class="text-right">~36–72 (2–4 tasks, auto scaling)</td>
+</tr>
+<tr>
+<td>Application Load Balancer</td>
+<td class="text-right">~3.1</td>
+<td class="text-right">18.63</td>
 <td class="text-right">~22</td>
 </tr>
 <tr>
-<td>Amazon ECS Fargate (0.5 vCPU, 1 GB RAM)</td>
-<td class="text-right">~2.5</td>
+<td>Public IPv4, 4 addresses</td>
+<td class="text-right">~2.4</td>
+<td class="text-right">14.60</td>
 <td class="text-right">~15</td>
-<td class="text-right">~30</td>
 </tr>
 <tr>
-<td>Public IPv4 Address</td>
-<td class="text-right">~2</td>
-<td class="text-right">~11</td>
-<td class="text-right">~11</td>
+<td>Secrets Manager, 2 secrets</td>
+<td class="text-right">0.85</td>
+<td class="text-right">0.85</td>
+<td class="text-right">0.85</td>
 </tr>
 <tr>
-<td>AWS Secrets Manager</td>
-<td class="text-right">0.8</td>
-<td class="text-right">0.8</td>
-<td class="text-right">0.8</td>
+<td>Bedrock (Nova Lite as pricing reference, Tokyo)</td>
+<td class="text-right">&lt;0.7</td>
+<td class="text-right">0.70</td>
+<td class="text-right">Based on usage</td>
 </tr>
 <tr>
-<td>Amazon Bedrock (Nova 2 Lite)</td>
-<td class="text-right">&lt; 1</td>
-<td class="text-right">&lt; 1</td>
-<td class="text-right">Usage-based</td>
-</tr>
-<tr>
-<td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
-<td class="text-right">~0–1</td>
-<td class="text-right">~1–3</td>
+<td>CloudFront 1.02 · CloudWatch 1.70 · ECR 0.10 · S3 0.07 · Cognito 0 · CloudTrail 0</td>
+<td class="text-right">~2.9</td>
+<td class="text-right">2.89</td>
 <td class="text-right">~5</td>
 </tr>
+<tr class="total-row">
+<td>Total (without WAF)</td>
+<td class="text-right">~27</td>
+<td class="text-right">116.40</td>
+<td class="text-right">~150–190</td>
+</tr>
 <tr>
-<td>AWS WAF (Optional)</td>
+<td>WAF (optional, Optional group)</td>
 <td class="text-right">0</td>
-<td class="text-right">~8–10</td>
+<td class="text-right">9.60</td>
 <td class="text-right">~10</td>
 </tr>
 <tr class="total-row">
-<td>Projected Total (USD/month)</td>
-<td class="text-right">~12–18</td>
-<td class="text-right">~65–75</td>
-<td class="text-right">~150–200</td>
+<td>Total with WAF</td>
+<td class="text-right">—</td>
+<td class="text-right">126.00</td>
+<td class="text-right">~160–200</td>
 </tr>
 </tbody>
 </table>
 </div>
+<p class="report-p">Cost Explorer recorded 6.44 USD for Nov 01–21, 2026, fully covered by credits. RDS 2.77; ALB 1.29; ECS 1.21; IPv4 0.74; Bedrock 0.21; Secrets Manager 0.20 USD. The listed items represent the major charges, not an itemized sum of the entire invoice. Since the app is only turned on during demo sessions, these actual numbers must not be used to extrapolate 24/7 operation. These actual figures were recorded before enabling Multi-AZ.</p>
+<p class="report-p">AWS Pricing Calculator estimate dated Nov 25, 2026. The 24/7 column uses the exact figures from Calculator (Singapore, except Bedrock in Tokyo). The Demo column converts from that for approximately 120 operating hours per month: hourly charges (RDS instance, Fargate, ALB, IPv4) multiplied by 120/730, while RDS storage (5.52 USD) and usage-based items remain unchanged. Load assumptions: 50 users/month, 5 GB CloudFront, approximately 3,600 AI queries/month (1 query/minute for 2 hours/day, 1,500 input tokens, 300 output tokens). Since the Calculator did not yet list Amazon Nova 2 Lite, Amazon Nova Lite was used as the pricing reference. The estimate excludes RDS Proxy and Database Insights Advanced as they are not used by the project.</p>
+</section>
 
-<p class="report-p" style="margin-top: 18px;"><strong>Table 2: Empirical Spending from AWS Cost Explorer (Nov 01 – Nov 21, 2026):</strong></p>
+<!-- 7. 7. RISK ASSESSMENT -->
+<section class="report-section">
+<h2 class="report-h2">7. Risk Assessment</h2>
+<h3 class="report-h3">Risk matrix</h3>
 <div class="report-table-wrapper">
 <table class="report-table">
 <thead>
 <tr>
-<th style="width: 50%;">Primary AWS Service Item</th>
-<th class="text-right" style="width: 25%;">Actual Incurred Cost (USD)</th>
-<th style="width: 25%;">Operational Notes</th>
+<th style="width: 30%;">Risk</th>
+<th style="width: 20%;">Impact</th>
+<th style="width: 25%;">Probability</th>
+<th style="width: 25%;">Level</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
-<td class="text-right font-bold">2.77</td>
-<td>Instance hours and 20 GB gp3 storage.</td>
+<td>Unexpected cost</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
 </tr>
 <tr>
-<td>Application Load Balancer (ALB)</td>
-<td class="text-right font-bold">1.29</td>
-<td>Load balancer active hours and integration testing traffic.</td>
+<td>Personal data exposure</td>
+<td>High</td>
+<td>Low</td>
+<td>Medium</td>
 </tr>
 <tr>
-<td>Amazon ECS Fargate</td>
-<td class="text-right font-bold">1.21</td>
-<td>Serverless container compute runtime for active tasks.</td>
+<td>AI incorrect/medical response</td>
+<td>High</td>
+<td>Medium</td>
+<td>High</td>
 </tr>
 <tr>
-<td>Public IPv4 Address</td>
-<td class="text-right font-bold">0.74</td>
-<td>Public IPv4 allocation fees for task in public subnet.</td>
+<td>Bedrock quota</td>
+<td>Medium</td>
+<td>High (already occurred in Singapore)</td>
+<td>Medium</td>
 </tr>
 <tr>
-<td>Amazon Bedrock (Nova 2 Lite)</td>
-<td class="text-right font-bold">0.21</td>
-<td>Token processing for nutrition natural language queries.</td>
+<td>HTTP from CloudFront to ALB</td>
+<td>Medium</td>
+<td>Low</td>
+<td>Low</td>
 </tr>
 <tr>
-<td>AWS Secrets Manager</td>
-<td class="text-right font-bold">0.20</td>
-<td>Encrypted credential storage and retrieval API calls.</td>
-</tr>
-<tr class="total-row">
-<td>Total Major Services Spend</td>
-<td class="text-right">6.44</td>
-<td>100% Offset by Promotional AWS Credits</td>
+<td>Single Availability Zone failure</td>
+<td>High</td>
+<td>Low</td>
+<td>Medium (reduced via Multi-AZ)</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
-* Note: Figures represent dominant expenditures incurred from Nov 01 to Nov 21, 2026. 
-The production scenario reflects future architectural recommendations not yet deployed during the internship.
-</p>
+<p class="report-p">Scoring methodology: Impact and Probability are evaluated across three levels: Low / Medium / High; Level is a combination of the two factors, after factoring in mitigation measures below. AI risk is classified as High because incorrect nutrition figures or medical advice can affect user health, thus prioritized for multi-layered controls.</p>
+<h3 class="report-h3">Mitigation measures</h3>
+<p class="report-p">Cost: 100 USD Budgets, alarms, and up/down scripts. RDS may automatically turn back on after 7 days stopped.</p>
+<p class="report-p">Personal data: JWT and authorization; avoid logging PII, physical biometric data is not sent to the model; users can delete their own profiles.</p>
+<p class="report-p">AI: Guardrails, read-only tools, metrics from DB; evaluation of 45 queries on Nov 21, 2026 achieved 17/17 safety, 27/28 lookup, 85% threshold. Query L01 still fluctuates.</p>
+<p class="report-p">Quota: Tokyo replaces Singapore per D18; monitor ApplyGuardrail permissions.</p>
+<p class="report-p">Origin: CloudFront prefix list and secret header reduce direct access; HTTP to ALB remains a constraint. HTTPS origin will require a custom domain and certificate in the future.</p>
+<h3 class="report-h3">Contingency plan</h3>
+<p class="report-p">When Bedrock is unreachable, maintain catalog and shopping flows, returning controlled AI errors. If costs rise, scale down following the runbook. When DB restoration is needed, follow the snapshot procedure in docs/runbook.md; drill record still awaits repository owner execution.</p>
 </section>
 
-<!-- 6. SECURITY AND RISK MANAGEMENT -->
+<!-- 8. 8. EXPECTED OUTCOMES -->
 <section class="report-section">
-<h2 class="report-h2">6. Security & Risk Management</h2>
-<p class="report-p"><strong>Implemented Multi-Layered Security Controls:</strong></p>
-<ul class="report-list">
-<li><strong>Stateless Authentication with Cognito JWT:</strong> RSA cryptographic validation on incoming bearer tokens; completely stateless backend without session affinity.</li>
-<li><strong>IAM Least Privilege & OIDC:</strong> Dedicated IAM Task and Execution Roles; GitHub Actions deployments use AWS OIDC without static long-lived credentials.</li>
-<li><strong>AWS Secrets Manager:</strong> Database credentials and API keys are encrypted at rest and injected directly at container boot.</li>
-<li><strong>Network Isolation & Private Subnets:</strong> RDS PostgreSQL resides strictly within private subnets, accepting ingress only from the ECS task Security Group on port 5432.</li>
-<li><strong>Bedrock Guardrails Safety:</strong> Proactive defense filtering prompt injection attempts and blocking unauthorized clinical advice.</li>
-<li><strong>Custom Secret Header Defense:</strong> CloudFront injects a custom cryptographic header; direct requests to the ALB public DNS are rejected with 403 Forbidden.</li>
-<li><strong>AWS Budgets & SNS Alerting:</strong> Real-time budget threshold monitors dispatching immediate email alerts via Amazon SNS if spend crosses 80%.</li>
-<li><strong>AWS WAF (Production Proposal):</strong> Web Application Firewall evaluating managed rulesets against SQLi, XSS, and volumetric attacks.</li>
-</ul>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Risk Analysis and Mitigation Strategy:</strong></p>
-<div class="report-table-wrapper">
-<table class="report-table">
-<thead>
-<tr>
-<th style="width: 25%;">Identified Risk</th>
-<th style="width: 35%;">Severity & Impact</th>
-<th style="width: 40%;">Implemented Mitigation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Cloud Cost Overrun</strong></td>
-<td>Medium – Potential budget depletion from forgotten running resources.</td>
-<td>AWS Budgets configured with SNS alerts; single active ECS task running during demo hours; lightweight db.t4g.micro RDS instance.</td>
-</tr>
-<tr>
-<td><strong>AI Hallucination</strong></td>
-<td>High – Fabricated calorie or macro figures posing potential health concerns.</td>
-<td>AI scope strictly restricted to intent parsing; 100% of nutritional figures are retrieved directly from PostgreSQL USDA tables.</td>
-</tr>
-<tr>
-<td><strong>Single-AZ Outage</strong></td>
-<td>Low (Demo Environment) – Brief downtime if the primary Singapore AZ experiences disruption.</td>
-<td>ECS service automatically restarts containers upon failure; Terraform manifests already define a secondary standby subnet for Multi-AZ upgrades.</td>
-</tr>
-<tr>
-<td><strong>Allergen Ingestion Risk</strong></td>
-<td>High – Undetected allergens posing severe health threats to consumers.</td>
-<td>Fail-closed verification: if an item has ambiguous allergen tags matching user exclusion criteria, it is automatically omitted from suggestions.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-
-<!-- 7. RESULTS AND FUTURE ROADMAP -->
-<section class="report-section">
-<h2 class="report-h2">7. Results & Future Roadmap</h2>
-<p class="report-p"><strong>Key Project Accomplishments:</strong></p>
-<ul class="report-list">
-<li>End-to-end cloud deployment of a full-stack personalized nutrition platform on AWS.</li>
-<li>Robust serverless container operation using Amazon ECS Fargate and managed PostgreSQL RDS.</li>
-<li>Accurate nutritional intent extraction with Amazon Bedrock Nova 2 Lite in Tokyo.</li>
-<li>152 items standardized with 9 allergen filters and 6 dietary tags according to USDA FoodData Central.</li>
-<li>100% Terraform coverage with secure GitHub Actions OIDC CI/CD automated deployment.</li>
-<li>Incurred only $6.44 over three weeks, fully offset by promotional AWS credits.</li>
-</ul>
-
-<p class="report-p" style="margin-top: 18px;"><strong>Production Roadmap (Future Enhancements - Not Yet Deployed):</strong></p>
-<ul class="report-list">
-<li><strong>Amazon RDS Multi-AZ Deployment:</strong> Enable automatic synchronous standby replica failover achieving 99.95% availability SLA.</li>
-<li><strong>Multi-Task ECS Fargate Auto-Scaling:</strong> Scale from 1 task to minimum 2 tasks distributed across multiple AZs with metric-based autoscaling.</li>
-<li><strong>End-to-End HTTPS Origin Encryption:</strong> Attach AWS Certificate Manager (ACM) public certificates to the ALB with custom Route 53 domain routing.</li>
-<li><strong>Permanent AWS WAF Protection:</strong> Deploy AWS WAF at the CloudFront tier with managed rule groups against layer-7 exploitation.</li>
-<li><strong>Automated Backups & Cross-Region DR:</strong> Automated daily snapshots with asynchronous cross-region replication for disaster recovery.</li>
-<li><strong>Deep Nutrition Algorithms:</strong> Expand to automated weekly meal planning workflows based on long-term user health metrics.</li>
-</ul>
+<h2 class="report-h2">8. Expected Outcomes</h2>
+<h3 class="report-h3">Technical improvements:</h3>
+<p class="report-p">React Web and API on CloudFront.</p>
+<p class="report-p">Source code, tests, and OIDC workflow on GitHub.</p>
+<p class="report-p">Terraform and demo-session operational guidelines.</p>
+<p class="report-p">Workshop package with 7 major sections, sub-steps, and bilingual report.</p>
+<h3 class="report-h3">Reference sources:</h3>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/architecture.md" target="_blank" rel="noopener noreferrer">docs/architecture.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/decisions.md" target="_blank" rel="noopener noreferrer">docs/decisions.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/api-contract.md" target="_blank" rel="noopener noreferrer">docs/api-contract.md</a></p>
+<p class="report-p"><a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/db-schema.md" target="_blank" rel="noopener noreferrer">docs/db-schema.md</a></p>
+<h3 class="report-h3">Long-term value</h3>
+<p class="report-p">The yet-to-be-deployed production roadmap includes RDS Multi-AZ, two tasks, a custom domain with HTTPS to ALB, and persistent WAF. Every change requires planning, fault-tolerance assessment, and updated cost estimates.</p>
 </section>
 </div>
